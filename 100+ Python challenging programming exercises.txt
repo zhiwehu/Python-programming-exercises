@@ -7,7 +7,8 @@ Level 2	Intermediate means someone who has just learned Python, but already has 
 Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
 
 2.	Problem template
-Level
+
+#----------------------------------------#
 Question
 Hints
 Solution
@@ -723,6 +724,122 @@ print "%s name is %s" % (Person.name, nico.name)
 #----------------------------------------#
 
 #----------------------------------------#
+Question:
+Define a function which can compute the sum of two numbers.
+
+Hints:
+Define a function with two numbers as arguments. You can compute the sum in the function and return the value.
+
+Solution
+def SumFunction(number1, number2):
+	return number1+number2
+
+print SumFunction(1,2)
 
 #----------------------------------------#
+Question:
+Define a function that can convert a integer into a string and print it in console.
+
+Hints:
+
+Use str() to convert a number to string.
+
+Solution
+def printValue(n):
+	print str(n)
+
+printValue(3)
+	
+
+#----------------------------------------#
+Question:
+Define a function that can convert a integer into a string and print it in console.
+
+Hints:
+
+Use str() to convert a number to string.
+
+Solution
+def printValue(n):
+	print str(n)
+
+printValue(3)
+
+#----------------------------------------#
+Question:
+Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
+
+Hints:
+
+Use int() to convert a string to integer.
+
+Solution
+def printValue(s1,s2):
+	print int(s1)+int(s2)
+
+printValue("3","4") #7
+
+
+#----------------------------------------#
+Question:
+Define a function that can accept two strings as input and concatenate them and then print it in console.
+
+Hints:
+
+Use + to concatenate the strings
+
+Solution
+def printValue(s1,s2):
+	print s1+s2
+
+printValue("3","4") #34
+
+#----------------------------------------#
+Question:
+Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print al l strings line by line.
+
+Hints:
+
+Use len() function to get the length of a string
+
+Solution
+def printValue(s1,s2):
+	len1 = len(s1)
+	len2 = len(s2)
+	if len1>len2:
+		print s1
+	elif len2>len1:
+		print s2
+	else:
+		print s1
+		print s2
+		
+
+printValue("one","three")
+
+
+
+#----------------------------------------#
+Question:
+Define a function that can accept an integer number as input and print the "It is an even number" if the number is even, otherwise print "It is an odd number".
+
+Hints:
+
+Use % operator to check if a number is even or odd.
+
+Solution
+def checkValue(n):
+	if n%2 == 0:
+		print "It is an even number"
+	else:
+		print "It is an odd number"
+		
+
+checkValue(7)
+
+
+
+
+
+
 
