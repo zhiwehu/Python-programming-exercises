@@ -1291,6 +1291,9 @@ print aCircle.area()
 
 
 #----------------------------------------#
+
+7.2
+
 Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area. 
 
 Hints:
@@ -1314,6 +1317,9 @@ print aRectangle.area()
 
 
 #----------------------------------------#
+
+7.2
+
 Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
 
 Hints:
@@ -1350,10 +1356,273 @@ print aSquare.area()
 #----------------------------------------#
 
 
+Please raise a RuntimeError exception.
+
+Hints:
+
+Use raise() to raise an exception.
+
+Solution:
+
+raise RuntimeError('something wrong')
+
+
+
+#----------------------------------------#
+Write a function to compute 5/0 and use try/except to catch the exceptions.
+
+Hints:
+
+Use try/except to catch exceptions.
+
+Solution:
+
+def throws():
+    return 5/0
+
+try:
+    throws()
+except ZeroDivisionError:
+    print "division by zero!"
+except Exception, err:
+    print 'Caught an exception'
+finally:
+    print 'In finally block for cleanup'
+
+
+#----------------------------------------#
+Define a custom exception class which takes a string message as attribute.
+
+Hints:
+
+To define a custom exception, we need to define a class inherited from Exception.
+
+Solution:
+
+class MyError(Exception):
+    """My own exception class
+
+    Attributes:
+        msg  -- explanation of the error
+    """
+
+    def __init__(self, msg):
+        self.msg = msg
+
+error = MyError("something wrong")
+
+#----------------------------------------#
+Question:
+
+Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the user name of a given email address. Both user names and company names are composed of letters only.
+
+Example:
+If the following email address is given as input to the program:
+
+john@google.com
+
+Then, the output of the program should be:
+
+john
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Hints:
+
+Use \w to match letters.
+
+Solution:
+import re
+emailAddress = raw_input()
+pat2 = "(\w+)@((\w+\.)+(com))"
+r2 = re.match(pat2,emailAddress)
+print r2.group(1)
+
+
+#----------------------------------------#
+Question:
+
+Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
+
+Example:
+If the following email address is given as input to the program:
+
+john@google.com
+
+Then, the output of the program should be:
+
+google
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Hints:
+
+Use \w to match letters.
+
+Solution:
+import re
+emailAddress = raw_input()
+pat2 = "(\w+)@(\w+)\.(com)"
+r2 = re.match(pat2,emailAddress)
+print r2.group(2)
+
+
+
+
+#----------------------------------------#
+Question:
+
+Write a program which accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
+
+Example:
+If the following words is given as input to the program:
+
+2 cats and 3 dogs.
+
+Then, the output of the program should be:
+
+['2', '3']
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Hints:
+
+Use re.findall() to find all substring using regex.
+
+Solution:
+import re
+s = raw_input()
+print re.findall("\d+",s)
+
+
+#----------------------------------------#
+Print a unicode string "hello world".
+
+Hints:
+
+Use u'strings' format to define unicode string.
+
+Solution:
+
+unicodeString = u"hello world!"
+print unicodeString
+
+#----------------------------------------#
+Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
+
+Hints:
+
+Use unicode() function to convert.
+
+Solution:
+
+s = raw_input()
+u = unicode( s ,"utf-8")
+print u
+
+#----------------------------------------#
+Question:
+
+Write a special comment to indicate a Python source code file is in unicode.
+
+Hints:
+
+Solution:
+
+# -*- coding: utf-8 -*-
+
+#----------------------------------------#
+
+8
+
+Write a program to compute 1/2+2/3+3/4+...+n/n+1 with a given n input by console (n>0).
+
+Example:
+If the following n is given as input to the program:
+
+5
+
+Then, the output of the program should be:
+
+3.55
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
+
+n=int(raw_input())
+sum=0.0
+for i in range(1,n+1):
+    sum += float(float(i)/(i+1))
+print sum
+
+
+#----------------------------------------#
+
+8
+
+Write a program to compute:
+
+f(n)=f(n-1)+100 when n>0
+and f(0)=1
+
+with a given n input by console (n>0).
+
+Example:
+If the following n is given as input to the program:
+
+5
+
+Then, the output of the program should be:
+
+500
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
+
+def f(n):
+    if n==0:
+        return 0
+    else:
+        return f(n-1)+100
+
+n=int(raw_input())
+print f(n)
+
+#----------------------------------------#
 
 
 
 
 
 #----------------------------------------#
+
+
+
+
+
+#----------------------------------------#
+
+
+
+
+
+#----------------------------------------#
+
+
+
+
+
+#----------------------------------------#
+
+
+
+
+
+#----------------------------------------#
+
+
+
+
 
