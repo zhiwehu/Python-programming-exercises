@@ -36,8 +36,8 @@ for i in range(2000, 3201):
 print ','.join(l)
 
 another solution using list comprehension:
-a= [x for x in range(2000,3201) if (x%7==0 and x%5 != 0)]
-print ','.join(str(x) for x in a)
+l= [i for i in range(2000,3201) if (i%7==0 and i%5 != 0)]
+print ','.join(str(i) for i in l)
 #----------------------------------------#
 
 #----------------------------------------#
