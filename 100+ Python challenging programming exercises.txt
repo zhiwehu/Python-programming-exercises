@@ -533,7 +533,8 @@ In case of input data being supplied to the question, it should be assumed to be
 We use itemgetter to enable multiple sort keys.
 
 Solutions:
-from operator import itemgetter, attrgetter
+
+from operator import itemgetter, attrgetter   
 
 l = []
 while True:
