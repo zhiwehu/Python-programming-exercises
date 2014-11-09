@@ -2185,6 +2185,11 @@ li = [12,24,35,24,88,120,155]
 li = [x for x in li if x!=24]
 print li
 
+another way of removing all repeated elements including original:
+from collections import Counter
+li = [12,24,35,24,88,120,155]
+li1 = [k for k,v in Counter(li).iteritems() if v==1]  # counter indexes the list by making it a dictionary, if any item is repeated than it's index would not be 1
+print li1
 
 #----------------------------------------#
 Question 93:
