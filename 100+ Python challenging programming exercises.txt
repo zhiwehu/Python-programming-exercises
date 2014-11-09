@@ -2207,6 +2207,14 @@ set1 &= set2
 li=list(set1)
 print li
 
+for intersection of multiple (more than two) lists:
+
+set1 = set([1,3,6,78,35,55])
+set2 = set([12,24,35,24,88,120,155])
+set3 = set([10,11,13,160,35,98,52])
+set4 = set.intersection(set1,set2,set3)
+li = list(set4)
+print li
 #----------------------------------------#
 
 Question 94:
