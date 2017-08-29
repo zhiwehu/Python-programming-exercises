@@ -2373,4 +2373,26 @@ print solutions
 
 #----------------------------------------#
 
+Question:
+
+The Doctor needs some stuff for his next adventure. He is currently on an alien planet and doesn't have any currency of that planet. But, he has a valuable gem that he found few days back on a planet when he was on his last adventure. The gem has some value N. He can get some coins with value 2 and some with 3 in exchange of the gem. Also, the sum of values of the coins will be equal to the value of the gem. Also, he wants to have maximum number of 3 valued coins as he'll have to carry less number of coins.Your task is to calculate the maximum number of 3 valued coins that he can get.
+
+Hint:
+use modulus of 3
+
+Solution:
+
+t=int(raw_input())
+while(t):
+	n=int(raw_input())
+	r=n/3
+	y=n-r*3
+	if y==1:
+		r-=1
+	print r
+	t-=1
+
+#----------------------------------------------------------------------------------------------------------------------------------------------#
+
+
 
