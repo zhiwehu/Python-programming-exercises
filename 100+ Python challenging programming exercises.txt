@@ -1168,7 +1168,7 @@ print evenNumbers
 #----------------------------------------#
 3.5
 
-Question: 46
+Question: 47
 Write a program which can map() to make a list whose elements are square of numbers between 1 and 20 (both included).
 
 Hints:
@@ -1186,7 +1186,7 @@ print squaredNumbers
 #----------------------------------------#
 7.2
 
-Question: 47
+Question: 48
 Define a class named American which has a static method called printNationality.
 
 Hints:
@@ -1210,7 +1210,7 @@ American.printNationality()
 
 7.2
 
-Question: 48
+Question: 49
 Define a class named American and its subclass NewYorker. 
 
 Hints:
@@ -1238,7 +1238,7 @@ print aNewYorker
 
 7.2
 
-Question: 49
+Question: 50
 Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area. 
 
 Hints:
@@ -1264,7 +1264,7 @@ print aCircle.area()
 
 #----------------------------------------#
 
-7.2 Question: 50
+7.2 Question: 51
 
 Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area. 
 
@@ -1290,7 +1290,7 @@ print aRectangle.area()
 
 #----------------------------------------#
 
-7.2
+7.2 7.2 Question: 52
 
 Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
 
@@ -1324,7 +1324,7 @@ print aSquare.area()
 
 
 
-
+7.2 Question: 53
 #----------------------------------------#
 
 
@@ -1341,6 +1341,9 @@ raise RuntimeError('something wrong')
 
 
 #----------------------------------------#
+
+7.2 Question: 54
+
 Write a function to compute 5/0 and use try/except to catch the exceptions.
 
 Hints:
@@ -1363,6 +1366,8 @@ finally:
 
 
 #----------------------------------------#
+
+7.2 Question: 55
 Define a custom exception class which takes a string message as attribute.
 
 Hints:
@@ -1384,7 +1389,7 @@ class MyError(Exception):
 error = MyError("something wrong")
 
 #----------------------------------------#
-Question:
+Question: 56
 
 Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the user name of a given email address. Both user names and company names are composed of letters only.
 
@@ -1412,7 +1417,7 @@ print r2.group(1)
 
 
 #----------------------------------------#
-Question:
+Question: 57
 
 Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
 
@@ -1442,7 +1447,7 @@ print r2.group(2)
 
 
 #----------------------------------------#
-Question:
+Question:58
 
 Write a program which accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
 
@@ -1468,7 +1473,7 @@ print re.findall("\d+",s)
 
 
 #----------------------------------------#
-Question:
+Question: 59
 
 
 Print a unicode string "hello world".
@@ -1496,7 +1501,7 @@ u = unicode( s ,"utf-8")
 print u
 
 #----------------------------------------#
-Question:
+Question: 60
 
 Write a special comment to indicate a Python source code file is in unicode.
 
@@ -1507,7 +1512,7 @@ Solution:
 # -*- coding: utf-8 -*-
 
 #----------------------------------------#
-Question:
+Question: 61
 
 Write a program to compute 1/2+2/3+3/4+...+n/n+1 with a given n input by console (n>0).
 
@@ -1535,7 +1540,7 @@ print sum
 
 
 #----------------------------------------#
-Question:
+Question: 62
 
 Write a program to compute:
 
@@ -1571,7 +1576,7 @@ print f(n)
 
 #----------------------------------------#
 
-Question:
+Question: 63
 
 
 The Fibonacci Sequence is computed based on the following formula:
@@ -1613,7 +1618,7 @@ print f(n)
 
 #----------------------------------------#
 
-Question:
+Question: 64
 
 The Fibonacci Sequence is computed based on the following formula:
 
@@ -1655,7 +1660,7 @@ print ",".join(values)
 
 #----------------------------------------#
 
-Question:
+Question: 65
 
 Please write a program using generator to print the even numbers between 0 and n in comma separated form while n is input by console.
 
@@ -1693,7 +1698,7 @@ print ",".join(values)
 
 #----------------------------------------#
 
-Question:
+Question: 66
 
 Please write a program using generator to print the numbers which can be divisible by 5 and 7 between 0 and n in comma separated form while n is input by console.
 
@@ -1728,7 +1733,7 @@ print ",".join(values)
 
 #----------------------------------------#
 
-Question:
+Question: 67
 
 
 Please write assert statements to verify that every number in the list [2,4,6,8] is even.
@@ -1747,7 +1752,7 @@ for i in li:
 
 
 #----------------------------------------#
-Question:
+Question: 68
 
 Please write a program which accepts basic mathematic expression from console and print the evaluation result.
 
@@ -1771,7 +1776,7 @@ print eval(expression)
 
 
 #----------------------------------------#
-Question:
+Question: 69
 
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
 
@@ -1806,7 +1811,7 @@ print bin_search(li,12)
 
 
 #----------------------------------------#
-Question:
+Question: 70
 
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
 
@@ -1841,7 +1846,7 @@ print bin_search(li,12)
 
 
 #----------------------------------------#
-Question:
+Question: 71
 
 Please generate a random float where the value is between 10 and 100 using Python math module.
 
