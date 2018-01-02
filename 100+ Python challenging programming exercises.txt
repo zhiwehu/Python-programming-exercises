@@ -1919,14 +1919,14 @@ Hints:
 Use random.randrange() to a random integer in a given range.
 
 
-Solution: 77
+Solution: 
 
 import random
 print random.randrange(7,16)
 
 #----------------------------------------#
 
-Question: 78
+Question: 77
 Please write a program to compress and decompress the string "hello world!hello world!hello world!hello world!".
 
 
@@ -1944,8 +1944,7 @@ print t
 print zlib.decompress(t)
 
 #----------------------------------------#
-Question: 79
-
+Question: 78
 Please write a program to print the running time of execution of "1+1" for 100 times.
 
 
@@ -1958,6 +1957,23 @@ Solution:
 from timeit import Timer
 t = Timer("for i in range(100):1+1")
 print t.timeit()
+
+#----------------------------------------#
+Question: 79
+
+Please write a program to shuffle and print the list [3,6,7,8].
+
+
+
+Hints:
+Use shuffle() function to shuffle a list.
+
+Solution:
+
+from random import shuffle
+li = [3,6,7,8]
+shuffle(li)
+print li
 
 #----------------------------------------#
 Question: 80
@@ -1976,27 +1992,10 @@ li = [3,6,7,8]
 shuffle(li)
 print li
 
+
+
 #----------------------------------------#
 Question: 81
-
-Please write a program to shuffle and print the list [3,6,7,8].
-
-
-
-Hints:
-Use shuffle() function to shuffle a list.
-
-Solution:
-
-from random import shuffle
-li = [3,6,7,8]
-shuffle(li)
-print li
-
-
-
-#----------------------------------------#
-Question: 82
 
 Please write a program to generate all sentences where subject is in ["I", "You"] and verb is in ["Play", "Love"] and the object is in ["Hockey","Football"].
 
@@ -2016,7 +2015,7 @@ for i in range(len(subjects)):
 
 
 #----------------------------------------#
-Question: 83
+Question: 82
 
 Please write a program to print the list after removing delete even numbers in [5,6,77,45,22,12,24].
 
@@ -2030,7 +2029,7 @@ li = [x for x in li if x%2!=0]
 print li
 
 #----------------------------------------#
-Question: 84
+Question: 83
 
 By using list comprehension, please write a program to print the list after removing delete numbers which are divisible by 5 and 7 in [12,24,35,70,88,120,155].
 
@@ -2045,7 +2044,7 @@ print li
 
 
 #----------------------------------------#
-Question: 85
+Question: 84
 
 By using list comprehension, please write a program to print the list after removing the 0th, 2nd, 4th,6th numbers in [12,24,35,70,88,120,155].
 
@@ -2061,7 +2060,7 @@ print li
 
 #----------------------------------------#
 
-Question: 89
+Question: 85
 
 By using list comprehension, please write a program generate a 3*5*8 3D array whose each element is 0.
 
@@ -2074,7 +2073,7 @@ array = [[ [0 for col in range(8)] for col in range(5)] for row in range(3)]
 print array
 
 #----------------------------------------#
-Question: 90
+Question: 86
 
 By using list comprehension, please write a program to print the list after removing the 0th,4th,5th numbers in [12,24,35,70,88,120,155].
 
@@ -2092,7 +2091,7 @@ print li
 
 #----------------------------------------#
 
-Question: 91
+Question: 87
 
 By using list comprehension, please write a program to print the list after removing the value 24 in [12,24,35,24,88,120,155].
 
@@ -2107,7 +2106,7 @@ print li
 
 
 #----------------------------------------#
-Question: 92
+Question: 88
 
 With two given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a program to make a list whose elements are intersection of the above given lists.
 
@@ -2123,7 +2122,7 @@ li=list(set1)
 print li
 
 #----------------------------------------#
-Question: 93
+Question: 89
 
 With a given list [12,24,35,24,88,120,155,88,120,155], write a program to print this list after removing all duplicate values with original order reserved.
 
@@ -2147,7 +2146,7 @@ print removeDuplicate(li)
 
 
 #----------------------------------------#
-Question: 94
+Question: 90
 
 Define a class Person and its two child classes: Male and Female. All classes have a method "getGender" which can print "Male" for Male class and "Female" for Female class.
 
@@ -2176,7 +2175,7 @@ print aFemale.getGender()
 
 
 #----------------------------------------#
-Question: 95
+Question: 91
 
 Please write a program which count and print the numbers of each character in a string input by console.
 
@@ -2209,7 +2208,7 @@ print '\n'.join(['%s,%s' % (k, v) for k, v in dic.items()])
 
 #----------------------------------------#
 
-Question: 96
+Question: 92
 
 Please write a program which accepts a string from console and print it in reverse order.
 
@@ -2233,7 +2232,7 @@ print s
 
 #----------------------------------------#
 
-Question: 97
+Question: 93
 
 Please write a program which accepts a string from console and print the characters that have even indexes.
 
@@ -2257,7 +2256,7 @@ print s
 #----------------------------------------#
 
 
-Question: 98
+Question: 94
 
 Please write a program which prints all permutations of [1,2,3]
 
@@ -2271,7 +2270,7 @@ import itertools
 print list(itertools.permutations([1,2,3]))
 
 #----------------------------------------#
-Question: 99
+Question: 95
 
 Write a program to solve a classic ancient Chinese puzzle: 
 We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
