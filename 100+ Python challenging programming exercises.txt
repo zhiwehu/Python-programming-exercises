@@ -177,7 +177,7 @@ Level 2
 
 Question:
 Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
-Note: i=0,1.., X-1; j=0,1,¡­Y-1.
+Note: i=0,1.., X-1; j=0,1,Â¡Â­Y-1.
 Example
 Suppose the following inputs are given to the program:
 3,5
@@ -225,7 +225,7 @@ print ','.join(items)
 Question 9
 Level 2
 
-Question£º
+QuestionÂ£Âº
 Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
 Suppose the following input is supplied to the program:
 Hello world
@@ -425,7 +425,7 @@ Question:
 Write a program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following:
 D 100
 W 200
-¡­
+Â¡Â­
 D means deposit while W means withdrawal.
 Suppose the following input is supplied to the program:
 D 300
@@ -439,7 +439,6 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
-import sys
 netAmount = 0
 while True:
     s = raw_input()
@@ -568,13 +567,13 @@ for i in reverse(100):
 Question 21
 Level 3
 
-Question£º
+QuestionÂ£Âº
 A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following:
 UP 5
 DOWN 3
 LEFT 3
 RIGHT 2
-¡­
+Â¡Â­
 The numbers after the direction are steps. Please write a program to compute the distance from current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
 Example:
 If the following tuples are given as input to the program:
