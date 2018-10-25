@@ -5,13 +5,13 @@ Contain 100+ programs written in Python 2.0v in text. So make sure you can conve
 # Level	Description
 
 **Beginner**<br> 
-_Means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks._<br>
+_Someone who has just gone through an introductory Python courses can solve some problems 1 or 2 using Python classes or functions. Normally, the answers could directly be found in the textbooks as well._<br>
 	
 **Intermediate**<br> 
-_Means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks._<br>
+_Someone who has learned Python, and already has a relatively strong programming background from before. And should be able to solve problems which may involve from question 3rd and above with Python classes or functions. The answers cannot be directly be found in the textbooks._<br>
 
 **Advanced**<br> 
-_You should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. And also supposed to solve the problem using several Python standard packages and advanced techniques._
+_You should be able to use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. And also supposed to solve the problem using several Python standard packages and advanced techniques._
 
 # Problem template
 #----------------------------------------#<br>
