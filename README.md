@@ -18,5 +18,5 @@ _You should use Python to solve more complex problem using more rich libraries f
 - Question<br>
 - Hints<br>
 - Solution<br>
-<br>
+
 **If any one have any problem just open an Issue, I will discuss and try to fix it from there.**
