@@ -1,5 +1,5 @@
 # Python-programming-exercises 
-Contain 100+ programs written in Python 2.0v in text. So make sure you can convert the codes for Python 3.0v as per the convenience. 
+Contain 100+ programs written in Python 2.0v in text. So make sure you can convert the codes for Python 3.0v as per the convenience. <br>
 **And I will be adding the new Python 3.x version to get you updated.**
 
 # Level	Description
@@ -18,5 +18,5 @@ _You should use Python to solve more complex problem using more rich libraries f
 - Question<br>
 - Hints<br>
 - Solution<br>
-
-If any one have any problem just open an Issue, I will discuss and try to fix it from there. 
+<br>
+**If any one have any problem just open an Issue, I will discuss and try to fix it from there.**
