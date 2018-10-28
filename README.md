@@ -19,4 +19,4 @@ _You should be able to use Python to solve more complex problem using more rich 
 - Hints<br>
 - Solution<br>
 
-**If any one have any problem just open an Issue, I will discuss and try to fix it from there.**
+**If you have any problem just open an Issue, We will discuss and try to fix it from there.**
