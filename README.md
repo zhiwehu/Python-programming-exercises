@@ -1,6 +1,6 @@
 # Python-programming-exercises 
 Contain 100+ programs written in Python 2.0v in text. So make sure you can convert the codes for Python 3.0v as per the convenience. <br>
-**And I will distributing the 100+ questions in different sets, where every set contains only 10 questions. It's easy to load the documentation with smaller file size. And It's all in new Python 3.x version to get you updated.**
+**And I will distributing the 100+ questions in different sets, where every set contains 10 questions each. And It's easy to load the  documentation file as well. All codes are in Python 3.x version to get you to start in Python.**
 
 # Level	Description
 
