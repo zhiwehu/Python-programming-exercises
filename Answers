@@ -33,72 +33,9 @@ if number%2==0:
     print("The number"+str(number)+"is even.")
 else:
     print("The number"+str(number)+"is odd.")
-#---------------------------------------------------------------------#
-
-#---------------------------------------------------------------------#
-# 字典的概念：储存各种特征以及信息值得一种空间
-# 比如说，我们给一个游戏涉及几款怪兽：
-alien_0={"color":"green","points":5}
-print(alien_0['color'])
-# 打倒一个怪兽就给你相应得分值：
-new_points=alien_o['points']
-print('You just earned'+str(new_points)+"points")
-# 除此之外，可以添加这个怪兽得键值对
-alien_0['x_position']=0
-alien_0['y_position']=25
-# 通常我们在建立一个字典得时候，都是先建立一个空得字典，然后再往里填信息
-alien_0={}
-alien_0['color']='green'
-alien_0['points']=5
-print(alien_0)
-# 来看一个更有趣得例子：对一个能够以不同速度移动的外星人得位置进行跟踪，为此我们要储存该外星人得当前速度
-# 根据外星人得速度确定其向右移动多远
-alien_0['speed']='medium'
-if alien_0['speed']=='slow':
-    x_increment=1
-elif alien-0['speed']=='medium':
-    x_increment=2
-else:
-    #这个外星人得速度一定很快
-    x_increment=3
-#新位置等于老位置加上增量
-
-#删除键值对
-del alien_0['points']
-print(alien_0)
-
-#一个字典里多个个体得写法：
-favorite_languages={
-    'jen':'python',
-    'sarah':'c',
-    'phil':'ruby'
-    'eward':'python'
-    }
-    
- # print语句分行
- print('sarah's favorite language is'+
-    favorite_language['sarah'].title()+
-    '.')
- # 如何遍历字典中得所有值
- for key,value in user_0.items():
-    print('\nkey:'+key)
-    print('value:'+key)
- 
- user_0.keys()
  
 #---------------------------------------------------------------------#
 
 #---------------------------------------------------------------------#
 
 
-        
-#---------------------------------------------------------------------#
-
-#---------------------------------------------------------------------#
-#认知笔记：
-input_str=input()
-dimensions=[int(x) for x in input_str.split(',')] 
-dimensions2=[x for x in input_str.split(',')]
-dimensions1=[x for x in input().split(',')]
-#dimension1和dimensions2与运行出来是一样的
-#dimensions运行的结果与前两个不一样
