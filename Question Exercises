@@ -110,4 +110,13 @@ class Dog():
         '''模拟小狗被命令打滚'''
         print(self.name.title()+'rolled over!')
         
+#---------------------------------------------------------------------#
 
+#---------------------------------------------------------------------#
+#认知笔记：
+input_str=input()
+dimensions=[int(x) for x in input_str.split(',')] 
+dimensions2=[x for x in input_str.split(',')]
+dimensions1=[x for x in input().split(',')]
+#dimension1和dimensions2与运行出来是一样的
+#dimensions运行的结果与前两个不一样
