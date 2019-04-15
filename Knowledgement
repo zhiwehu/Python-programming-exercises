@@ -1,1 +1,10 @@
+#------------------------------split(',')-----------------------------#
+
+#---------------------------------------------------------------------#
+input_str=input()
+dimensions=[int(x) for x in input_str.split(',')] 
+dimensions2=[x for x in input_str.split(',')]
+dimensions1=[x for x in input().split(',')]
+
+
 
