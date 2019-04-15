@@ -1,0 +1,6 @@
+.split(',')  #.split(',')不能用于list后面
+while的格式
+\n的用法
+.join()
+.upper()     #.upper()不能用于list后面
+lines.append()的用法
