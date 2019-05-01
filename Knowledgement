@@ -23,7 +23,7 @@ print(sun)   #打印变量，也可以打印变量的变型
 print("这个数"+str(sun)+"是偶数")  #要注意这种+的变型
 
 #---------------------------------sorted()-------------------------------#
-sorted指的是对首字母进行排序
+sorted指的是对首字母进行排序，直接会把目标元素变成列表
 
 for name in sorted(favorite_language.keys()):
     print(name.title()+',thank you for taking the poll.')
