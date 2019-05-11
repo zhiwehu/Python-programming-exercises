@@ -2,21 +2,83 @@
 
 #-----------------------------创建和使用类-----------------------------#
 
-使用类几乎可以模拟任何东西，下面来编写一个表示小狗的简单类Dog:每个Dog储存名字和年龄，并赋予了每条小狗蹲下（sit()）和打滚（roll_over()）的能力
-
+使用类几乎可以模拟任何东西，相当于定义个体，以及个体的各种信息和动作
+下面来编写一个表示小狗的简单类Dog，类Dog不是特定的小狗，而是任何小狗:
+每个Dog储存名字和年龄（信息），并赋予了每条小狗蹲下（sit()）和打滚（roll_over()）（动作）
+#------------------------------------------------------------------------#
 class Dog():
     '''一次模拟小狗的简单尝试'''
     
-    def _init_(self,name,age):
+    def _init_(self,name,age):  #储存信息
         '''初始化属性name和age'''
-        self.name=name
+        self.name=name          #把这个函数的名字定义为_init_()
         self.age=age
-    def sit(self):
+    def sit(self):              #定义一个动作函数
         '''模拟小狗被命令时蹲下'''
         print(self.name.title()+'is now sitting')
-    def roll_over(self)
+    def roll_over(self)         #定义另一个动作函数
         '''模拟小狗被命令打滚'''
         print(self.name.title()+'rolled over!')
+ my_dog=Dog('dove',6)   #my_dog指的是一个特定的实例
+ my_dog.name
+ my_dog.age
+ my.dog.sit()  #调用实例的动作属性
+ 
+#------------------------------------------------------------------------# 
+ #如何使用类呢？
+ #创建好类的基本框架之后，就是对类的实例进行创建
+ #一个关于汽车的类
+ class Car():
+"""一次模拟汽车的简单尝试"""
+    def __init__(self, make, model, year):
+    """初始化描述汽车的属性"""
+    self.make = make
+    self.model = model
+    self.year = year
+    def get_descriptive_name(self):
+    """返回整洁的描述性信息"""
+    long_name = str(self.year) + ' ' + self.make + ' ' + self.model  #对于字符型变量的组合直接用+完成
+    return long_name.title()
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
+
+#------------------------------------------------------------------------# 
+#为让这个类更有趣，下面给它添加一个随时间变化的属性，它存储汽车的总里程。
+class Car():
+    def __init__(self, make, model, year):
+    """初始化描述汽车的属性"""
+    self.make = make
+    self.model = model
+    self.year = year
+   self.odometer_reading = 0  #设定这个变量的初始值总为0
+    def get_descriptive_name(self):
+    --snip--
+   def read_odometer(self):
+    """打印一条指出汽车里程的消息"""
+    print("This car has " + str(self.odometer_reading) + " miles on it.")
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
+my_new_car.read_odometer()
+#------------------------------------------------------------------------#
+#那么怎么修改里程的数据呢？
+#方法一：直接进行赋值
+my_new_car = Car('audi', 'a4', 2016)
+my_new_car.read_odometer()=23
+
+#方法二：让其自己更新
+class Car():
+--snip--
+   def update_odometer(self, mileage):#建立一个形参的函数
+    """将里程表读数设置为指定的值"""
+    self.odometer_reading = mileage #设定一个属性
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
+ my_new_car.update_odometer(23)  #在类里面自主定义
+my_new_car.read_odometer()
+
+ 
+ 
+ 
 #---------------------------------字典------------------------------------#
 
 #------------------------------------------------------------------------#
