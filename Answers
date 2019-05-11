@@ -1,0 +1,41 @@
+#Question 1:
+Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
+between 2000 and 3200 (both included).
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+#My Answer:
+numbers=[]
+for number in range(2000,3201):
+    if number/7==round(number/7) and number/5!=round(number/5):
+        numbers.append(number)
+print(numbers)
+
+#Hint:
+sun=[]
+for i in range(2000,3201):
+    if (i%7==0) and (i%5!=0):
+        sun.append(str(i))
+print (','.join(sun))
+
+#Know
+#数字是不能当变量名的
+#append如何用？通常进行的是一个列表的遍历
+#掌握%的用法，可以更加简单
+#对于print内部的结构怎么做？
+#.join()需要查询
+让程序在一行代码中呈现：这叫做列表解析
+squares=[value**2 for value in range(1,11)]
+print(squares)
+
+number=input("输入一个数，我告诉你是奇数还是偶数")
+number=int(number)
+if number%2==0:
+    print("The number"+str(number)+"is even.")
+else:
+    print("The number"+str(number)+"is odd.")
+ 
+#---------------------------------------------------------------------#
+
+#---------------------------------------------------------------------#
+
+

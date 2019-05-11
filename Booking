@@ -1,0 +1,133 @@
+#------------------------------类的学习--------------------------------#
+
+#-----------------------------创建和使用类-----------------------------#
+
+使用类几乎可以模拟任何东西，相当于定义个体，以及个体的各种信息和动作
+下面来编写一个表示小狗的简单类Dog，类Dog不是特定的小狗，而是任何小狗:
+每个Dog储存名字和年龄（信息），并赋予了每条小狗蹲下（sit()）和打滚（roll_over()）（动作）
+#------------------------------------------------------------------------#
+class Dog():
+    '''一次模拟小狗的简单尝试'''
+    
+    def _init_(self,name,age):  #储存信息
+        '''初始化属性name和age'''
+        self.name=name          #把这个函数的名字定义为_init_()
+        self.age=age
+    def sit(self):              #定义一个动作函数
+        '''模拟小狗被命令时蹲下'''
+        print(self.name.title()+'is now sitting')
+    def roll_over(self)         #定义另一个动作函数
+        '''模拟小狗被命令打滚'''
+        print(self.name.title()+'rolled over!')
+ my_dog=Dog('dove',6)   #my_dog指的是一个特定的实例
+ my_dog.name
+ my_dog.age
+ my.dog.sit()  #调用实例的动作属性
+ 
+#------------------------------------------------------------------------# 
+ #如何使用类呢？
+ #创建好类的基本框架之后，就是对类的实例进行创建
+ #一个关于汽车的类
+ class Car():
+"""一次模拟汽车的简单尝试"""
+    def __init__(self, make, model, year):
+    """初始化描述汽车的属性"""
+    self.make = make
+    self.model = model
+    self.year = year
+    def get_descriptive_name(self):
+    """返回整洁的描述性信息"""
+    long_name = str(self.year) + ' ' + self.make + ' ' + self.model  #对于字符型变量的组合直接用+完成
+    return long_name.title()
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
+
+#------------------------------------------------------------------------# 
+#为让这个类更有趣，下面给它添加一个随时间变化的属性，它存储汽车的总里程。
+class Car():
+    def __init__(self, make, model, year):
+    """初始化描述汽车的属性"""
+    self.make = make
+    self.model = model
+    self.year = year
+   self.odometer_reading = 0  #设定这个变量的初始值总为0
+    def get_descriptive_name(self):
+    --snip--
+   def read_odometer(self):
+    """打印一条指出汽车里程的消息"""
+    print("This car has " + str(self.odometer_reading) + " miles on it.")
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
+my_new_car.read_odometer()
+#------------------------------------------------------------------------#
+#那么怎么修改里程的数据呢？
+#方法一：直接进行赋值
+my_new_car = Car('audi', 'a4', 2016)
+my_new_car.read_odometer()=23
+
+#方法二：让其自己更新
+class Car():
+--snip--
+   def update_odometer(self, mileage):#建立一个形参的函数
+    """将里程表读数设置为指定的值"""
+    self.odometer_reading = mileage #设定一个属性
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
+ my_new_car.update_odometer(23)  #在类里面自主定义
+my_new_car.read_odometer()
+
+ 
+ 
+ 
+#---------------------------------字典------------------------------------#
+
+#------------------------------------------------------------------------#
+# 字典的概念：储存各种特征以及信息值得一种空间
+# 比如说，我们给一个游戏涉及几款怪兽：
+alien_0={"color":"green","points":5}
+print(alien_0['color'])
+# 打倒一个怪兽就给你相应得分值：
+new_points=alien_o['points']
+print('You just earned'+str(new_points)+"points")
+# 除此之外，可以添加这个怪兽得键值对
+alien_0['x_position']=0
+alien_0['y_position']=25
+# 通常我们在建立一个字典得时候，都是先建立一个空得字典，然后再往里填信息
+alien_0={}
+alien_0['color']='green'
+alien_0['points']=5
+print(alien_0)
+# 来看一个更有趣得例子：对一个能够以不同速度移动的外星人得位置进行跟踪，为此我们要储存该外星人得当前速度
+# 根据外星人得速度确定其向右移动多远
+alien_0['speed']='medium'
+if alien_0['speed']=='slow':
+    x_increment=1
+elif alien-0['speed']=='medium':
+    x_increment=2
+else:
+    #这个外星人得速度一定很快
+    x_increment=3
+#新位置等于老位置加上增量
+
+#删除键值对
+del alien_0['points']
+print(alien_0)
+
+#一个字典里多个个体得写法：
+favorite_languages={
+    'jen':'python',
+    'sarah':'c',
+    'phil':'ruby'
+    'eward':'python'
+    }
+    
+ # print语句分行
+ print('sarah's favorite language is'+
+    favorite_language['sarah'].title()+
+    '.')
+ # 如何遍历字典中得所有值
+ for key,value in user_0.items():
+    print('\nkey:'+key)
+    print('value:'+key)
+ 
+ user_0.keys()
