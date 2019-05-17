@@ -390,12 +390,11 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
-a = raw_input()
-n1 = int( "%s" % a )
-n2 = int( "%s%s" % (a,a) )
-n3 = int( "%s%s%s" % (a,a,a) )
-n4 = int( "%s%s%s%s" % (a,a,a,a) )
-print n1+n2+n3+n4
+a = input("enter a number: ")
+count = 0
+for i in range(1,5):
+	count += int(a * i)
+print(count)
 #----------------------------------------#
 
 #----------------------------------------#
