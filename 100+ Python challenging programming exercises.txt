@@ -24,19 +24,17 @@ Write a program which will find all such numbers which are divisible by 7 but ar
 between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-x = range(2000,3200)
-x.each(
-  )
+numbers = range(2000,3200)
+result = []
+for number in numbers:
+    if (number % 7 == 0) and (number % 5 != 0):
+        result.append(str(number))
 
-print(x)
+print(', '.join(result))
+
 
 Hints:
 Consider use range(#begin, #end) method
-
-
-
-
-
 
 
 
