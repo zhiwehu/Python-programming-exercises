@@ -24,8 +24,22 @@ Write a program which will find all such numbers which are divisible by 7 but ar
 between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-Hints: 
+x = range(2000,3200)
+x.each(
+  )
+
+print(x)
+
+Hints:
 Consider use range(#begin, #end) method
+
+
+
+
+
+
+
+
 
 Solution:
 l=[]
@@ -156,7 +170,7 @@ The output of the program should be:
 
 Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
-In case of input data being supplied to the question, it should be assumed to be a console input. 
+In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
 #!/usr/bin/env python
@@ -182,7 +196,7 @@ Example
 Suppose the following inputs are given to the program:
 3,5
 Then, the output of the program should be:
-[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
 
 Hints:
 Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
@@ -616,7 +630,7 @@ Question 22
 Level 3
 
 Question:
-Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically. 
+Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically.
 Suppose the following input is supplied to the program:
 New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.
 Then, the output should be:
@@ -674,7 +688,7 @@ Question:
     Python has many built-in functions, and if you do not know how to use it, you can read document online or find some books. But Python has a built-in document function for every built-in functions.
     Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
     And add document for your own function
-    
+
 Hints:
     The built-in document method is __doc__
 
@@ -685,7 +699,7 @@ print raw_input.__doc__
 
 def square(num):
     '''Return the square value of the input number.
-    
+
     The input number must be integer.
     '''
     return num ** 2
@@ -709,7 +723,7 @@ Solution:
 class Person:
     # Define the class parameter "name"
     name = "Person"
-    
+
     def __init__(self, name = None):
         # self.name is the instance parameter
         self.name = name
@@ -748,7 +762,7 @@ def printValue(n):
 	print str(n)
 
 printValue(3)
-	
+
 
 #----------------------------------------#
 Question:
@@ -820,7 +834,7 @@ def printValue(s1,s2):
 	else:
 		print s1
 		print s2
-		
+
 
 printValue("one","three")
 
@@ -842,7 +856,7 @@ def checkValue(n):
 		print "It is an even number"
 	else:
 		print "It is an odd number"
-		
+
 
 checkValue(7)
 
@@ -865,7 +879,7 @@ def printDict():
 	d[2]=2**2
 	d[3]=3**2
 	print d
-		
+
 
 printDict()
 
@@ -891,7 +905,7 @@ def printDict():
 	for i in range(1,21):
 		d[i]=i**2
 	print d
-		
+
 
 printDict()
 
@@ -914,9 +928,9 @@ def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
-	for (k,v) in d.items():	
+	for (k,v) in d.items():
 		print v
-		
+
 
 printDict()
 
@@ -938,9 +952,9 @@ def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
-	for k in d.keys():	
+	for k in d.keys():
 		print k
-		
+
 
 printDict()
 
@@ -963,7 +977,7 @@ def printList():
 	for i in range(1,21):
 		li.append(i**2)
 	print li
-		
+
 
 printList()
 
@@ -986,7 +1000,7 @@ def printList():
 	for i in range(1,21):
 		li.append(i**2)
 	print li[:5]
-		
+
 
 printList()
 
@@ -1010,7 +1024,7 @@ def printList():
 	for i in range(1,21):
 		li.append(i**2)
 	print li[-5:]
-		
+
 
 printList()
 
@@ -1034,7 +1048,7 @@ def printList():
 	for i in range(1,21):
 		li.append(i**2)
 	print li[5:]
-		
+
 
 printList()
 
@@ -1043,7 +1057,7 @@ printList()
 2.10
 
 Question:
-Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included). 
+Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included).
 
 Hints:
 
@@ -1058,7 +1072,7 @@ def printTuple():
 	for i in range(1,21):
 		li.append(i**2)
 	print tuple(li)
-		
+
 printTuple()
 
 
@@ -1067,7 +1081,7 @@ printTuple()
 2.10
 
 Question:
-With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line. 
+With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line.
 
 Hints:
 
@@ -1085,7 +1099,7 @@ print tp2
 2.10
 
 Question:
-Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10). 
+Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10).
 
 Hints:
 
@@ -1108,7 +1122,7 @@ print tp2
 2.14
 
 Question:
-Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No".
 
 Hints:
 
@@ -1238,7 +1252,7 @@ American.printNationality()
 7.2
 
 Question:
-Define a class named American and its subclass NewYorker. 
+Define a class named American and its subclass NewYorker.
 
 Hints:
 
@@ -1266,7 +1280,7 @@ print aNewYorker
 7.2
 
 Question:
-Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area. 
+Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area.
 
 Hints:
 
@@ -1293,7 +1307,7 @@ print aCircle.area()
 
 7.2
 
-Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area. 
+Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area.
 
 Hints:
 
@@ -2349,7 +2363,7 @@ print list(itertools.permutations([1,2,3]))
 #----------------------------------------#
 Question:
 
-Write a program to solve a classic ancient Chinese puzzle: 
+Write a program to solve a classic ancient Chinese puzzle:
 We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
 
 Hint:
