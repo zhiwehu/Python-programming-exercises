@@ -1,17 +1,17 @@
 100+ Python challenging programming exercises
 
 1.	Level description
-Level	Description
-Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
-Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
-Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
+# Level	Description
+# Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
+# Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
+# Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
 
 2.	Problem template
 
 #----------------------------------------#
-Question
-Hints
-Solution
+# Question
+# Hints
+# Solution
 
 3.	Questions
 
@@ -24,6 +24,10 @@ Write a program which will find all such numbers which are divisible by 7 but ar
 between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
+
+----
+Jakob Solution:
+
 numbers = range(2000,3200)
 result = []
 for number in numbers:
@@ -31,21 +35,17 @@ for number in numbers:
         result.append(str(number))
 
 print(', '.join(result))
-
+----
 
 # Hints:
 # Consider use range(#begin, #end) method
+# Solution:
+# l=[]
+# for i in range(2000, 3201):
+#     if (i%7==0) and (i%5!=0):
+#         l.append(str(i))
 
-
-
-
-Solution:
-l=[]
-for i in range(2000, 3201):
-    if (i%7==0) and (i%5!=0):
-        l.append(str(i))
-
-print ','.join(l)
+# print ','.join(l)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -63,6 +63,8 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+----
+Jakob solution:
 
 def fact(x):
     if x == 0
@@ -71,16 +73,16 @@ def fact(x):
 
 x = int(input)
 print(fact(x))
+-----
 
+# Solution:
+# def fact(x):
+#     if x == 0:
+#         return 1
+#     return x * fact(x - 1)
 
-Solution:
-def fact(x):
-    if x == 0:
-        return 1
-    return x * fact(x - 1)
-
-x=int(raw_input())
-print fact(x)
+# x=int(raw_input())
+# print fact(x)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -98,6 +100,9 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 Consider use dict()
 
+----
+Jakob solution:
+
 def multi(x):
   count = 1
   #create empty dictionary
@@ -110,23 +115,16 @@ def multi(x):
       count += 1
   return output
 
-
-x = int(input)
+x = int(raw_input)
 print(multi(x))
+-----
+# Solution:
+# n=int(raw_input())
+# d=dict()
+# for i in range(1,n+1):
+#     d[i]=i*i
 
-
-
-
-
-
-
-Solution:
-n=int(raw_input())
-d=dict()
-for i in range(1,n+1):
-    d[i]=i*i
-
-print d
+# print d
 #----------------------------------------#
 
 #----------------------------------------#
@@ -144,6 +142,11 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 tuple() method can convert list to tuple
+
+
+
+
+
 
 Solution:
 values=raw_input()
