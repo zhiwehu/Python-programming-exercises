@@ -144,16 +144,20 @@ In case of input data being supplied to the question, it should be assumed to be
 tuple() method can convert list to tuple
 
 
+input_value = input("Enter comma separated integers: ")
+list_input = input_value.split(',')
+tuple_input = tuple(list_input)
+
+print(list_input)
+print(tuple_input)
 
 
-
-
-Solution:
-values=raw_input()
-l=values.split(",")
-t=tuple(l)
-print l
-print t
+# Solution:
+# values=raw_input()
+# l=values.split(",")
+# t=tuple(l)
+# print l
+# print t
 #----------------------------------------#
 
 #----------------------------------------#
