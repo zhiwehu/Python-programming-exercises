@@ -98,6 +98,28 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 Consider use dict()
 
+def multi(x):
+  count = 1
+  #create empty dictionary
+  output = dict()
+  # While 1 < als x
+  while count <= x:
+  # create key value pair with 1: 1*1
+      output[count] = count * count
+  # increase by 1 and check if smaller than x
+      count += 1
+  return output
+
+
+x = int(input)
+print(multi(x))
+
+
+
+
+
+
+
 Solution:
 n=int(raw_input())
 d=dict()
