@@ -173,16 +173,32 @@ Also please include simple test function to test the class methods.
 Hints:
 Use __init__ method to construct some parameters
 
+class Converter(object):
+  def __init__(self):
+      self.s = ''
+
+  def getString(self):
+      self.s = input()
+
+  def Capitalized(self):
+      result = self.s.upper()
+      print(result)
+
+strObj = Converter()
+strObj.getString()
+strObj.Capitalized()
+
+
 Solution:
 class InputOutString(object):
-    def __init__(self):
-        self.s = ""
+  def __init__(self):
+      self.s = ""
 
-    def getString(self):
-        self.s = raw_input()
+  def getString(self):
+      self.s = raw_input()
 
-    def printString(self):
-        print self.s.upper()
+  def printString(self):
+      print self.s.upper()
 
 strObj = InputOutString()
 strObj.getString()
