@@ -221,33 +221,35 @@ Let us assume the following comma separated input sequence is given to the progr
 The output of the program should be:
 18,22,24
 
+----
+Solution Jakob:
+----
+
 import math
-D = [ int(x) for x in input().split(',') ]
+items = [ int(x) for x in input().split(',') ]
 C = 50
 H = 30
 result = []
-for i in D:
-    Q = round(math.sqrt((2*C*i)/H))
-    result.append(Q)
+for D in items:
+    result.append(str(round(math.sqrt((2*C*D)/H))))
 
-print(result)
+print(','.join(result))
 
+# Hints:
+# If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
+# In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Hints:
-If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
-In case of input data being supplied to the question, it should be assumed to be a console input.
+# Solution:
+# #!/usr/bin/env python
+# import math
+# c=50
+# h=30
+# value = []
+# items=[x for x in raw_input().split(',')]
+# for d in items:
+#     value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
 
-Solution:
-#!/usr/bin/env python
-import math
-c=50
-h=30
-value = []
-items=[x for x in raw_input().split(',')]
-for d in items:
-    value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
-
-print ','.join(value)
+# print ','.join(value)
 #----------------------------------------#
 
 #----------------------------------------#
