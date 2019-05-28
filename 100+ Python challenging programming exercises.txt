@@ -189,20 +189,20 @@ strObj.getString()
 strObj.Capitalized()
 
 
-Solution:
-class InputOutString(object):
-  def __init__(self):
-      self.s = ""
+# Solution:
+# class InputOutString(object):
+#   def __init__(self):
+#       self.s = ""
 
-  def getString(self):
-      self.s = raw_input()
+#   def getString(self):
+#       self.s = raw_input()
 
-  def printString(self):
-      print self.s.upper()
+#   def printString(self):
+#       print self.s.upper()
 
-strObj = InputOutString()
-strObj.getString()
-strObj.printString()
+# strObj = InputOutString()
+# strObj.getString()
+# strObj.printString()
 #----------------------------------------#
 
 #----------------------------------------#
@@ -220,6 +220,18 @@ Let us assume the following comma separated input sequence is given to the progr
 100,150,180
 The output of the program should be:
 18,22,24
+
+import math
+D = [ int(x) for x in input().split(',') ]
+C = 50
+H = 30
+result = []
+for i in D:
+    Q = round(math.sqrt((2*C*i)/H))
+    result.append(Q)
+
+print(result)
+
 
 Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
