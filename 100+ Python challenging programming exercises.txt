@@ -265,21 +265,37 @@ Suppose the following inputs are given to the program:
 Then, the output of the program should be:
 [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
 
-Hints:
-Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
+----
+Jakob solution:
+----
 
-Solution:
-input_str = raw_input()
-dimensions=[int(x) for x in input_str.split(',')]
-rowNum=dimensions[0]
-colNum=dimensions[1]
-multilist = [[0 for col in range(colNum)] for row in range(rowNum)]
+digits = [int(x) for x in input().split(',')]
+rows = digits[0]
+cols = digits[1]
+array = [[0 for i in range(cols)] for j in range(rows)]
 
-for row in range(rowNum):
-    for col in range(colNum):
-        multilist[row][col]= row*col
+for row in range(rows):
+    for col in range(cols):
+        array[row][col] = row * col
 
-print multilist
+print(array)
+
+
+# Hints:
+# Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
+
+# Solution:
+# input_str = raw_input()
+# dimensions=[int(x) for x in input_str.split(',')]
+# rowNum=dimensions[0]
+# colNum=dimensions[1]
+# multilist = [[0 for col in range(colNum)] for row in range(rowNum)]
+
+# for row in range(rowNum):
+#     for col in range(colNum):
+#         multilist[row][col]= row*col
+
+# print multilist
 #----------------------------------------#
 
 #----------------------------------------#
