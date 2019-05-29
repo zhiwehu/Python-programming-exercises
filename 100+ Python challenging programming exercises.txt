@@ -338,20 +338,38 @@ Then, the output should be:
 HELLO WORLD
 PRACTICE MAKES PERFECT
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
-
-Solution:
+----
+Jakob Solution:
+----
 lines = []
 while True:
-    s = raw_input()
-    if s:
-        lines.append(s.upper())
+# while line contains input
+    line = input()
+    if line:
+      # add to emty query and uppercase it
+        lines.append(line.upper())
     else:
-        break;
+      # if empty line provided break loop
+        break
+# join list by adding a line break between each element
+text = '\n'.join(lines)
 
-for sentence in lines:
-    print sentence
+for l in lines:
+    print(l)
+# Hints:
+# In case of input data being supplied to the question, it should be assumed to be a console input.
+
+# Solution:
+# lines = []
+# while True:
+#     s = raw_input()
+#     if s:
+#         lines.append(s.upper())
+#     else:
+#         break;
+
+# for sentence in lines:
+#     print sentence
 #----------------------------------------#
 
 #----------------------------------------#
