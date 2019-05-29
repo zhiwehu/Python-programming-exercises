@@ -383,14 +383,22 @@ hello world and practice makes perfect and hello world again
 Then, the output should be:
 again and hello makes perfect practice world
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
-We use set container to remove duplicated data automatically and then use sorted() to sort the data.
+s = input()
+words = [word for word in s.split(' ')]
+# turn list into keys in dict (which can only occur once)
+# turn dict into list
+# sort list
+# join with whitespace in between
+print(' '.join(sorted(list(dict.fromkeys(words)))))
 
-Solution:
-s = raw_input()
-words = [word for word in s.split(" ")]
-print " ".join(sorted(list(set(words))))
+# Hints:
+# In case of input data being supplied to the question, it should be assumed to be a console input.
+# We use set container to remove duplicated data automatically and then use sorted() to sort the data.
+
+# Solution:
+# s = raw_input()
+# words = [word for word in s.split(" ")]
+# print " ".join(sorted(list(set(words))))
 #----------------------------------------#
 
 #----------------------------------------#
