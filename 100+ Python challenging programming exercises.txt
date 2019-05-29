@@ -102,6 +102,7 @@ Consider use dict()
 
 ----
 Jakob solution:
+-----
 
 def multi(x):
   count = 1
@@ -117,7 +118,6 @@ def multi(x):
 
 x = int(raw_input)
 print(multi(x))
------
 # Solution:
 # n=int(raw_input())
 # d=dict()
@@ -309,13 +309,20 @@ without,hello,bag,world
 Then, the output should be:
 bag,hello,without,world
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+----
+Jakob solution:
+----
+  raw_words = [x for x in input().split(',')]
+  print(','.join(sorted(raw_words)))
 
-Solution:
-items=[x for x in raw_input().split(',')]
-items.sort()
-print ','.join(items)
+# Hints:
+# In case of input data being supplied to the question, it should be assumed to be a console input.
+
+
+# Solution:
+# items=[x for x in raw_input().split(',')]
+# items.sort()
+# print ','.join(items)
 #----------------------------------------#
 
 #----------------------------------------#
