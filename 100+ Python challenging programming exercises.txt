@@ -481,7 +481,9 @@ DIGITS 3
 
 #split string into individual pieces
 
-
+----
+Jakob Solution:
+----
 s = input()
 numbers = sum(i.isdigit() for i in str(s))
 letters   = sum(i.isalpha() for i in str(s))
@@ -517,21 +519,30 @@ Then, the output should be:
 UPPER CASE 1
 LOWER CASE 9
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+----
+Jakob Solution:
+----
+s = input()
+upper  = sum(i.isupper() for i in str(s))
+lower  = sum(i.islower() for i in str(s))
 
-Solution:
-s = raw_input()
-d={"UPPER CASE":0, "LOWER CASE":0}
-for c in s:
-    if c.isupper():
-        d["UPPER CASE"]+=1
-    elif c.islower():
-        d["LOWER CASE"]+=1
-    else:
-        pass
-print "UPPER CASE", d["UPPER CASE"]
-print "LOWER CASE", d["LOWER CASE"]
+print('UPPER CASE:',upper)
+print('LOWER CASE:',lower)
+
+# Hints:
+# In case of input data being supplied to the question, it should be assumed to be a console input.
+# Solution:
+# s = raw_input()
+# d={"UPPER CASE":0, "LOWER CASE":0}
+# for c in s:
+#     if c.isupper():
+#         d["UPPER CASE"]+=1
+#     elif c.islower():
+#         d["LOWER CASE"]+=1
+#     else:
+#         pass
+# print "UPPER CASE", d["UPPER CASE"]
+# print "LOWER CASE", d["LOWER CASE"]
 #----------------------------------------#
 
 #----------------------------------------#
