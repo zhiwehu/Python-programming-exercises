@@ -556,16 +556,21 @@ Suppose the following input is supplied to the program:
 Then, the output should be:
 11106
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+d = input()
+result = int(d) + int(d*2) + int(d*3) + int(d*4)
+print(result)
 
-Solution:
-a = raw_input()
-n1 = int( "%s" % a )
-n2 = int( "%s%s" % (a,a) )
-n3 = int( "%s%s%s" % (a,a,a) )
-n4 = int( "%s%s%s%s" % (a,a,a,a) )
-print n1+n2+n3+n4
+
+# Hints:
+# In case of input data being supplied to the question, it should be assumed to be a console input.
+
+# Solution:
+# a = raw_input()
+# n1 = int( "%s" % a )
+# n2 = int( "%s%s" % (a,a) )
+# n3 = int( "%s%s%s" % (a,a,a) )
+# n4 = int( "%s%s%s%s" % (a,a,a,a) )
+# print n1+n2+n3+n4
 #----------------------------------------#
 
 #----------------------------------------#
