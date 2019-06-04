@@ -479,21 +479,30 @@ Then, the output should be:
 LETTERS 10
 DIGITS 3
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+#split string into individual pieces
 
-Solution:
-s = raw_input()
-d={"DIGITS":0, "LETTERS":0}
-for c in s:
-    if c.isdigit():
-        d["DIGITS"]+=1
-    elif c.isalpha():
-        d["LETTERS"]+=1
-    else:
-        pass
-print "LETTERS", d["LETTERS"]
-print "DIGITS", d["DIGITS"]
+
+s = input()
+numbers = sum(i.isdigit() for i in str(s))
+letters   = sum(i.isalpha() for i in str(s))
+print('LETTERS:',letters)
+print('NUMBERS:',numbers)
+
+# Hints:
+# In case of input data being supplied to the question, it should be assumed to be a console input.
+
+# Solution:
+# s = raw_input()
+# d={"DIGITS":0, "LETTERS":0}
+# for c in s:
+#     if c.isdigit():
+#         d["DIGITS"]+=1
+#     elif c.isalpha():
+#         d["LETTERS"]+=1
+#     else:
+#         pass
+# print "LETTERS", d["LETTERS"]
+# print "DIGITS", d["DIGITS"]
 #----------------------------------------#
 
 #----------------------------------------#
