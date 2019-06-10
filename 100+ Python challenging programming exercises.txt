@@ -634,25 +634,25 @@ for transaction in transactions:
 
 print(balance)
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
+# Hints:
+# In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
-netAmount = 0
-while True:
-    s = raw_input()
-    if not s:
-        break
-    values = s.split(" ")
-    operation = values[0]
-    amount = int(values[1])
-    if operation=="D":
-        netAmount+=amount
-    elif operation=="W":
-        netAmount-=amount
-    else:
-        pass
-print netAmount
+# Solution:
+# netAmount = 0
+# while True:
+#     s = raw_input()
+#     if not s:
+#         break
+#     values = s.split(" ")
+#     operation = values[0]
+#     amount = int(values[1])
+#     if operation=="D":
+#         netAmount+=amount
+#     elif operation=="W":
+#         netAmount-=amount
+#     else:
+#         pass
+# print netAmount
 #----------------------------------------#
 
 #----------------------------------------#
@@ -675,32 +675,43 @@ ABd1234@1,a F1#,2w3E*,2We3345
 Then, the output of the program should be:
 ABd1234@1
 
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
-
-Solutions:
 import re
-value = []
-items=[x for x in raw_input().split(',')]
-for p in items:
-    if len(p)<6 or len(p)>12:
-        continue
-    else:
-        pass
-    if not re.search("[a-z]",p):
-        continue
-    elif not re.search("[0-9]",p):
-        continue
-    elif not re.search("[A-Z]",p):
-        continue
-    elif not re.search("[$#@]",p):
-        continue
-    elif re.search("\s",p):
-        continue
-    else:
-        pass
-    value.append(p)
-print ",".join(value)
+passwords = input().split(',')
+result = []
+for password in passwords:
+  if len(password) >=6 and len(password)<= 12:
+      if re.match('[a-z]*', str(password)) and re.match('[A-Z]*', str(password)) and re.match('[0-9]*', str(password)):
+          if '#' in str(password) or '@' in str(password) or ('$' in str(password)):
+              result.append(password)
+
+print(''.join(result))
+
+# Hints:
+# In case of input data being supplied to the question, it should be assumed to be a console input.
+
+# Solutions:
+# import re
+# value = []
+# items=[x for x in raw_input().split(',')]
+# for p in items:
+#     if len(p)<6 or len(p)>12:
+#         continue
+#     else:
+#         pass
+#     if not re.search("[a-z]",p):
+#         continue
+#     elif not re.search("[0-9]",p):
+#         continue
+#     elif not re.search("[A-Z]",p):
+#         continue
+#     elif not re.search("[$#@]",p):
+#         continue
+#     elif re.search("\s",p):
+#         continue
+#     else:
+#         pass
+#     value.append(p)
+# print ",".join(value)
 #----------------------------------------#
 
 #----------------------------------------#
