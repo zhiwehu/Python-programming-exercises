@@ -25,9 +25,9 @@ between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
 
-----
-Jakob Solution:
-
+Hints:
+Consider use range(#begin, #end) method
+Solution:
 numbers = range(2000,3200)
 result = []
 for number in numbers:
@@ -35,17 +35,6 @@ for number in numbers:
         result.append(str(number))
 
 print(', '.join(result))
-----
-
-# Hints:
-# Consider use range(#begin, #end) method
-# Solution:
-# l=[]
-# for i in range(2000, 3201):
-#     if (i%7==0) and (i%5!=0):
-#         l.append(str(i))
-
-# print ','.join(l)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -63,9 +52,7 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-----
-Jakob solution:
-
+Solution:
 def fact(x):
     if x == 0
         return 1
@@ -73,16 +60,6 @@ def fact(x):
 
 x = int(input)
 print(fact(x))
------
-
-# Solution:
-# def fact(x):
-#     if x == 0:
-#         return 1
-#     return x * fact(x - 1)
-
-# x=int(raw_input())
-# print fact(x)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -100,10 +77,7 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 Consider use dict()
 
-----
-Jakob solution:
------
-
+Solution:
 def multi(x):
   count = 1
   #create empty dictionary
@@ -118,13 +92,6 @@ def multi(x):
 
 x = int(raw_input)
 print(multi(x))
-# Solution:
-# n=int(raw_input())
-# d=dict()
-# for i in range(1,n+1):
-#     d[i]=i*i
-
-# print d
 #----------------------------------------#
 
 #----------------------------------------#
@@ -144,6 +111,9 @@ In case of input data being supplied to the question, it should be assumed to be
 tuple() method can convert list to tuple
 
 
+
+
+Solution:
 input_value = input("Enter comma separated integers: ")
 list_input = input_value.split(',')
 tuple_input = tuple(list_input)
@@ -151,13 +121,6 @@ tuple_input = tuple(list_input)
 print(list_input)
 print(tuple_input)
 
-
-# Solution:
-# values=raw_input()
-# l=values.split(",")
-# t=tuple(l)
-# print l
-# print t
 #----------------------------------------#
 
 #----------------------------------------#
@@ -173,6 +136,7 @@ Also please include simple test function to test the class methods.
 Hints:
 Use __init__ method to construct some parameters
 
+Solution:
 class Converter(object):
   def __init__(self):
       self.s = ''
@@ -187,22 +151,6 @@ class Converter(object):
 strObj = Converter()
 strObj.getString()
 strObj.Capitalized()
-
-
-# Solution:
-# class InputOutString(object):
-#   def __init__(self):
-#       self.s = ""
-
-#   def getString(self):
-#       self.s = raw_input()
-
-#   def printString(self):
-#       print self.s.upper()
-
-# strObj = InputOutString()
-# strObj.getString()
-# strObj.printString()
 #----------------------------------------#
 
 #----------------------------------------#
@@ -221,10 +169,12 @@ Let us assume the following comma separated input sequence is given to the progr
 The output of the program should be:
 18,22,24
 
-----
-Solution Jakob:
-----
 
+Hints:
+If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
 import math
 items = [ int(x) for x in input().split(',') ]
 C = 50
@@ -234,22 +184,6 @@ for D in items:
     result.append(str(round(math.sqrt((2*C*D)/H))))
 
 print(','.join(result))
-
-# Hints:
-# If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-
-# Solution:
-# #!/usr/bin/env python
-# import math
-# c=50
-# h=30
-# value = []
-# items=[x for x in raw_input().split(',')]
-# for d in items:
-#     value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
-
-# print ','.join(value)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -265,9 +199,10 @@ Suppose the following inputs are given to the program:
 Then, the output of the program should be:
 [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
 
-----
-Jakob solution:
-----
+Hints:
+Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
+
+Solution:
 
 digits = [int(x) for x in input().split(',')]
 rows = digits[0]
@@ -279,23 +214,6 @@ for row in range(rows):
         array[row][col] = row * col
 
 print(array)
-
-
-# Hints:
-# Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
-
-# Solution:
-# input_str = raw_input()
-# dimensions=[int(x) for x in input_str.split(',')]
-# rowNum=dimensions[0]
-# colNum=dimensions[1]
-# multilist = [[0 for col in range(colNum)] for row in range(rowNum)]
-
-# for row in range(rowNum):
-#     for col in range(colNum):
-#         multilist[row][col]= row*col
-
-# print multilist
 #----------------------------------------#
 
 #----------------------------------------#
@@ -309,20 +227,14 @@ without,hello,bag,world
 Then, the output should be:
 bag,hello,without,world
 
-----
-Jakob solution:
-----
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+
+Solution:
   raw_words = [x for x in input().split(',')]
   print(','.join(sorted(raw_words)))
 
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-
-
-# Solution:
-# items=[x for x in raw_input().split(',')]
-# items.sort()
-# print ','.join(items)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -338,9 +250,10 @@ Then, the output should be:
 HELLO WORLD
 PRACTICE MAKES PERFECT
 
-----
-Jakob Solution:
-----
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
 lines = []
 while True:
 # while line contains input
@@ -356,20 +269,6 @@ text = '\n'.join(lines)
 
 for l in lines:
     print(l)
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-
-# Solution:
-# lines = []
-# while True:
-#     s = raw_input()
-#     if s:
-#         lines.append(s.upper())
-#     else:
-#         break;
-
-# for sentence in lines:
-#     print sentence
 #----------------------------------------#
 
 #----------------------------------------#
@@ -383,22 +282,16 @@ hello world and practice makes perfect and hello world again
 Then, the output should be:
 again and hello makes perfect practice world
 
+
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+We use set container to remove duplicated data automatically and then use sorted() to sort the data.
+
+Solution:
 s = input()
 words = [word for word in s.split(' ')]
-# turn list into keys in dict (which can only occur once)
-# turn dict into list
-# sort list
-# join with whitespace in between
 print(' '.join(sorted(list(dict.fromkeys(words)))))
-
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-# We use set container to remove duplicated data automatically and then use sorted() to sort the data.
-
-# Solution:
-# s = raw_input()
-# words = [word for word in s.split(" ")]
-# print " ".join(sorted(list(set(words))))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -413,6 +306,9 @@ Then the output should be:
 1010
 Notes: Assume the data is input by console.
 
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+Solution:
 output = []
 numbers = [x for x in input().split(',')]
 for number in numbers:
@@ -421,18 +317,6 @@ for number in numbers:
             output.append((number))
 
 print(','.join(output))
-
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-# Solution:
-# value = []
-# items=[x for x in raw_input().split(',')]
-# for p in items:
-#     intp = int(p, 2)
-#     if not intp%5:
-#         value.append(p)
-
-# print ','.join(value)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -443,9 +327,10 @@ Question:
 Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-----
-Jakob Solution:
-----
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
 result = []
 
   values = range(1000,3000)
@@ -453,18 +338,6 @@ result = []
         if all(int(integer) % 2 == 0 for integer in str(value)):
             result.append(value)
 print(result)
-
-
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-
-# Solution:
-# values = []
-# for i in range(1000, 3001):
-#     s = str(i)
-#     if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and (int(s[3])%2==0):
-#         values.append(s)
-# print ",".join(values)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -481,30 +354,15 @@ DIGITS 3
 
 #split string into individual pieces
 
-----
-Jakob Solution:
-----
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
 s = input()
 numbers = sum(i.isdigit() for i in str(s))
 letters   = sum(i.isalpha() for i in str(s))
 print('LETTERS:',letters)
 print('NUMBERS:',numbers)
-
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-
-# Solution:
-# s = raw_input()
-# d={"DIGITS":0, "LETTERS":0}
-# for c in s:
-#     if c.isdigit():
-#         d["DIGITS"]+=1
-#     elif c.isalpha():
-#         d["LETTERS"]+=1
-#     else:
-#         pass
-# print "LETTERS", d["LETTERS"]
-# print "DIGITS", d["DIGITS"]
 #----------------------------------------#
 
 #----------------------------------------#
@@ -519,30 +377,15 @@ Then, the output should be:
 UPPER CASE 1
 LOWER CASE 9
 
-----
-Jakob Solution:
-----
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+Solution:
 s = input()
 upper  = sum(i.isupper() for i in str(s))
 lower  = sum(i.islower() for i in str(s))
 
 print('UPPER CASE:',upper)
 print('LOWER CASE:',lower)
-
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-# Solution:
-# s = raw_input()
-# d={"UPPER CASE":0, "LOWER CASE":0}
-# for c in s:
-#     if c.isupper():
-#         d["UPPER CASE"]+=1
-#     elif c.islower():
-#         d["LOWER CASE"]+=1
-#     else:
-#         pass
-# print "UPPER CASE", d["UPPER CASE"]
-# print "LOWER CASE", d["LOWER CASE"]
 #----------------------------------------#
 
 #----------------------------------------#
@@ -555,24 +398,14 @@ Suppose the following input is supplied to the program:
 9
 Then, the output should be:
 11106
-----
-Jakob Solution:
-----
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
 d = input()
 result = int(d) + int(d*2) + int(d*3) + int(d*4)
 print(result)
-
-
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-
-# Solution:
-# a = raw_input()
-# n1 = int( "%s" % a )
-# n2 = int( "%s%s" % (a,a) )
-# n3 = int( "%s%s%s" % (a,a,a) )
-# n4 = int( "%s%s%s%s" % (a,a,a,a) )
-# print n1+n2+n3+n4
 #----------------------------------------#
 
 #----------------------------------------#
@@ -586,20 +419,12 @@ Suppose the following input is supplied to the program:
 Then, the output should be:
 1,3,5,7,9
 
-----
-Jakob Solution:
-----
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
 result = [i for i in input().split(',') if int(i) % 2 != 0]
 print(','.join(result))
-
-
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-
-# Solution:
-# values = raw_input()
-# numbers = [x for x in values.split(",") if int(x)%2!=0]
-# print ",".join(numbers)
 # #----------------------------------------#
 
 Question 17
@@ -620,6 +445,11 @@ Then, the output should be:
 500
 
 
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
+
 span = 2
 words = input().split(' ')
 balance = 0
@@ -633,26 +463,6 @@ for transaction in transactions:
         balance -= amount[0]
 
 print(balance)
-
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-
-# Solution:
-# netAmount = 0
-# while True:
-#     s = raw_input()
-#     if not s:
-#         break
-#     values = s.split(" ")
-#     operation = values[0]
-#     amount = int(values[1])
-#     if operation=="D":
-#         netAmount+=amount
-#     elif operation=="W":
-#         netAmount-=amount
-#     else:
-#         pass
-# print netAmount
 #----------------------------------------#
 
 #----------------------------------------#
@@ -675,6 +485,10 @@ ABd1234@1,a F1#,2w3E*,2We3345
 Then, the output of the program should be:
 ABd1234@1
 
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solutions:
 import re
 passwords = input().split(',')
 result = []
@@ -685,33 +499,6 @@ for password in passwords:
               result.append(password)
 
 print(''.join(result))
-
-# Hints:
-# In case of input data being supplied to the question, it should be assumed to be a console input.
-
-# Solutions:
-# import re
-# value = []
-# items=[x for x in raw_input().split(',')]
-# for p in items:
-#     if len(p)<6 or len(p)>12:
-#         continue
-#     else:
-#         pass
-#     if not re.search("[a-z]",p):
-#         continue
-#     elif not re.search("[0-9]",p):
-#         continue
-#     elif not re.search("[A-Z]",p):
-#         continue
-#     elif not re.search("[$#@]",p):
-#         continue
-#     elif re.search("\s",p):
-#         continue
-#     else:
-#         pass
-#     value.append(p)
-# print ",".join(value)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -733,6 +520,13 @@ Json,21,85
 Then, the output of the program should be:
 [('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
 
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+We use itemgetter to enable multiple sort keys.
+
+Solutions:
+
 from operator import itemgetter, attrgetter
 people = []
 while True:
@@ -742,22 +536,6 @@ while True:
     people.append(tuple(input_value.split(',')))
 
 print(sorted(people, key=itemgetter(0,1,2)))
-
-Hints:
-In case of input data being supplied to the question, it should be assumed to be a console input.
-We use itemgetter to enable multiple sort keys.
-
-Solutions:
-from operator import itemgetter, attrgetter
-
-l = []
-while True:
-    s = raw_input()
-    if not s:
-        break
-    l.append(tuple(s.split(",")))
-
-print sorted(l, key=itemgetter(0,1,2))
 #----------------------------------------#
 
 #----------------------------------------#
