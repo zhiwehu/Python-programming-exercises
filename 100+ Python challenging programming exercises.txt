@@ -733,6 +733,16 @@ Json,21,85
 Then, the output of the program should be:
 [('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
 
+from operator import itemgetter, attrgetter
+people = []
+while True:
+    input_value = input()
+    if not input_value
+        break
+    people.append(tuple(input_value.split(',')))
+
+print(sorted(people, key=itemgetter(0,1,2)))
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use itemgetter to enable multiple sort keys.
