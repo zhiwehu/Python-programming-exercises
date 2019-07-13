@@ -1,0 +1,11 @@
+s=input("enter a sentence:")
+d,l=0,0
+for i in list(s):
+    try:
+        p=int(i)
+        d+=1
+    except:
+        if i.isalpha():
+            l+=1
+print("DIGITS:",d,"\nLETTERS:",l)
+            
