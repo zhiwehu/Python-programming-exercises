@@ -1,0 +1,10 @@
+def putNumbers(n):
+    i = 0
+    while i<n:
+        j=i
+        i=i+1
+        if j%7==0:
+            yield j
+
+for i in putNumbers(100):  #the original solution has reverse(100) which is wrong
+    print(i)

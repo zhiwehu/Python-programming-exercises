@@ -1,0 +1,3 @@
+n=int(input("enter the value:"))
+s=n+(10*n+n)+(100*n+10*n+n)+(1000*n+100*n+10*n+n)
+print(s)
