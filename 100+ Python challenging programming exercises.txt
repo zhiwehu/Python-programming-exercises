@@ -194,6 +194,9 @@ rowNum=dimensions[0]
 colNum=dimensions[1]
 multilist = [[0 for col in range(colNum)] for row in range(rowNum)]
 
+# if you want to create your numpy array directly
+multilist = np.zeros([rowNum, colNum]
+
 for row in range(rowNum):
     for col in range(colNum):
         multilist[row][col]= row*col
