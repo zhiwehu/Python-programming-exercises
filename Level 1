@@ -1,0 +1,600 @@
+#----------------------------------------#
+Question 1
+#----------------------------------------#
+
+Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
+between 2000 and 3200 (both included).
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+Hints: 
+Consider use range(#begin, #end) method
+
+Solution:
+lst = []
+for n in range(2000, 3201):
+    if n % 7 == 0 and n % 5 != 0:
+        lst.append(str(n))
+print(', '.join(lst))
+
+#----------------------------------------#
+Question 2
+#----------------------------------------#
+
+Write a program which can compute the factorial of a given numbers.
+Suppose the following input is supplied to the program:
+8
+Then, the output should be:
+40320
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
+#with for loop:
+n = int(input())
+f = 1
+for i in range(2, n+1):
+    f *= i
+print(f)
+
+#With recursion:
+def fact(n):
+    if n == 1:
+        return 1
+    return n * fact(n-1)
+
+
+num = int(input())
+print(fact(num))
+
+#----------------------------------------#
+Question 3
+#----------------------------------------#
+
+With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
+Suppose the following input is supplied to the program:
+8
+Then, the output should be:
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+Consider use dict()
+
+Solution:
+n = int(input())
+d = {}
+for i in range(1, n+1):
+    d[i] = i*i
+print(d)
+
+#----------------------------------------#
+Question 4
+#----------------------------------------#
+
+Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
+Suppose the following input is supplied to the program:
+34,67,55,33,12,98
+Then, the output should be:
+['34', '67', '55', '33', '12', '98']
+('34', '67', '55', '33', '12', '98')
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+tuple() method can convert list to tuple
+
+Solution:
+lst = input().split(',')
+tup = tuple(lst)
+print(lst)
+print(tup)
+
+#----------------------------------------#
+Question 5
+#----------------------------------------#
+
+Define a class which has at least two methods:
+get_string: to get a string from console input
+print_string: to print the string in upper case.
+
+Hints:
+Use __init__ method to construct some parameters
+
+Solution:
+class InputOutputString:
+    def __init__(self):
+        self.string = ''
+
+    def get_string(self):
+        self.string = input()
+
+    def print_string(self):
+        print(self.string)
+
+
+obj = InputOutputString()
+obj.get_string()
+obj.print_string()
+
+#----------------------------------------#
+Question 6
+#----------------------------------------#
+
+Write a method which can calculate square value of number
+
+Hints:
+Using the ** operator
+
+Solution:
+def sqr(n):
+    return n ** 2
+
+
+num = int(input())
+print(sqr(num))
+
+#----------------------------------------#
+Question 7
+#----------------------------------------#
+
+Python has many built-in functions, and if you do not know how to use it, you can read document online or find some books. But Python has a built-in document function for every built-in functions.
+Please write a program to print some Python built-in functions documents, such as abs(), int(), input()
+And add document for your own function
+    
+Hints:
+The built-in document method is __doc__
+
+Solution:
+print(abs.__doc__)
+print(int.__doc__)
+print(input.__doc__)
+
+
+def square(num):
+    """Return the square value of the input number.
+
+    The input number must be integer.
+    """
+    return num ** 2
+
+
+print(square(2))
+print(square.__doc__)
+
+#----------------------------------------#
+Question 8
+#----------------------------------------#
+
+Define a function which can compute the sum of two numbers.
+
+Example:
+Input:
+4 3
+Output:
+7
+
+Hints:
+Define a function with two numbers as arguments. You can compute the sum in the function and return the value.
+
+Solution
+def sum_function(n1, n2):
+    return n1 + n2
+
+
+num1, num2 = map(int, input().split())
+print(sum_function(num1, num2))
+
+#----------------------------------------#
+Question 9
+#----------------------------------------#
+
+Define a function that can convert a integer into a string and print it in console.
+
+Hints:
+
+Use str() to convert a number to string.
+
+Solution
+def int_to_str(i):
+    return str(i)
+
+
+n = int(input())
+print(int_to_str(n))
+
+#----------------------------------------#
+Question 10
+#----------------------------------------#
+
+Define a function that can convert a integer into a string and print it in console.
+
+Hints:
+
+Use str() to convert a number to string.
+
+Solution
+def printValue(n):
+	print str(n)
+
+printValue(3)
+
+#----------------------------------------#
+Question 11
+#----------------------------------------#
+
+Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
+
+Hints:
+
+Use int() to convert a string to integer.
+
+Solution
+def print_sum(string1, string2):
+    print(int(string1) + int(string2))
+
+
+print_sum('32', '29')
+
+#----------------------------------------#
+Question 12
+#----------------------------------------#
+
+Define a function that can accept two strings as input and concatenate them and then print it in console.
+
+Hints:
+
+Use + to concatenate the strings
+
+Solution
+def print_sum(string1, string2):
+    print(string1 + string2)
+
+
+print_sum('32', '29')
+
+#----------------------------------------#
+Question 13
+#----------------------------------------#
+
+Define a class, which have a class parameter and have a same instance parameter.
+
+Hints:
+Define a instance parameter, need add it in __init__ method
+You can init a object with construct parameter or set the value later
+
+class PersonName:
+    name = 'Person'
+
+    def __init__(self, name):
+        self.name = name
+
+
+person = PersonName("Abhijeet")
+print("%s name is %s." % (PersonName.name, person.name))
+
+#----------------------------------------#
+Question 14
+#----------------------------------------#
+
+Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print all strings line by line.
+
+Hints:
+
+Use len() function to get the length of a string
+
+Solution
+def print_string(s1, s2):
+    if len(s1) > len(s2):
+        print(s1)
+    elif len(s1) < len(s2):
+        print(s2)
+    else:
+        print(s1)
+        print(s2)
+
+
+string1, string2 = (input() for i in range(2))
+print_string(string1, string2)
+
+#----------------------------------------#
+Question 15
+#----------------------------------------#
+
+Define a function that can accept an integer number as input and print the "It is an even number" if the number is even, otherwise print "It is an odd number".
+
+Hints:
+
+Use % operator to check if a number is even or odd.
+
+Solution
+def even_or_odd(n):
+    if n % 2 == 0:
+        print('It is an even number')
+    else:
+        print('It is an odd number')
+
+
+num = int(input())
+even_or_odd(num)
+
+#----------------------------------------#
+Question 16
+#----------------------------------------#
+
+Define a function which can print a dictionary where the keys are numbers between 1 and 3 (both included) and the values are square of keys.
+
+Hints:
+
+Use dict[key]=value pattern to put entry into a dictionary.
+Use ** operator to get power of a number.
+
+Solution
+def print_dict():
+	d=dict()
+	d[1]=1
+	d[2]=2**2
+	d[3]=3**2
+	print(d)
+		
+
+print_dict()
+
+#----------------------------------------#
+Question 17
+#----------------------------------------#
+
+Define a function which can print a dictionary where the keys are numbers between 1 and 20 (both included) and the values are cube of keys.
+
+Hints:
+
+Use dict[key]=value pattern to put entry into a dictionary.
+Use ** operator to get power of a number.
+Use range() for loops.
+
+Solution
+def my_dict():
+    d = {}
+    for i in range(1, 21):
+        d[i] = i ** 3
+
+    print(d)
+
+
+my_dict()
+
+#----------------------------------------#
+Question 18
+#----------------------------------------#
+
+Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the values only.
+
+Hints:
+
+Use dict[key]=value pattern to put entry into a dictionary.
+Use ** operator to get power of a number.
+Use range() for loops.
+Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
+
+Solution
+def print_values():
+    d = {}
+    for i in range(1, 21):
+        d[i] = i ** 2
+    for (k, v) in d.items():
+        print(v, end=' ')
+
+
+print_values()
+
+#----------------------------------------#
+Question 19
+#----------------------------------------#
+
+Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the keys only.
+
+Hints:
+
+Use dict[key]=value pattern to put entry into a dictionary.
+Use ** operator to get power of a number.
+Use range() for loops.
+Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
+
+Solution
+def print_values():
+    d = {}
+    for i in range(1, 21):
+        d[i] = i ** 2
+    for k in d.keys():
+        print(k, end=' ')
+
+
+print_values()
+
+#----------------------------------------#
+Question 20
+#----------------------------------------#
+
+Define a function which can generate and print a list where the values are square of numbers between 1 and 20 (both included).
+
+Hints:
+
+Use ** operator to get power of a number.
+Use range() for loops.
+Use list.append() to add values into a list.
+
+Solution
+def print_list():
+    lst = list()
+    for i in range(1, 21):
+        lst.append(i ** 2)
+    print(lst)
+
+
+print_list()
+
+#----------------------------------------#
+Question 21
+#----------------------------------------#
+
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the first 5 elements in the list.
+
+Hints:
+
+Use ** operator to get power of a number.
+Use range() for loops.
+Use list.append() to add values into a list.
+Use [n1:n2] to slice a list
+
+Solution
+def print_list():
+    lst = []
+    for i in range(1, 21):
+        lst.append(i ** 2)
+    print(lst[:5])
+
+
+print_list()
+
+#----------------------------------------#
+Question 22
+#----------------------------------------#
+
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the last 5 elements in the list.
+
+Hints:
+
+Use ** operator to get power of a number.
+Use range() for loops.
+Use list.append() to add values into a list.
+Use [n1:n2] to slice a list
+
+Solution
+def print_list():
+    lst = []
+    for i in range(1, 21):
+        lst.append(i ** 2)
+    print(lst[-5:])
+
+
+print_list()
+
+#----------------------------------------#
+Question 23
+#----------------------------------------#
+
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
+
+Hints:
+
+Use ** operator to get power of a number.
+Use range() for loops.
+Use list.append() to add values into a list.
+Use [n1:n2] to slice a list
+
+Solution
+def print_list():
+    lst = []
+    for i in range(1, 21):
+        lst.append(i ** 2)
+    print(lst[5:])
+
+
+print_list()
+
+#----------------------------------------#
+Question 24
+#----------------------------------------#
+
+Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included). 
+
+Hints:
+
+Use ** operator to get power of a number.
+Use range() for loops.
+Use list.append() to add values into a list.
+Use tuple() to get a tuple from a list.
+
+Solution
+def print_tuple():
+    lst = list()
+    for i in range(1, 21):
+        lst.append(i ** 2)
+    print(tuple(lst))
+
+
+print_tuple()
+
+#----------------------------------------#
+Question 25
+#----------------------------------------#
+
+With a given tuple (1, 2, 3, 4, 5, 6, 7, 8, 9, 10), write a program to print the first half values in one line and the last half values in one line. 
+
+Hints:
+
+Use [n1:n2] notation to get a slice from a tuple.
+
+Solution
+given_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+h_len = len(given_tuple)//2
+print(given_tuple[:h_len])
+print(given_tuple[h_len:])
+
+#----------------------------------------#
+Question 26
+#----------------------------------------#
+
+Write a program to generate and print another tuple whose values are even numbers in the given tuple (1, 2, 3, 4, 5, 6, 7, 8, 9, 10). 
+
+Hints:
+
+Use "for" to iterate the tuple
+Use tuple() to generate a tuple from a list.
+
+Solution
+given_tup = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+lst = []
+for val in given_tup:
+    if val % 2 == 0:
+        lst.append(val)
+
+new_tup = tuple(lst)
+print(new_tup)
+
+#----------------------------------------#
+Question 27
+#----------------------------------------#
+
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
+
+Hints:
+
+Use if statement to judge condition.
+
+Solution
+string = input()
+if string == 'yes' or string == 'YES' or string == 'Yes':
+    print('Yes')
+else:
+    print('No')
+
+#----------------------------------------#
+Questiong 28
+#----------------------------------------#
+Question:
+
+Please write a program which accepts basic mathematic expression from console and print the evaluation result.
+
+Example:
+If the following string is given as input to the program:
+35 + 3
+
+Then, the output of the program should be:
+38
+
+Hints:
+Use eval() to evaluate an expression.
+
+
+Solution:
+print(eval(input()))
