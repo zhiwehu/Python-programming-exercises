@@ -1,0 +1,277 @@
+#----------------------------------------#
+Question 1
+#----------------------------------------#
+
+A website requires the users to input username and password to register. Write a program to check the validity of password input by users.
+Following are the criteria for checking the password:
+1. Minimum length of password: 6
+2. Maximum length of password: 12
+3. At least 1 letter between [a-z]
+4. At least 1 number between [A-Z]
+5. At least 1 letter between [0-9]
+6. At least 1 character from [$#@]
+
+Example
+If the following password is given as input to the program:
+ABd1234@1
+Then, the output of the program should be:
+Valid Password
+
+If the following password is given as input to the program:
+a F1#,2w3E*
+Then, the output of the program should be:
+Invalid Password
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solutions:
+import re
+password = input()
+if 6 <= len(password) <= 12 and re.search("[a-z]", password) and re.search("[A-Z]", password) and re.search("[0-9]", password) and re.search("[$#@]", password):
+    print("Valid password")
+else:
+    print("Invalid password")
+
+#----------------------------------------#
+Question 2
+#----------------------------------------#
+
+You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. The tuples are input by console. The sort criteria is:
+1: Sort based on name;
+2: Then sort based on age;
+3: Then sort by score.
+The priority is that name > age > score.
+If the following tuples are given as input to the program:
+Tom,19,80
+John,20,90
+Jony,17,91
+Jony,17,93
+Json,21,85
+Then, the output of the program should be:
+[('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+We use itemgetter to enable multiple sort keys.
+
+Solutions:
+from operator import itemgetter
+
+my_list = []
+while 1:
+    string = input()
+    if not string:
+        break
+    my_list.append(tuple(string.split(",")))
+
+print(sorted(my_list, key=itemgetter(0, 1, 2)))
+
+#----------------------------------------#
+Question 3
+#----------------------------------------#
+
+Define a function with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
+
+Hints:
+Consider use yield
+
+Solution:
+def divisible_by_7(num):
+    for i in range(num):
+        if i % 7 == 0:
+            yield i
+
+
+for n in divisible_by_7(100):
+    print(n)
+
+#----------------------------------------#
+Question 4
+#----------------------------------------#
+
+A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following:
+UP 5
+DOWN 3
+LEFT 3
+RIGHT 2
+
+The numbers after the direction are steps. Please write a program to compute the distance from current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
+Example:
+If the following tuples are given as input to the program:
+UP 5
+DOWN 3
+LEFT 3
+RIGHT 2
+
+Then, the output of the program should be:
+2
+
+Hints:
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
+from math import *
+pos = [0, 0]
+while True:
+    string = input()
+    if not string:
+        break
+    move = string.split(" ")
+    direction = move[0]
+    step = int(move[1])
+    if direction == "UP":
+        pos[0] += step
+    elif direction == "DOWN":
+        pos[0] -= step
+    elif direction == "RIGHT":
+        pos[1] += step
+    elif direction == "LEFT":
+        pos[1] -= step
+    else:
+        pass
+
+print(int(round(sqrt(pos[0]**2 + pos[1]**2))))
+
+#----------------------------------------#
+Question 5
+#----------------------------------------#
+
+Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically. 
+Suppose the following input is supplied to the program:
+New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.
+Then, the output should be:
+2: 2
+3.: 1
+3?: 1
+New: 1
+Python: 5
+Read: 1
+and: 1
+between: 1
+choosing: 1
+or: 2
+to: 1
+
+Hints
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Solution:
+my_dict = {}
+string = input().split(" ")
+for word in string:
+    my_dict[word] = my_dict.get(word, 0) + 1
+
+words = list(my_dict.keys())
+words.sort()
+
+for word in words:
+    print("%s: %d" % (word, my_dict[word]))
+
+#----------------------------------------#
+Question 6
+#----------------------------------------#
+
+Assuming that we have some email addresses in the "username@companyname.domain_name" format, please write program to print the user name of a given email address. Both user names and company names are composed of letters only.
+
+Example:
+If the following email address is given as input to the program:
+abhijeet@yahoo.com
+
+Then, the output of the program should be:
+abhijeet
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Hints:
+Use \w to match letters.
+
+Solution:
+import re
+
+emailAddress = input()
+r = re.match(r"(\w+)@(\w+).(\w+)", emailAddress)
+print(r.group(1))
+
+#----------------------------------------#
+Question 7
+#----------------------------------------#
+
+Assuming that we have some email addresses in the "username@companyname.domain_name" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
+
+Example:
+If the following email address is given as input to the program:
+
+abhijeet@google.com
+
+Then, the output of the program should be:
+
+google
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Hints:
+
+Use \w to match letters.
+
+Solution:
+import re
+
+emailAddress = input()
+r = re.match(r"(\w+)@(\w+).(\w+)", emailAddress)
+print(r.group(2))
+
+#----------------------------------------#
+Question 8
+#----------------------------------------#
+
+Write a program which accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
+
+Example:
+If the following words is given as input to the program:
+2 cats and 3 dogs.
+
+Then, the output of the program should be:
+['2', '3']
+
+Hints:
+Use re.findall() to find all substring using regex.
+
+Solution:
+import re
+
+string = input()
+print(re.findall(r"[\d+]", string))
+
+#----------------------------------------#
+Question 9
+#----------------------------------------#
+
+Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
+
+
+Hints:
+Use if/elif to deal with conditions.
+
+
+Solution:
+def bin_search(lst, n):
+    l = 0
+    u = len(lst) - 1
+
+    while l <= u:
+        mid = (l+u)//2
+        if lst[mid] == n:
+            return mid
+        elif lst[mid] < n:
+            l = mid+1
+        else:
+            u = mid-1
+    return "Not found"
+
+
+my_lst = [1, 2, 3, 88, 109, 889]
+print(bin_search(my_lst, 88))
+print(bin_search(my_lst, 2))
+print(bin_search(my_lst, 11111))
+
