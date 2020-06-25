@@ -9,6 +9,4 @@ For now I just use Chinese if you like I could use English as well.
 
 ![Python Comic](https://github.com/zhiwehu/Python-programming-exercises/blob/master/comic.png?raw=true)
 
-And if you like this repo please support me by clicking the https://images.gitads.io/Python-programming-exercises
-
-![ad](https://images.gitads.io/Python-programming-exercises)
+<a href='https://tracking.gitads.io/?repo=Python-programming-exercises'><img src="https://images.gitads.io/Python-programming-exercises" alt="git-ad"/></a>
