@@ -30,7 +30,7 @@ Write a program which will find all such numbers which are divisible by 7 but ar
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
 Hints: 
-Consider use range(#begin, #end) method
+Consider using range(#begin, #end) method
 
 Solution:
 ```python
@@ -578,7 +578,7 @@ for i in reverse(100):
 Level 3
 
 Question
-A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following:
+A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of the robot's movement is displayed as following:
 UP 5
 DOWN 3
 LEFT 3
@@ -665,7 +665,7 @@ for w in words:
 level 1
 
 Question:
-Write a method which can calculate square value of number
+Write a method which can calculate the square value of a number.
 
 Hints:
 Using the ** operator
