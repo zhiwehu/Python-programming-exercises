@@ -34,12 +34,14 @@ Consider use range(#begin, #end) method
 
 Solution:
 ```python
-l=[]
-for i in range(2000, 3201):
-    if (i%7==0) and (i%5!=0):
-        l.append(str(i))
+def div():
+	my_list=[]
+	for i in range(2000,3200):
+		if i%7==0 and i%5!=0:
+			   my_list.append(i)
+	print(my_list)		   
 
-print(','.join(l))
+print(div())
 ```
 
 ### Question 2
