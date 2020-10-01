@@ -2,6 +2,9 @@
 
 100+ Python challenging programming exercises.
 
+
+https://pynative.com/python-basic-exercise-for-beginners/
+
 <a href="https://tracking.gitads.io/?repo=Python-programming-exercises"><img src="https://images.gitads.io/Python-programming-exercises" alt="GitAds"/></a>
 
 ## Python Comics
