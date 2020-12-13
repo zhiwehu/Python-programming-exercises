@@ -2058,19 +2058,19 @@ print li
 #----------------------------------------#
 Question:
 
-Please write a program to shuffle and print the list [3,6,7,8].
+Please write a program to shuffle the list [1,2,3,4,5,6,7,8,9,10,11,12,13] and then print the index of a number in the list input by the user.
 
 
 
 Hints:
-Use shuffle() function to shuffle a list.
+Use index() method to get the index of the number.
 
 Solution:
 
 from random import shuffle
-li = [3,6,7,8]
+li = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 shuffle(li)
-print li
+print(li.index(int(input())))
 
 
 
