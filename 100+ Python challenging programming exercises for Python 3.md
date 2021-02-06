@@ -66,6 +66,29 @@ def fact(x):
 x=int(input())
 print(fact(x))
 ```
+```python
+#The previous answer gets into an infinitive loop
+#I am guessing there must be a way to make it look better, but I am just learning.
+def fact(x) :
+    n = 0
+    i = x - n
+    while i >= 2 :
+        n = n + 1
+        i = i - 1
+        x = x * i
+    return x
+
+inum = input('Insert Number: ')
+try :
+    num = int(inum)
+except :
+    print('Only Numbers valid.')
+    exit()
+
+y = fact(num)
+print('the factorial of: ', inum, 'is', y)
+```
+
 
 ### Question 3
 Level 1
