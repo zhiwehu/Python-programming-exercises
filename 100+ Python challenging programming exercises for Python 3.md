@@ -412,7 +412,8 @@ Use a list comprehension to square each odd number in a list. The list is input 
 Suppose the following input is supplied to the program:
 1,2,3,4,5,6,7,8,9
 Then, the output should be:
-1,3,5,7,9
+1,3,5,7,9 # THIS OUTPUT is only correct if we are just selecting the odd numbers.
+1,9,25,49,81 # if we are squaring them.
 
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
@@ -423,6 +424,15 @@ Solution:
 values = input()
 numbers = [x for x in values.split(",") if int(x)%2!=0]
 print(",".join(numbers))
+```
+```python
+num = input('Please Enter Comma Separated Numbers: ')
+if len(num) < 1 :
+    num = '1,2,3,4,5,6,7,8,9'
+
+l = [str(int(x)**2) for x in num.split(',') if int(x)%2!=0]
+
+print(",".join(l))
 ```
 
 ### Question 17
