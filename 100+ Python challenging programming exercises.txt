@@ -2371,5 +2371,28 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
+Level: Easy
 
+Question:
+Given a string, return a list of indexes of the letters that are vowels within the string.
+
+Example:
+"I lovE yOU" => [0,3,5,8,9]
+"ThE uNivERSE" => [2,4,6,8,11]
+
+Hints: Use a for loop, lower() or upper(), and append().
+
+Answer:
+
+def find_vowels(string):
+    string = string.lower()
+    vowels = ['a','e','i','o','u']
+    index_list = []
+    for letter in range(0, len(string)):
+        if string[letter] in vowels:
+            index_list.append(letter)
+    return new_list
+ 
+find_vowels(string)
+#----------------------------------------#
 
