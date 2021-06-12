@@ -2371,5 +2371,46 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
+Question:
 
+Write a program to multiply 2 matrices:
+we first enter details of matrices and then enter matrices. And then get the answer
 
+Solution:
+
+print("Enter details of matrix1\n")
+rows1 = input("Enter number of raws : ")
+cols1 = input("Enter number of cols : ")
+
+print("Enter matrix2\n")
+rows2 = input("Enter number of rows : ")
+cols2 = input("Enter number of cols : ")
+
+if rows1 != cols2:
+    print("Error check number of rows and cols\n")
+
+else:
+    mat1 = []
+    mat2 = []
+    ansmat = []
+    print("Matrix 1:\n")
+    for x in xrange(rows1):
+        row = raw_input().split(" ")
+        mat1.append(row)
+
+    print("Matrix 2:\n")
+    for x in xrange(rows2):
+        row = raw_input().split(" ")
+        mat2.append(row)
+
+    for i in xrange(rows1):
+        ansrow = []
+        for j in xrange(cols2):
+            ele = 0
+            for k in xrange(cols1):
+                ele += int(mat1[i][k])*int(mat2[k][j])
+            ansrow.append(str(ele))
+        ansmat.append(ansrow)
+
+    for m in xrange(len(ansmat)):
+        print " ".join(ansmat[m])
