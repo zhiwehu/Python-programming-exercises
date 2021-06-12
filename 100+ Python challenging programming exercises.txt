@@ -3,7 +3,7 @@
 1.	Level description
 Level	Description
 Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
-Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
+Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly found in the textbooks.
 Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
 
 2.	Problem template
@@ -41,14 +41,14 @@ Question 2
 Level 1
 
 Question:
-Write a program which can compute the factorial of a given numbers.
+Write a program which can compute the factorial of a given number.
 The results should be printed in a comma-separated sequence on a single line.
 Suppose the following input is supplied to the program:
 8
 Then, the output should be:
 40320
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -72,7 +72,7 @@ Suppose the following input is supplied to the program:
 Then, the output should be:
 {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 Consider use dict()
 
@@ -97,7 +97,7 @@ Then, the output should be:
 ['34', '67', '55', '33', '12', '98']
 ('34', '67', '55', '33', '12', '98')
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 tuple() method can convert list to tuple
 
@@ -184,7 +184,7 @@ Suppose the following inputs are given to the program:
 Then, the output of the program should be:
 [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
 
-Hints:
+Hint:
 Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
 
 Solution:
@@ -212,7 +212,7 @@ without,hello,bag,world
 Then, the output should be:
 bag,hello,without,world
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -234,7 +234,7 @@ Then, the output should be:
 HELLO WORLD
 PRACTICE MAKES PERFECT
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -261,7 +261,7 @@ hello world and practice makes perfect and hello world again
 Then, the output should be:
 again and hello makes perfect practice world
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use set container to remove duplicated data automatically and then use sorted() to sort the data.
 
@@ -283,7 +283,7 @@ Then the output should be:
 1010
 Notes: Assume the data is input by console.
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -305,7 +305,7 @@ Question:
 Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -329,7 +329,7 @@ Then, the output should be:
 LETTERS 10
 DIGITS 3
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -358,7 +358,7 @@ Then, the output should be:
 UPPER CASE 1
 LOWER CASE 9
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -386,7 +386,7 @@ Suppose the following input is supplied to the program:
 Then, the output should be:
 11106
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -409,7 +409,7 @@ Suppose the following input is supplied to the program:
 Then, the output should be:
 1,3,5,7,9
 
-Hints:
+Hin:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -435,7 +435,7 @@ D 100
 Then, the output should be:
 500
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -476,7 +476,7 @@ ABd1234@1,a F1#,2w3E*,2We3345
 Then, the output of the program should be:
 ABd1234@1
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solutions:
@@ -584,7 +584,7 @@ RIGHT 2
 Then, the output of the program should be:
 2
 
-Hints:
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -632,7 +632,7 @@ choosing:1
 or:2
 to:1
 
-Hints
+Hint:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
@@ -655,7 +655,7 @@ level 1
 Question:
     Write a method which can calculate square value of number
 
-Hints:
+Hint:
     Using the ** operator
 
 Solution:
@@ -675,7 +675,7 @@ Question:
     Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
     And add document for your own function
     
-Hints:
+Hint:
     The built-in document method is __doc__
 
 Solution:
@@ -726,7 +726,7 @@ print "%s name is %s" % (Person.name, nico.name)
 Question:
 Define a function which can compute the sum of two numbers.
 
-Hints:
+Hint:
 Define a function with two numbers as arguments. You can compute the sum in the function and return the value.
 
 Solution
@@ -739,7 +739,7 @@ print SumFunction(1,2)
 Question:
 Define a function that can convert a integer into a string and print it in console.
 
-Hints:
+Hint:
 
 Use str() to convert a number to string.
 
@@ -754,7 +754,7 @@ printValue(3)
 Question:
 Define a function that can convert a integer into a string and print it in console.
 
-Hints:
+Hint:
 
 Use str() to convert a number to string.
 
@@ -770,7 +770,7 @@ printValue(3)
 Question:
 Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
 
-Hints:
+Hint:
 
 Use int() to convert a string to integer.
 
@@ -788,7 +788,7 @@ printValue("3","4") #7
 Question:
 Define a function that can accept two strings as input and concatenate them and then print it in console.
 
-Hints:
+Hint:
 
 Use + to concatenate the strings
 
@@ -805,7 +805,7 @@ printValue("3","4") #34
 Question:
 Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print al l strings line by line.
 
-Hints:
+Hint:
 
 Use len() function to get the length of a string
 
@@ -832,7 +832,7 @@ printValue("one","three")
 Question:
 Define a function that can accept an integer number as input and print the "It is an even number" if the number is even, otherwise print "It is an odd number".
 
-Hints:
+Hint:
 
 Use % operator to check if a number is even or odd.
 
@@ -1043,7 +1043,7 @@ printList()
 2.10
 
 Question:
-Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included). 
+Define a function which can generate and print a tuple where the value is a square of numbers between 1 and 20 (both included). 
 
 Hints:
 
@@ -1069,7 +1069,7 @@ printTuple()
 Question:
 With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line. 
 
-Hints:
+Hint:
 
 Use [n1:n2] notation to get a slice from a tuple.
 
@@ -1295,7 +1295,7 @@ print aCircle.area()
 
 Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area. 
 
-Hints:
+Hint:
 
 Use def methodName(self) to define a method.
 
@@ -1321,7 +1321,7 @@ print aRectangle.area()
 
 Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
 
-Hints:
+Hint:
 
 To override a method in super class, we can define a method with the same name in the super class.
 
@@ -1392,7 +1392,7 @@ finally:
 #----------------------------------------#
 Define a custom exception class which takes a string message as attribute.
 
-Hints:
+Hint:
 
 To define a custom exception, we need to define a class inherited from Exception.
 
@@ -1441,7 +1441,7 @@ print r2.group(1)
 #----------------------------------------#
 Question:
 
-Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
+Assuming that we have some email addresses in the "username@companyname.com" format, please write a program to print the company name of a given email address. Both user names and company names are composed of letters only.
 
 Example:
 If the following email address is given as input to the program:
@@ -1484,7 +1484,7 @@ Then, the output of the program should be:
 
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Hints:
+Hint:
 
 Use re.findall() to find all substring using regex.
 
@@ -1500,7 +1500,7 @@ Question:
 
 Print a unicode string "hello world".
 
-Hints:
+Hint:
 
 Use u'strings' format to define unicode string.
 
@@ -1512,7 +1512,7 @@ print unicodeString
 #----------------------------------------#
 Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
 
-Hints:
+Hint:
 
 Use unicode() function to convert.
 
@@ -1549,7 +1549,7 @@ Then, the output of the program should be:
 
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Hints:
+Hint:
 Use float() to convert an integer to a float
 
 Solution:
@@ -1582,7 +1582,7 @@ Then, the output of the program should be:
 
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Hints:
+Hint:
 We can define recursive function in Python.
 
 Solution:
@@ -1762,7 +1762,7 @@ Please write assert statements to verify that every number in the list [2,4,6,8]
 
 
 
-Hints:
+Hint:
 Use "assert expression" to make assertion.
 
 
@@ -1803,7 +1803,7 @@ Question:
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
 
 
-Hints:
+Hint:
 Use if/elif to deal with conditions.
 
 
@@ -1838,7 +1838,7 @@ Question:
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
 
 
-Hints:
+Hint:
 Use if/elif to deal with conditions.
 
 
@@ -1874,7 +1874,7 @@ Please generate a random float where the value is between 10 and 100 using Pytho
 
 
 
-Hints:
+Hint:
 Use random.random() to generate a random float in [0,1].
 
 
@@ -1890,7 +1890,7 @@ Please generate a random float where the value is between 5 and 95 using Python 
 
 
 
-Hints:
+Hint:
 Use random.random() to generate a random float in [0,1].
 
 
@@ -1907,7 +1907,7 @@ Please write a program to output a random even number between 0 and 10 inclusive
 
 
 
-Hints:
+Hint:
 Use random.choice() to a random element from a list.
 
 
@@ -1924,7 +1924,7 @@ Please write a program to output a random number, which is divisible by 5 and 7,
 
 
 
-Hints:
+Hint:
 Use random.choice() to a random element from a list.
 
 
@@ -1943,7 +1943,7 @@ Please write a program to generate a list with 5 random numbers between 100 and 
 
 
 
-Hints:
+Hint:
 Use random.sample() to generate a list of random values.
 
 
@@ -1959,7 +1959,7 @@ Please write a program to randomly generate a list with 5 even numbers between 1
 
 
 
-Hints:
+Hint:
 Use random.sample() to generate a list of random values.
 
 
@@ -1976,7 +1976,7 @@ Please write a program to randomly generate a list with 5 numbers, which are div
 
 
 
-Hints:
+Hint:
 Use random.sample() to generate a list of random values.
 
 
@@ -1993,7 +1993,7 @@ Please write a program to randomly print a integer number between 7 and 15 inclu
 
 
 
-Hints:
+Hint:
 Use random.randrange() to a random integer in a given range.
 
 
@@ -2010,7 +2010,7 @@ Please write a program to compress and decompress the string "hello world!hello 
 
 
 
-Hints:
+Hint:
 Use zlib.compress() and zlib.decompress() to compress and decompress a string.
 
 
@@ -2029,7 +2029,7 @@ Please write a program to print the running time of execution of "1+1" for 100 t
 
 
 
-Hints:
+Hint:
 Use timeit() function to measure the running time.
 
 Solution:
@@ -2045,7 +2045,7 @@ Please write a program to shuffle and print the list [3,6,7,8].
 
 
 
-Hints:
+Hint:
 Use shuffle() function to shuffle a list.
 
 Solution:
@@ -2062,7 +2062,7 @@ Please write a program to shuffle and print the list [3,6,7,8].
 
 
 
-Hints:
+Hint:
 Use shuffle() function to shuffle a list.
 
 Solution:
@@ -2079,7 +2079,7 @@ Question:
 
 Please write a program to generate all sentences where subject is in ["I", "You"] and verb is in ["Play", "Love"] and the object is in ["Hockey","Football"].
 
-Hints:
+Hint:
 Use list[index] notation to get a element from a list.
 
 Solution:
@@ -2097,7 +2097,7 @@ for i in range(len(subjects)):
 #----------------------------------------#
 Please write a program to print the list after removing delete even numbers in [5,6,77,45,22,12,24].
 
-Hints:
+Hint:
 Use list comprehension to delete a bunch of element from a list.
 
 Solution:
@@ -2111,7 +2111,7 @@ Question:
 
 By using list comprehension, please write a program to print the list after removing delete numbers which are divisible by 5 and 7 in [12,24,35,70,88,120,155].
 
-Hints:
+Hint:
 Use list comprehension to delete a bunch of element from a list.
 
 Solution:
@@ -2142,7 +2142,7 @@ Question:
 
 By using list comprehension, please write a program generate a 3*5*8 3D array whose each element is 0.
 
-Hints:
+Hint:
 Use list comprehension to make an array.
 
 Solution:
@@ -2188,7 +2188,7 @@ Question:
 
 With two given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a program to make a list whose elements are intersection of the above given lists.
 
-Hints:
+Hint:
 Use set() and "&=" to do set intersection operation.
 
 Solution:
@@ -2298,7 +2298,7 @@ Then, the output of the program should be:
 
 ris etov ot esir
 
-Hints:
+Hint:
 Use list[::-1] to iterate a list in a reverse order.
 
 Solution:
@@ -2322,7 +2322,7 @@ Then, the output of the program should be:
 
 Helloworld
 
-Hints:
+Hint:
 Use list[::2] to iterate a list by step 2.
 
 Solution:
@@ -2338,7 +2338,7 @@ Question:
 Please write a program which prints all permutations of [1,2,3]
 
 
-Hints:
+Hint:
 Use itertools.permutations() to get permutations of list.
 
 Solution:
