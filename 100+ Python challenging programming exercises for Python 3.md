@@ -1,7 +1,7 @@
 # 100+ Python challenging programming exercises for Python 3
 
 ## 1. Level description
-### Level 1	Beginner 
+### Level 1	Beginner  
 Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
 
 ### Level 2	Intermediate 
