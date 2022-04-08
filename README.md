@@ -1,7 +1,3 @@
-# A simple Python online IDE run in browser.
-
-Hey guys I just made a simple Python online IDE run in browser : https://react-python-ide.vercel.app. It's free and opensource. Feel free to let me know if you have any issues.
-
 # Python-programming-exercises
 
 100+ Python challenge programming exercises.
@@ -9,6 +5,10 @@ Hey guys I just made a simple Python online IDE run in browser : https://react-p
 ## 100+ Python Projects Challenge 
 
 https://github.com/zhiwehu/100_plus_Python_Projects_Challenge
+
+## A simple Python online IDE run in browser.
+
+Hey guys I just made a simple Python online IDE run in browser : https://runpython.live. It's free and opensource. Feel free to let me know if you have any issues.
 
 ## Python comic
 
