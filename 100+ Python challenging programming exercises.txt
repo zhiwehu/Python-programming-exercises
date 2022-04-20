@@ -2371,5 +2371,22 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
+Question:
+
+In a regular table tennis match, the player who serves changes every time after 2 points are scored, regardless of which players scored them.
+
+Chef and Cook are playing a different match — they decided that the player who serves would change every time after K points are scored instead (again regardless of which players scored them). When the game starts, it's Chef's turn to serve.
+
+You are given the current number of points scored by Chef and Cook (P1 and P2 respectively). Find out whether Chef or Cook has to serve next.
+
+Solution:
+
+n=int(input())
+for i in range(n):
+    a=list(map(int,input().split()))
+    if(((a[0]+a[1])//a[2])%2==0):
+        print('CHEF')
+    else:
+        print('COOK')
 
 
