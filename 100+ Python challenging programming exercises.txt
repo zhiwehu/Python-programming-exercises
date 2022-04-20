@@ -3,8 +3,8 @@
 1.	Level description
 Level	Description
 Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
-Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
-Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
+Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems that may involve 3 or 4 Python classes or functions. The answers cannot be directly found in the textbooks.
+Level 3	Advanced. He should use Python to solve more complex problems using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
 
 2.	Problem template
 
@@ -41,7 +41,7 @@ Question 2
 Level 1
 
 Question:
-Write a program which can compute the factorial of a given numbers.
+Write a program which can compute the factorial of a given number.
 The results should be printed in a comma-separated sequence on a single line.
 Suppose the following input is supplied to the program:
 8
@@ -90,7 +90,7 @@ Question 4
 Level 1
 
 Question:
-Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
+Write a program which accepts a sequence of comma-separated numbers from console and generates a list and a tuple which contains every number.
 Suppose the following input is supplied to the program:
 34,67,55,33,12,98
 Then, the output should be:
@@ -99,7 +99,7 @@ Then, the output should be:
 
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
-tuple() method can convert list to tuple
+tuple() method can convert a list to a tuple
 
 Solution:
 values=raw_input()
@@ -117,7 +117,7 @@ Question:
 Define a class which has at least two methods:
 getString: to get a string from console input
 printString: to print the string in upper case.
-Also please include simple test function to test the class methods.
+Also please include a simple test function to test the class methods.
 
 Hints:
 Use __init__ method to construct some parameters
@@ -149,7 +149,7 @@ Following are the fixed values of C and H:
 C is 50. H is 30.
 D is the variable whose values should be input to your program in a comma-separated sequence.
 Example
-Let us assume the following comma separated input sequence is given to the program:
+Let us assume the following comma-separated input sequence is given to the program:
 100,150,180
 The output of the program should be:
 18,22,24
@@ -176,7 +176,7 @@ Question 7
 Level 2
 
 Question:
-Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
+Write a program that takes 2 digits, X, Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
 Note: i=0,1.., X-1; j=0,1,¡­Y-1.
 Example
 Suppose the following inputs are given to the program:
@@ -206,7 +206,7 @@ Question 8
 Level 2
 
 Question:
-Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
+Write a program that accepts a comma-separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
 Suppose the following input is supplied to the program:
 without,hello,bag,world
 Then, the output should be:
@@ -226,7 +226,7 @@ Question 9
 Level 2
 
 Question£º
-Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+Write a program that accepts sequences of lines as input and prints the lines after making all characters in the sentence capitalized.
 Suppose the following input is supplied to the program:
 Hello world
 Practice makes perfect
@@ -255,7 +255,7 @@ Question 10
 Level 2
 
 Question:
-Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
+Write a program that accepts a sequence of whitespace-separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
 Suppose the following input is supplied to the program:
 hello world and practice makes perfect and hello world again
 Then, the output should be:
@@ -263,7 +263,7 @@ again and hello makes perfect practice world
 
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
-We use set container to remove duplicated data automatically and then use sorted() to sort the data.
+We use a set container to remove duplicated data automatically and then use sorted() to sort the data.
 
 Solution:
 s = raw_input()
@@ -276,7 +276,7 @@ Question 11
 Level 2
 
 Question:
-Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma separated sequence.
+Write a program which accepts a sequence of comma-separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma-separated sequence.
 Example:
 0100,0011,1010,1001
 Then the output should be:
@@ -302,7 +302,7 @@ Question 12
 Level 2
 
 Question:
-Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
+Write a program which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
 Hints:
@@ -322,10 +322,10 @@ Question 13
 Level 2
 
 Question:
-Write a program that accepts a sentence and calculate the number of letters and digits.
+Write a program that accepts a sentence and calculates the number of letters and digits.
 Suppose the following input is supplied to the program:
 hello world! 123
-Then, the output should be:
+Then the output should be:
 LETTERS 10
 DIGITS 3
 
@@ -351,7 +351,7 @@ Question 14
 Level 2
 
 Question:
-Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+Write a program that accepts a sentence and calculates the number of upper case letters and lowercase letters.
 Suppose the following input is supplied to the program:
 Hello world!
 Then, the output should be:
@@ -422,7 +422,7 @@ Question 17
 Level 2
 
 Question:
-Write a program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following:
+Write a program that computes the net amount of a bank account based on a transaction log from console input. The transaction log format is shown as following:
 D 100
 W 200
 
@@ -469,7 +469,7 @@ Following are the criteria for checking the password:
 3. At least 1 character from [$#@]
 4. Minimum length of transaction password: 6
 5. Maximum length of transaction password: 12
-Your program should accept a sequence of comma separated passwords and will check them according to the above criteria. Passwords that match the criteria are to be printed, each separated by a comma.
+Your program should accept a sequence of comma-separated passwords and will check them according to the above criteria. Passwords that match the criteria are to be printed, each separated by a comma.
 Example
 If the following passwords are given as input to the program:
 ABd1234@1,a F1#,2w3E*,2We3345
@@ -509,7 +509,7 @@ Question 19
 Level 3
 
 Question:
-You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. The tuples are input by console. The sort criteria is:
+You are required to write a program to sort the (name, age, height) tuples by ascending order where name is a string, age and height are numbers. The tuples are input by console. The sort criteria is:
 1: Sort based on name;
 2: Then sort based on age;
 3: Then sort by score.
@@ -545,7 +545,7 @@ Question 20
 Level 3
 
 Question:
-Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
+Define a class with a generator that can iterate the numbers, which are divisible by 7, between a given range 0 and n.
 
 Hints:
 Consider use yield
@@ -568,13 +568,13 @@ Question 21
 Level 3
 
 Question£º
-A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following:
+A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given step. The trace of robot movement is shown as the following:
 UP 5
 DOWN 3
 LEFT 3
 RIGHT 2
 ¡­
-The numbers after the direction are steps. Please write a program to compute the distance from current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
+The numbers after the direction are steps. Please write a program to compute the distance from the current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
 Example:
 If the following tuples are given as input to the program:
 UP 5
@@ -653,7 +653,7 @@ Question 23
 level 1
 
 Question:
-    Write a method which can calculate square value of number
+    Write a method which can calculate the square value of a number
 
 Hints:
     Using the ** operator
@@ -671,7 +671,7 @@ Question 24
 Level 1
 
 Question:
-    Python has many built-in functions, and if you do not know how to use it, you can read document online or find some books. But Python has a built-in document function for every built-in functions.
+    Python has many built-in functions, and if you do not know how to use it, you can read documents online or find some books. But Python has a built-in document function for every built-in function.
     Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
     And add document for your own function
     
@@ -686,7 +686,7 @@ print raw_input.__doc__
 def square(num):
     '''Return the square value of the input number.
     
-    The input number must be integer.
+    The input number must be an integer.
     '''
     return num ** 2
 
@@ -699,11 +699,11 @@ Question 25
 Level 1
 
 Question:
-    Define a class, which have a class parameter and have a same instance parameter.
+    Define a class, which has a class parameter and have the same instance parameter.
 
 Hints:
-    Define a instance parameter, need add it in __init__ method
-    You can init a object with construct parameter or set the value later
+    Define an instance parameter, need to add it in __init__ method
+    You can init an object with construct parameter or set the value later
 
 Solution:
 class Person:
@@ -724,7 +724,7 @@ print "%s name is %s" % (Person.name, nico.name)
 
 #----------------------------------------#
 Question:
-Define a function which can compute the sum of two numbers.
+Define a function that can compute the sum of two numbers.
 
 Hints:
 Define a function with two numbers as arguments. You can compute the sum in the function and return the value.
@@ -737,7 +737,7 @@ print SumFunction(1,2)
 
 #----------------------------------------#
 Question:
-Define a function that can convert a integer into a string and print it in console.
+Define a function that can convert an integer into a string and print it in console.
 
 Hints:
 
@@ -752,7 +752,7 @@ printValue(3)
 
 #----------------------------------------#
 Question:
-Define a function that can convert a integer into a string and print it in console.
+Define a function that can convert an integer into a string and print it in console.
 
 Hints:
 
@@ -803,7 +803,7 @@ printValue("3","4") #34
 
 
 Question:
-Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print al l strings line by line.
+Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print all strings line by line.
 
 Hints:
 
@@ -851,12 +851,12 @@ checkValue(7)
 2.10
 
 Question:
-Define a function which can print a dictionary where the keys are numbers between 1 and 3 (both included) and the values are square of keys.
+Define a function that can print a dictionary where the keys are numbers between 1 and 3 (both included) and the values are squares of keys.
 
 Hints:
 
 Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 
 Solution
 def printDict():
@@ -877,12 +877,12 @@ printDict()
 2.10
 
 Question:
-Define a function which can print a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys.
+Define a function that can print a dictionary where the keys are numbers between 1 and 20 (both included) and the values are squares of keys.
 
 Hints:
 
 Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
 
 Solution
@@ -900,14 +900,14 @@ printDict()
 2.10
 
 Question:
-Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the values only.
+Define a function that can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are squares of keys. The function should just print the values only.
 
 Hints:
 
 Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
-Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
+Use keys() to iterate keys in the dictionary. Also, we can use item() to get key/value pairs.
 
 Solution
 def printDict():
@@ -924,7 +924,7 @@ printDict()
 2.10
 
 Question:
-Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the keys only.
+Define a function that can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are squares of keys. The function should just print the keys only.
 
 Hints:
 
@@ -971,7 +971,7 @@ printList()
 2.10
 
 Question:
-Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the first 5 elements in the list.
+Define a function that can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the first 5 elements in the list.
 
 Hints:
 
@@ -995,7 +995,7 @@ printList()
 2.10
 
 Question:
-Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the last 5 elements in the list.
+Define a function that can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the last 5 elements in the list.
 
 Hints:
 
@@ -1019,11 +1019,11 @@ printList()
 2.10
 
 Question:
-Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
+Define a function that can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
 
 Hints:
 
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
@@ -1043,11 +1043,11 @@ printList()
 2.10
 
 Question:
-Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included). 
+Define a function which can generate and print a tuple where the values are square of numbers between 1 and 20 (both included). 
 
 Hints:
 
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 Use tuple() to get a tuple from a list.
@@ -1127,7 +1127,7 @@ else:
 3.4
 
 Question:
-Write a program which can filter even numbers in a list by using filter function. The list is: [1,2,3,4,5,6,7,8,9,10].
+Write a program that can filter even numbers in a list by using the filter function. The list is: [1,2,3,4,5,6,7,8,9,10].
 
 Hints:
 
@@ -1160,7 +1160,7 @@ print squaredNumbers
 3.5
 
 Question:
-Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10].
+Write a program which can map() and filter() to make a list whose elements are squares of even numbers in [1,2,3,4,5,6,7,8,9,10].
 
 Hints:
 
@@ -1180,7 +1180,7 @@ print evenNumbers
 3.5
 
 Question:
-Write a program which can filter() to make a list whose elements are even number between 1 and 20 (both included).
+Write a program that can filter() to make a list whose elements are even numbers between 1 and 20 (both included).
 
 Hints:
 
@@ -1196,7 +1196,7 @@ print evenNumbers
 3.5
 
 Question:
-Write a program which can map() to make a list whose elements are square of numbers between 1 and 20 (both included).
+Write a program that can map() to make a list whose elements are square of numbers between 1 and 20 (both included).
 
 Hints:
 
@@ -1293,7 +1293,7 @@ print aCircle.area()
 
 7.2
 
-Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area. 
+Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method that can compute the area. 
 
 Hints:
 
@@ -1319,11 +1319,11 @@ print aRectangle.area()
 
 7.2
 
-Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
+Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as an argument. Both classes have an area function that can print the area of the shape where Shape's area is 0 by default.
 
 Hints:
 
-To override a method in super class, we can define a method with the same name in the super class.
+To override a method in the super class, we can define a method with the same name in the super class.
 
 Solution:
 
@@ -1390,7 +1390,7 @@ finally:
 
 
 #----------------------------------------#
-Define a custom exception class which takes a string message as attribute.
+Define a custom exception class that takes a string message as an attribute.
 
 Hints:
 
@@ -1413,7 +1413,7 @@ error = MyError("something wrong")
 #----------------------------------------#
 Question:
 
-Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the user name of a given email address. Both user names and company names are composed of letters only.
+Assuming that we have some email addresses in the "username@companyname.com" format, please write a program to print the user name of a given email address. Both user names and company names are composed of letters only.
 
 Example:
 If the following email address is given as input to the program:
@@ -1441,7 +1441,7 @@ print r2.group(1)
 #----------------------------------------#
 Question:
 
-Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
+Assuming that we have some email addresses in the "username@companyname.com" format, please write a program to print the company name of a given email address. Both user names and company names are composed of letters only.
 
 Example:
 If the following email address is given as input to the program:
@@ -1471,10 +1471,10 @@ print r2.group(2)
 #----------------------------------------#
 Question:
 
-Write a program which accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
+Write a program that accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
 
 Example:
-If the following words is given as input to the program:
+If the following words are given as input to the program:
 
 2 cats and 3 dogs.
 
@@ -1486,7 +1486,7 @@ In case of input data being supplied to the question, it should be assumed to be
 
 Hints:
 
-Use re.findall() to find all substring using regex.
+Use re.findall() to find all substrings using regex.
 
 Solution:
 import re
@@ -1649,7 +1649,7 @@ f(n)=0 if n=0
 f(n)=1 if n=1
 f(n)=f(n-1)+f(n-2) if n>1
 
-Please write a program using list comprehension to print the Fibonacci Sequence in comma separated form with a given n input by console.
+Please write a program using list comprehension to print the Fibonacci Sequence in comma-separated form with a given n input by console.
 
 Example:
 If the following n is given as input to the program:
@@ -1684,7 +1684,7 @@ print ",".join(values)
 
 Question:
 
-Please write a program using generator to print the even numbers between 0 and n in comma separated form while n is input by console.
+Please write a program using generator to print the even numbers between 0 and n in comma-separated form while n is input by console.
 
 Example:
 If the following n is given as input to the program:
@@ -1722,7 +1722,7 @@ print ",".join(values)
 
 Question:
 
-Please write a program using generator to print the numbers which can be divisible by 5 and 7 between 0 and n in comma separated form while n is input by console.
+Please write a program using generator to print the numbers which can be divisible by 5 and 7 between 0 and n in comma-separated form while n is input by console.
 
 Example:
 If the following n is given as input to the program:
@@ -1763,7 +1763,7 @@ Please write assert statements to verify that every number in the list [2,4,6,8]
 
 
 Hints:
-Use "assert expression" to make assertion.
+Use "assert expression" to make an assertion.
 
 
 Solution:
@@ -1776,7 +1776,7 @@ for i in li:
 #----------------------------------------#
 Question:
 
-Please write a program which accepts basic mathematic expression from console and print the evaluation result.
+Please write a program that accepts a basic mathematical expression from console and print the evaluation result.
 
 Example:
 If the following string is given as input to the program:
@@ -1972,7 +1972,7 @@ print random.sample([i for i in range(100,201) if i%2==0], 5)
 #----------------------------------------#
 Question:
 
-Please write a program to randomly generate a list with 5 numbers, which are divisible by 5 and 7 , between 1 and 1000 inclusive.
+Please write a program to randomly generate a list with 5 numbers, which are divisible by 5 and 7, between 1 and 1000 inclusive.
 
 
 
@@ -1989,7 +1989,7 @@ print random.sample([i for i in range(1,1001) if i%5==0 and i%7==0], 5)
 
 Question:
 
-Please write a program to randomly print a integer number between 7 and 15 inclusive.
+Please write a program to randomly print an integer number between 7 and 15 inclusive.
 
 
 
@@ -2025,7 +2025,7 @@ print zlib.decompress(t)
 #----------------------------------------#
 Question:
 
-Please write a program to print the running time of execution of "1+1" for 100 times.
+Please write a program to print the running time of execution of "1+1" 100 times.
 
 
 
@@ -2077,10 +2077,10 @@ print li
 #----------------------------------------#
 Question:
 
-Please write a program to generate all sentences where subject is in ["I", "You"] and verb is in ["Play", "Love"] and the object is in ["Hockey","Football"].
+Please write a program to generate all sentences where the subject is in ["I", "You"] and the verb is in ["Play", "Love"] and the object is in ["Hockey","Football"].
 
 Hints:
-Use list[index] notation to get a element from a list.
+Use list[index] notation to get an element from a list.
 
 Solution:
 
@@ -2098,7 +2098,7 @@ for i in range(len(subjects)):
 Please write a program to print the list after removing delete even numbers in [5,6,77,45,22,12,24].
 
 Hints:
-Use list comprehension to delete a bunch of element from a list.
+Use list comprehension to delete a bunch of elements from a list.
 
 Solution:
 
@@ -2112,7 +2112,7 @@ Question:
 By using list comprehension, please write a program to print the list after removing delete numbers which are divisible by 5 and 7 in [12,24,35,70,88,120,155].
 
 Hints:
-Use list comprehension to delete a bunch of element from a list.
+Use list comprehension to delete a bunch of elements from a list.
 
 Solution:
 
@@ -2127,7 +2127,7 @@ Question:
 By using list comprehension, please write a program to print the list after removing the 0th, 2nd, 4th,6th numbers in [12,24,35,70,88,120,155].
 
 Hints:
-Use list comprehension to delete a bunch of element from a list.
+Use list comprehension to delete a bunch of elements from a list.
 Use enumerate() to get (index, value) tuple.
 
 Solution:
@@ -2140,7 +2140,7 @@ print li
 
 Question:
 
-By using list comprehension, please write a program generate a 3*5*8 3D array whose each element is 0.
+By using list comprehension, please write a program to generate a 3*5*8 3D array whose each element is 0.
 
 Hints:
 Use list comprehension to make an array.
@@ -2156,7 +2156,7 @@ Question:
 By using list comprehension, please write a program to print the list after removing the 0th,4th,5th numbers in [12,24,35,70,88,120,155].
 
 Hints:
-Use list comprehension to delete a bunch of element from a list.
+Use list comprehension to delete a bunch of elements from a list.
 Use enumerate() to get (index, value) tuple.
 
 Solution:
@@ -2186,7 +2186,7 @@ print li
 #----------------------------------------#
 Question:
 
-With two given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a program to make a list whose elements are intersection of the above given lists.
+With two given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a program to make a list whose elements are the intersection of the above given lists.
 
 Hints:
 Use set() and "&=" to do set intersection operation.
@@ -2254,7 +2254,7 @@ print aFemale.getGender()
 #----------------------------------------#
 Question:
 
-Please write a program which count and print the numbers of each character in a string input by console.
+Please write a program that counts and prints the numbers of each character in a string input by console.
 
 Example:
 If the following string is given as input to the program:
@@ -2287,7 +2287,7 @@ print '\n'.join(['%s,%s' % (k, v) for k, v in dic.items()])
 
 Question:
 
-Please write a program which accepts a string from console and print it in reverse order.
+Please write a program which accepts a string from console and prints it in reverse order.
 
 Example:
 If the following string is given as input to the program:
@@ -2311,7 +2311,7 @@ print s
 
 Question:
 
-Please write a program which accepts a string from console and print the characters that have even indexes.
+Please write a program which accepts a string from console and prints the characters that have even indexes.
 
 Example:
 If the following string is given as input to the program:
@@ -2339,7 +2339,7 @@ Please write a program which prints all permutations of [1,2,3]
 
 
 Hints:
-Use itertools.permutations() to get permutations of list.
+Use itertools.permutations() to get permutations of the list.
 
 Solution:
 
@@ -2353,7 +2353,7 @@ Write a program to solve a classic ancient Chinese puzzle:
 We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
 
 Hint:
-Use for loop to iterate all possible solutions.
+Use a for loop to iterate all possible solutions.
 
 Solution:
 
@@ -2371,5 +2371,4 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
-
 
