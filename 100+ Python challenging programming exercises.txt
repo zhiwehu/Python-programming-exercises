@@ -280,7 +280,7 @@ Write a program which accepts a sequence of comma separated 4 digit binary numbe
 Example:
 0100,0011,1010,1001
 Then the output should be:
-1010
+0100,1010
 Notes: Assume the data is input by console.
 
 Hints:
