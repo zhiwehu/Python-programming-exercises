@@ -412,7 +412,7 @@ Use a list comprehension to square each odd number in a list. The list is input 
 Suppose the following input is supplied to the program:
 1,2,3,4,5,6,7,8,9
 Then, the output should be:
-1,3,5,7,9
+1,9,25,49,81
 
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
@@ -420,9 +420,9 @@ In case of input data being supplied to the question, it should be assumed to be
 Solution:
 
 ```python
-values = input()
-numbers = [x for x in values.split(",") if int(x)%2!=0]
-print(",".join(numbers))
+values = input().split(',')
+numbers = [str(int(x) ** 2) for x in values if int(x) % 2 != 0]
+print(','.join(numbers))
 ```
 
 ### Question 17
@@ -563,14 +563,12 @@ Solution:
 
 ```python
 def putNumbers(n):
-    i = 0
-    while i<n:
-        j=i
-        i=i+1
-        if j%7==0:
-            yield j
+    for i in range(n):
+        if i % 7 == 0:
+            yield i
 
-for i in reverse(100):
+
+for i in putNumbers(100):
     print(i)
 ```
 
