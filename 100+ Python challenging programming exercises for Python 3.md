@@ -1,4 +1,4 @@
-# 100+ Python challenging programming exercises for Python 3
+# 101 Python challenging programming exercises for Python 3
 
 ## 1. Level description
 ### Level 1	Beginner 
@@ -2158,4 +2158,20 @@ numlegs=94
 solutions=solve(numheads,numlegs)
 print(solutions)
 ```
+### Question 101
+Write a program to check the speed if speed is less than 70 reutrn ok 
+if speed is greater than 70 for each 5 increament add 2 demerit points and when the demerit point exceeds 12 points then suspend the liscence
+Solution:
+'''
+def speedChecker(speed): 
+    if speed < 70: 
+        print('ok') 
+    elif speed > 70: 
+        value = (speed - 70) // 5
+        print(f'your point is {value}')
+        if value > 12: 
+            print('your liscence has been suspended') 
+
+speedChecker(140) 
+'''
 
