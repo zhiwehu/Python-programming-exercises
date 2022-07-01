@@ -403,6 +403,15 @@ n3 = int( "%s%s%s" % (a,a,a) )
 n4 = int( "%s%s%s%s" % (a,a,a,a) )
 print(n1+n2+n3+n4)
 ```
+###update:
+'''python
+a = input()
+n1 = int(f"{a}"*1)
+n2 = int(f"{a}"*2)
+n3 = int(f"{a}"*3)
+n4 = int(f"{a}"*4)
+print(n1+n2+n3+n4)
+'''
 
 ### Question 16
 Level 2
