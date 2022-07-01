@@ -474,6 +474,19 @@ while True:
 print(netAmount)
 ```
 
+###update
+'''python
+deposit = 0
+withdraw = 0
+inp = input().split(" ")
+for i in range(len(inp)):
+    if inp[i] == "D":
+        deposit += int(inp[i+1])
+    elif inp[i] == "W":
+        withdraw += int(inp[i+1])
+print(deposit-withdraw)
+'''
+
 ### Question 18
 Level 3
 
