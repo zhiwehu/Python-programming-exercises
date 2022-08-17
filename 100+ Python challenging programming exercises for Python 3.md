@@ -562,16 +562,21 @@ Consider use yield
 Solution:
 
 ```python
-def putNumbers(n):
-    i = 0
-    while i<n:
-        j=i
-        i=i+1
-        if j%7==0:
-            yield j
+class generator:
 
-for i in reverse(100):
-    print(i)
+    list = []
+    def __init__(self, n):
+        self.n = n
+    
+    def listGenerator(self):
+        for i in range(1, self.n):
+            if i%7==0:
+                self.list.append(i)
+        print(self.list)
+
+n = int(input())
+obj = generator(n)
+obj.listGenerator()
 ```
 
 ### Question 21
