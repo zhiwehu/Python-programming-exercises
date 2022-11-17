@@ -1,38 +1,72 @@
 # 100+ Python challenging programming exercises for Python 3
+# 100+ Exercícios desafiadores de programação para python 3
 
 ## 1. Level description
 ### Level 1	Beginner 
 Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
 
+## 1. Descrição de nível
+### Level 1	Iniciante
+Iniciante é a pessoa que precisa passar por um curso introdutório em Python. Poderá resolver alguns problemas com 1 ou 2 aulas de classes e funções em python. Geralmente, as respostas podem ser encontradas diretamente no livro.
+
+
 ### Level 2	Intermediate 
 Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
+
+### Level 2	intermediário
+Intermediário é alguém que acabou de aprender Python, mas já possui certa experiência anterior com programação. É capaz de resolver problemas envolvendo 3 ou 3 Python classes ou funções. As respostas não podem ser encontradas diretamente no livro.
+
 
 ### Level 3	Advanced. 
 He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
 
+### Level 3	Avançado.
+Pode usar o Python para resolver problemas mais complexos usando funções de bibliotecas mais completas e estrutura de dados e algoritmos. É recomendado resolver problemas usando varios pacotes padrões em Python e técnicas avançadas.
+
+## L
+
 ----
 
 ## 2. Problem template
+## 2. Modelo de problema
 
 Question
 Hints
 Solution
 
+Pergunta
+Dica
+Resposta
+
 ----
 
 ## 3. Questions
+## 3. Perguntas
+
 
 ### Question 1
+### Pergunta 1
 Level 1
 
 Question:
 Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
+Pergunta:
+Escreva um programa que irá achar todos os números divisiveis por 7 mas que não são multiplos de 5, entre 2000 e 3200(ambos inclusos).
+Os números obtidos devem ser imprimidos com uma vírgula separando-os em uma única linha.
+
+
 Hints: 
 Consider use range(#begin, #end) method
 
+Dica:
+Considere usar range(#início, #fim) método
+
+
 Solution:
+Solução:
+
 ```python
 l=[]
 for i in range(2000, 3201):
@@ -43,6 +77,7 @@ print(','.join(l))
 ```
 
 ### Question 2
+### Pergunta 2
 Level 1
 
 Question:
@@ -53,10 +88,25 @@ Suppose the following input is supplied to the program:
 Then, the output should be:
 40320
 
+Pergunta:
+Escreva um programa que calcule o fatorial de um número dado.
+Os resultados devem ser imprimidos em uma sequencia separada por vírgula em uma única linha.
+Imagine que esse valor foi dado ao programa:
+8
+Assim sua saída será:
+40320
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dica:
+Em caso da entrada de um valor para solução do problema, deverá ser assumido como uma entrada no console.
+
+
 Solution:
+Resposta:
+
 ```python
 def fact(x):
     if x == 0:
@@ -68,6 +118,7 @@ print(fact(x))
 ```
 
 ### Question 3
+### Pergunta 3
 Level 1
 
 Question:
@@ -77,11 +128,24 @@ Suppose the following input is supplied to the program:
 Then, the output should be:
 {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
 
+Pergunta:
+Dado um número integral n, escreva um programa para gerar um dicionário que tenha (i, i*i) tal como um número integral entre 1 e n (ambos incluidos). Então o programa deverá imprimir o dicionário.
+Imagine que o número abaixo foi fornecido para o programa:
+8
+Assim a saída será:
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 Consider use dict()
 
+Dica:
+No caso de um valor inserido, deverá ser assumido como uma entrada de console.
+
 Solution:
+Resposta:
+
 ```python
 n=int(input())
 d=dict()
@@ -92,6 +156,7 @@ print(d)
 ```
 
 ### Question 4
+### Pergunta 4
 Level 1
 
 Question:
@@ -102,11 +167,26 @@ Then, the output should be:
 ['34', '67', '55', '33', '12', '98']
 ('34', '67', '55', '33', '12', '98')
 
+Pergunta:
+Escreva um programa que aceite uma sequencia de números separados por vírgula do console e gere uma lista e uma tupla que contenha todos os números.
+Imagine os valores fornecidos ao programa:
+34,67,55,33,12,98
+Assim a saída do programa será:
+['34', '67', '55', '33', '12', '98']
+('34', '67', '55', '33', '12', '98')
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 tuple() method can convert list to tuple
 
+Dica:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+O método tuple() pode converter uma lista para tupla.
+
 Solution:
+Resposta:
+
 ```python
 values=input()
 l=values.split(",")
@@ -116,6 +196,7 @@ print(t)
 ```
 
 ### Question 5
+### Pergunta 5
 Level 1
 
 Question:
@@ -124,10 +205,23 @@ getString: to get a string from console input
 printString: to print the string in upper case.
 Also please include simple test function to test the class methods.
 
+Pergunta:
+Defina uma classe que tenha  no mínimo dois métodos:
+getString: para obter uma string da entrada do console
+printString: para imprimir a string em letras maiusculas.
+Além disso por favor inclua uma função de teste simples para o métodos da classe.
+
+
 Hints:
 Use __init__ method to construct some parameters
 
+Dica:
+Use o método __init__ para construir alguns parâmetros
+
+
 Solution:
+Resposta:
+
 ```python
 class InputOutString(object):
     def __init__(self):
@@ -145,6 +239,7 @@ strObj.printString()
 ```
 
 ### Question 6
+### Pergunta 6
 Level 2
 
 Question:
@@ -159,11 +254,30 @@ Let us assume the following comma separated input sequence is given to the progr
 The output of the program should be:
 18,22,24
 
+Pergunta:
+Escreva um programa que calcule e imprima o valor de acordo com a formula:
+Q = Raiz quadrada de [(2 * C * D)/H]
+Seguido pela correção dos valores de C e H:
+C é igual a 50. H é igual a 30.
+D é uma variável cujo valor deve ser colocado no programa em uma sequência separada por vírgula.
+Exemplo
+Vamos assumir que a seguinte sequência de entrada separada por vírgula é fornecida ao programa:
+100,150,100
+O valor de saída será:
+18,22,24
+
+
 Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
-In case of input data being supplied to the question, it should be assumed to be a console input. 
+In case of input data being supplied to the question, it should be assumed to be a console input.
+
+Dica:
+Se o valor de saída for decimal, deve ser arredondado para o valor mais próximo (por exemplo, se a saída recebida for 26.0, deve ser impresso como 26)
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
 
 Solution:
+Resposta:
+
 ```python
 import math
 c=50
