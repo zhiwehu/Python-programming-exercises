@@ -65,7 +65,7 @@ Considere usar range(#início, #fim) método
 
 
 Solution:
-Solução:
+Resposta:
 
 ```python
 l=[]
@@ -275,6 +275,7 @@ Dica:
 Se o valor de saída for decimal, deve ser arredondado para o valor mais próximo (por exemplo, se a saída recebida for 26.0, deve ser impresso como 26)
 No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
 
+
 Solution:
 Resposta:
 
@@ -291,6 +292,7 @@ print(','.join(value))
 ```
 
 ### Question 7
+### Pergunta 7 
 Level 2
 
 Question:
@@ -300,12 +302,27 @@ Example
 Suppose the following inputs are given to the program:
 3,5
 Then, the output of the program should be:
-[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+
+Pergunta:
+Escreva um programa que receba 2 dígitos, X,Y como entrada e gere um array bidimensional. O valor do elemento na linha i-th e na coluna j-th de matriz deve ser i*j.
+Nota: i=0,1.., X-1; j=0,1,¡­Y-1.
+Exemplo
+Suponha que as seguintes entradas sejam dadas ao programa:
+3,5
+Então, a saída do programa deve ser:
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
 
 Hints:
 Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
 
+Dica:
+Nota: No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console em um formato separado por vírgula.
+
+
 Solution:
+Resposta:
+
 ```python
 input_str = input()
 dimensions=[int(x) for x in input_str.split(',')]
@@ -334,6 +351,8 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
+Resposta:
+
 ```python
 items=[x for x in input().split(',')]
 items.sort()
@@ -341,6 +360,7 @@ print(','.join(items))
 ```
 
 ### Question 9
+### Pergunta 9
 Level 2
 
 Question£º
@@ -352,10 +372,26 @@ Then, the output should be:
 HELLO WORLD
 PRACTICE MAKES PERFECT
 
+Pergunta £º
+Escreva um programa que aceite uma sequência de linhas como entrada e imprima as linhas depois de colocar todos os caracteres da frase em maiúsculas.
+Suponha que a seguinte entrada seja fornecida ao programa:
+Olá Mundo
+A prática leva à perfeição
+Então, a saída deve ser:
+OLÁ MUNDO
+A PRÁTICA LEVA À PERFEIÇÃO
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dica:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+
+
 Solution:
+Resposta:
+
 ```python
 lines = []
 while True:
@@ -370,6 +406,7 @@ for sentence in lines:
 ```
 
 ### Question 10
+### Pergunta 10
 Level 2
 
 Question:
@@ -379,11 +416,25 @@ hello world and practice makes perfect and hello world again
 Then, the output should be:
 again and hello makes perfect practice world
 
+Pergunta:
+Escreva um programa que aceite uma sequência de palavras separadas por espaços em branco como entrada e imprima as palavras após remover todas as palavras duplicadas e classificá-las alfanumericamente.
+Suponha que a seguinte entrada seja fornecida ao programa:
+olá mundo e a prática leva a perfeição e olá mundo novamente
+Então, a saída deve ser:
+novamente e olá torna o mundo de prática perfeito
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use set container to remove duplicated data automatically and then use sorted() to sort the data.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+Usamos set container para remover dados duplicados automaticamente e, em seguida, usamos sorted() para classificar os dados.
+
 Solution:
+Resposta:
+
 ```python
 s = input()
 words = [word for word in s.split(" ")]
@@ -391,6 +442,7 @@ print(" ".join(sorted(list(set(words)))))
 ```
 
 ### Question 11
+### Pergunta 11
 Level 2
 
 Question:
@@ -401,10 +453,25 @@ Then the output should be:
 1010
 Notes: Assume the data is input by console.
 
+Pergunta:
+Escreva um programa que aceite uma sequência de números binários de 4 dígitos separados por vírgulas como entrada e verifique se eles são divisíveis por 5 ou não. Os números que são divisíveis por 5 devem ser impressos em uma sequência separada por vírgulas.
+Exemplo:
+0100,0011,1010,1001
+Então a saída deve ser:
+1010
+Notas: Suponha que os dados sejam inseridos pelo console.
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+
+
 Solution:
+Resposta:
+
 ```python
 value = []
 items=[x for x in input().split(',')]
@@ -417,16 +484,28 @@ print(','.join(value))
 ```
 
 ### Question 12
+### Pergunta 12
 Level 2
 
 Question:
 Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
+Pergunta:
+Escreva um programa que encontre todos os números entre 1.000 e 3.000 (ambos incluídos), de modo que cada dígito do número seja um número par.
+Os números obtidos devem ser impressos em uma sequência separada por vírgulas em uma única linha.
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+
+
 Solution:
+Resposta:
+
 ```python
 values = []
 for i in range(1000, 3001):
@@ -437,6 +516,7 @@ print(",".join(values))
 ```
 
 ### Question 13
+### Pergunta 13
 Level 2
 
 Question:
@@ -447,10 +527,25 @@ Then, the output should be:
 LETTERS 10
 DIGITS 3
 
+Pergunta:
+Escreva um programa que aceite uma sentença e calcule o número de letras e dígitos.
+Suponha que a seguinte entrada seja fornecida ao programa:
+Olá Mundo! 123
+Então, a saída deve ser:
+CARTAS 10
+DÍGITOS 3
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+
+
 Solution:
+Resposta:
+
 ```python
 s = input()
 d={"DIGITS":0, "LETTERS":0}
@@ -466,6 +561,7 @@ print("DIGITS", d["DIGITS"])
 ```
 
 ### Question 14
+### Pergunta 14
 Level 2
 
 Question:
@@ -476,10 +572,25 @@ Then, the output should be:
 UPPER CASE 1
 LOWER CASE 9
 
+Pergunta:
+Escreva um programa que aceite uma sentença e calcule o número de letras maiúsculas e minúsculas.
+Suponha que a seguinte entrada seja fornecida ao programa:
+Olá Mundo!
+Então, a saída deve ser:
+MAIÚSCULAS 1
+CAIXA MINÚSCULA 9
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+
+
 Solution:
+Resposta:
+
 ```python
 s = input()
 d={"UPPER CASE":0, "LOWER CASE":0}
@@ -495,6 +606,7 @@ print("LOWER CASE", d["LOWER CASE"])
 ```
 
 ### Question 15
+### Pergunta 15
 Level 2
 
 Question:
@@ -504,10 +616,23 @@ Suppose the following input is supplied to the program:
 Then, the output should be:
 11106
 
+Pergunta:
+Escreva um programa que calcule o valor de a+aa+aaa+aaaa com um dado dígito como o valor de a.
+Suponha que a seguinte entrada seja fornecida ao programa:
+9
+Então, a saída deve ser:
+11106
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+
+
 Solution:
+Resposta:
 
 ```python
 a = input()
@@ -519,6 +644,8 @@ print(n1+n2+n3+n4)
 ```
 
 ### Question 16
+### Pergunta 16
+
 Level 2
 
 Question:
@@ -528,10 +655,23 @@ Suppose the following input is supplied to the program:
 Then, the output should be:
 1,3,5,7,9
 
+Pergunta:
+Use uma compreensão de lista para elevar ao quadrado cada número ímpar em uma lista. A lista é inserida por uma sequência de números separados por vírgulas.
+Suponha que a seguinte entrada seja fornecida ao programa:
+1,2,3,4,5,6,7,8,9
+Então, a saída deve ser:
+1,3,5,7,9
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+
+
 Solution:
+Resposta: 
 
 ```python
 values = input()
@@ -540,6 +680,7 @@ print(",".join(numbers))
 ```
 
 ### Question 17
+#Pergunta 17
 Level 2
 
 Question:
@@ -556,10 +697,30 @@ D 100
 Then, the output should be:
 500
 
+Pergunta:
+Escreva um programa que calcule o valor líquido de uma conta bancária com base em um log de transação da entrada do console. O formato do log de transações é mostrado a seguir:
+D 100
+W 200
+
+D significa depósito enquanto W significa retirada.
+Suponha que a seguinte entrada seja fornecida ao programa:
+D 300
+D 300
+W 200
+D 100
+Então, a saída deve ser:
+500
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+
+
 Solution:
+Resposta:
 
 ```python
 netAmount = 0
@@ -580,6 +741,7 @@ print(netAmount)
 ```
 
 ### Question 18
+### Pergunta 18
 Level 3
 
 Question:
@@ -598,10 +760,31 @@ ABd1234@1,a F1#,2w3E*,2We3345
 Then, the output of the program should be:
 ABd1234@1
 
+Pergunta:
+Um site exige que os usuários insiram nome de usuário e senha para se registrar. Escreva um programa para verificar a validade da entrada de senha pelos usuários.
+A seguir estão os critérios para verificar a senha:
+1. Pelo menos 1 letra entre [a-z]
+2. Pelo menos 1 número entre [0-9]
+1. Pelo menos 1 letra entre [A-Z]
+3. Pelo menos 1 caractere de [$#@]
+4. Comprimento mínimo da senha da transação: 6
+5. Comprimento máximo da senha da transação: 12
+Seu programa deve aceitar uma sequência de senhas separadas por vírgulas e as verificará de acordo com os critérios acima. As senhas que correspondem aos critérios devem ser impressas, cada uma separada por uma vírgula.
+Exemplo
+Se as seguintes senhas forem fornecidas como entrada para o programa:
+ABd1234@1,a F1#,2w3E*,2We3345
+Então, a saída do programa deve ser:
+ABd1234@1
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+
+
 Solutions:
+Resposta:
 
 ```python
 import re
@@ -629,6 +812,7 @@ print(",".join(value))
 ```
 
 ### Question 19
+### Pergunta 19
 Level 3
 
 Question:
@@ -646,11 +830,34 @@ Json,21,85
 Then, the output of the program should be:
 [('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
 
+Pergunta:
+Você deve escrever um programa para classificar as tuplas (nome, idade, altura) em ordem crescente, onde nome é string, idade e altura são números. As tuplas são inseridas pelo console. O critério de ordenação é:
+1: Classifique com base no nome;
+2: Em seguida, classifique com base na idade;
+3: Em seguida, classifique por pontuação.
+A prioridade é esse nome > idade > pontuação.
+Se as seguintes tuplas forem dadas como entrada para o programa:
+tom,19,80
+João,20,90
+Jony,17,91
+Jony,17,93
+Json,21,85
+Então, a saída do programa deve ser:
+[('João', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21 ', '85'), ('Tom', '19', '80')]
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use itemgetter to enable multiple sort keys.
 
+Dicas:
+No caso de dados de entrada serem fornecidos à pergunta, deve-se presumir que seja uma entrada do console.
+Usamos o itemgetter para ativar várias chaves de classificação.
+
+
 Solutions:
+Resposta:
+
 from operator import itemgetter, attrgetter
 
 ```python
@@ -665,15 +872,25 @@ print(sorted(l, key=itemgetter(0,1,2)))
 ```
 
 ### Question 20
+### Pergunta 20
 Level 3
 
 Question:
 Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
 
+Pergunta:
+Defina uma classe com um gerador que possa iterar os números, que são divisíveis por 7, entre um determinado intervalo de 0 e n.
+
+
 Hints:
 Consider use yield
 
+Dicas:
+Considere o rendimento de uso
+
+
 Solution:
+Resposta:
 
 ```python
 def putNumbers(n):
