@@ -32,7 +32,10 @@ The numbers obtained should be printed in a comma-separated sequence on a single
 Hints: 
 Consider use range(#begin, #end) method
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 l=[]
 for i in range(2000, 3201):
@@ -41,6 +44,8 @@ for i in range(2000, 3201):
 
 print(','.join(l))
 ```
+
+</details>
 
 ### Question 2
 Level 1
@@ -56,7 +61,10 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 def fact(x):
     if x == 0:
@@ -66,6 +74,8 @@ def fact(x):
 x=int(input())
 print(fact(x))
 ```
+
+</details>
 
 ### Question 3
 Level 1
@@ -81,7 +91,10 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 Consider use dict()
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 n=int(input())
 d=dict()
@@ -90,6 +103,8 @@ for i in range(1,n+1):
 
 print(d)
 ```
+
+</details>
 
 ### Question 4
 Level 1
@@ -106,7 +121,10 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 tuple() method can convert list to tuple
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 values=input()
 l=values.split(",")
@@ -114,6 +132,8 @@ t=tuple(l)
 print(l)
 print(t)
 ```
+
+</details>
 
 ### Question 5
 Level 1
@@ -127,7 +147,10 @@ Also please include simple test function to test the class methods.
 Hints:
 Use __init__ method to construct some parameters
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 class InputOutString(object):
     def __init__(self):
@@ -143,6 +166,8 @@ strObj = InputOutString()
 strObj.getString()
 strObj.printString()
 ```
+
+</details>
 
 ### Question 6
 Level 2
@@ -163,7 +188,10 @@ Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
 In case of input data being supplied to the question, it should be assumed to be a console input. 
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import math
 c=50
@@ -175,6 +203,8 @@ for d in items:
 
 print(','.join(value))
 ```
+
+</details>
 
 ### Question 7
 Level 2
@@ -191,7 +221,10 @@ Then, the output of the program should be:
 Hints:
 Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 input_str = input()
 dimensions=[int(x) for x in input_str.split(',')]
@@ -206,6 +239,8 @@ for row in range(rowNum):
 print(multilist)
 ```
 
+</details>
+
 ### Question 8
 Level 2
 
@@ -219,12 +254,17 @@ bag,hello,without,world
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 items=[x for x in input().split(',')]
 items.sort()
 print(','.join(items))
 ```
+
+</details>
 
 ### Question 9
 Level 2
@@ -241,7 +281,10 @@ PRACTICE MAKES PERFECT
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 lines = []
 while True:
@@ -254,6 +297,8 @@ while True:
 for sentence in lines:
     print(sentence)
 ```
+
+</details>
 
 ### Question 10
 Level 2
@@ -269,12 +314,17 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use set container to remove duplicated data automatically and then use sorted() to sort the data.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 s = input()
 words = [word for word in s.split(" ")]
 print(" ".join(sorted(list(set(words)))))
 ```
+
+</details>
 
 ### Question 11
 Level 2
@@ -290,7 +340,10 @@ Notes: Assume the data is input by console.
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 value = []
 items=[x for x in input().split(',')]
@@ -302,6 +355,8 @@ for p in items:
 print(','.join(value))
 ```
 
+</details>
+
 ### Question 12
 Level 2
 
@@ -312,7 +367,10 @@ The numbers obtained should be printed in a comma-separated sequence on a single
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 values = []
 for i in range(1000, 3001):
@@ -321,6 +379,8 @@ for i in range(1000, 3001):
         values.append(s)
 print(",".join(values))
 ```
+
+</details>
 
 ### Question 13
 Level 2
@@ -336,7 +396,10 @@ DIGITS 3
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 s = input()
 d={"DIGITS":0, "LETTERS":0}
@@ -350,6 +413,8 @@ for c in s:
 print("LETTERS", d["LETTERS"])
 print("DIGITS", d["DIGITS"])
 ```
+
+</details>
 
 ### Question 14
 Level 2
@@ -365,7 +430,10 @@ LOWER CASE 9
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 s = input()
 d={"UPPER CASE":0, "LOWER CASE":0}
@@ -380,6 +448,8 @@ print("UPPER CASE", d["UPPER CASE"])
 print("LOWER CASE", d["LOWER CASE"])
 ```
 
+</details>
+
 ### Question 15
 Level 2
 
@@ -393,7 +463,10 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 
 ```python
 a = input()
@@ -403,6 +476,8 @@ n3 = int( "%s%s%s" % (a,a,a) )
 n4 = int( "%s%s%s%s" % (a,a,a,a) )
 print(n1+n2+n3+n4)
 ```
+
+</details>
 
 ### Question 16
 Level 2
@@ -417,13 +492,18 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 
 ```python
 values = input()
 numbers = [x for x in values.split(",") if int(x)%2!=0]
 print(",".join(numbers))
 ```
+
+</details>
 
 ### Question 17
 Level 2
@@ -445,7 +525,10 @@ Then, the output should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 
 ```python
 netAmount = 0
@@ -464,6 +547,8 @@ while True:
         pass
 print(netAmount)
 ```
+
+</details>
 
 ### Question 18
 Level 3
@@ -514,6 +599,8 @@ for p in items:
 print(",".join(value))
 ```
 
+</details>
+
 ### Question 19
 Level 3
 
@@ -550,6 +637,8 @@ while True:
 print(sorted(l, key=itemgetter(0,1,2)))
 ```
 
+</details>
+
 ### Question 20
 Level 3
 
@@ -559,7 +648,10 @@ Define a class with a generator which can iterate the numbers, which are divisib
 Hints:
 Consider use yield
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 
 ```python
 def putNumbers(n):
@@ -573,6 +665,8 @@ def putNumbers(n):
 for i in reverse(100):
     print(i)
 ```
+
+</details>
 
 ### Question 21
 Level 3
@@ -597,7 +691,10 @@ Then, the output of the program should be:
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 
 ```python
 import math
@@ -623,6 +720,8 @@ while True:
 print(int(round(math.sqrt(pos[1]**2+pos[0]**2))))
 ```
 
+</details>
+
 ### Question 22
 Level 3
 
@@ -646,7 +745,10 @@ to:1
 Hints
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 
 ```python
 freq = {}   # frequency of words in text
@@ -661,6 +763,8 @@ for w in words:
     print("%s:%d" % (w,freq[w]))
 ```
 
+</details>
+
 ### Question 23
 level 1
 
@@ -670,7 +774,10 @@ Write a method which can calculate square value of number
 Hints:
 Using the ** operator
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 
 ```python
 def square(num):
@@ -679,6 +786,8 @@ def square(num):
 print(square(2))
 print(square(3))
 ```
+
+</details>
 
 ### Question 24
 Level 1
@@ -693,7 +802,10 @@ And add document for your own function
 Hints:
 The built-in document method is __doc__
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 print(abs.__doc__)
 print(int.__doc__)
@@ -708,6 +820,8 @@ def square(num):
 
 print(square(2))
 print(square.__doc__)
+
+</details>
 ```
 ### Question 25
 Level 1
@@ -719,7 +833,10 @@ Hints:
 Define a instance parameter, need add it in __init__ method
 You can init a object with construct parameter or set the value later
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 class Person:
     # Define the class parameter "name"
@@ -737,13 +854,17 @@ nico.name = "Nico"
 print("%s name is %s" % (Person.name, nico.name))
 ```
 
+</details>
+
 ### Question 26:
 Define a function which can compute the sum of two numbers.
 
 Hints:
 Define a function with two numbers as arguments. You can compute the sum in the function and return the value.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 
 ```python
 def SumFunction(number1, number2):
@@ -752,6 +873,8 @@ def SumFunction(number1, number2):
 print(SumFunction(1,2))
 ```
 
+</details>
+
 ### Question 27
 Define a function that can convert a integer into a string and print it in console.
 
@@ -759,13 +882,17 @@ Hints:
 
 Use str() to convert a number to string.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printValue(n):
     print(str(n))
 
 printValue(3)
 ```
+
+</details>
 
 ### Question 28
 Define a function that can convert a integer into a string and print it in console.
@@ -774,13 +901,17 @@ Hints:
 
 Use str() to convert a number to string.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printValue(n):
     print(str(n))
 
 printValue(3)
 ```
+
+</details>
 
 ### Question 29
 Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
@@ -789,13 +920,17 @@ Hints:
 
 Use int() to convert a string to integer.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printValue(s1,s2):
     print(int(s1)+int(s2))
 
 printValue("3","4")
 ```
+
+</details>
 
 ### Question 30
 Define a function that can accept two strings as input and concatenate them and then print it in console.
@@ -804,13 +939,17 @@ Hints:
 
 Use + to concatenate the strings
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printValue(s1,s2):
     print(s1+s2)
 
 printValue("3","4") #34
 ```
+
+</details>
 
 ### Question 31
 Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print al l strings line by line.
@@ -819,7 +958,9 @@ Hints:
 
 Use len() function to get the length of a string
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printValue(s1,s2):
     len1 = len(s1)
@@ -834,6 +975,8 @@ def printValue(s1,s2):
         
 printValue("one","three")
 
+
+</details>
 ```
 ### Question 32
 Define a function that can accept an integer number as input and print the "It is an even number" if the number is even, otherwise print "It is an odd number".
@@ -842,7 +985,9 @@ Hints:
 
 Use % operator to check if a number is even or odd.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def checkValue(n):
     if n%2 == 0:
@@ -852,6 +997,8 @@ def checkValue(n):
         
 checkValue(7)
 
+</details>
+
 ### Question 33
 Define a function which can print a dictionary where the keys are numbers between 1 and 3 (both included) and the values are square of keys.
 
@@ -860,8 +1007,7 @@ Hints:
 Use dict[key]=value pattern to put entry into a dictionary.
 Use ** operator to get power of a number.
 
-Solution
-​```python
+<detailsython
 def printDict():
     d=dict()
     d[1]=1
@@ -870,6 +1016,8 @@ def printDict():
     print(d)
         
 printDict()
+
+</details>
 ```
 ### Question 34
 Define a function which can print a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys.
@@ -880,7 +1028,9 @@ Use dict[key]=value pattern to put entry into a dictionary.
 Use ** operator to get power of a number.
 Use range() for loops.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printDict():
 	d=dict()
@@ -890,6 +1040,8 @@ def printDict():
 
 printDict()
 ```
+
+</details>
 
 ### Question 35
 Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the values only.
@@ -901,7 +1053,9 @@ Use ** operator to get power of a number.
 Use range() for loops.
 Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printDict():
 	d=dict()
@@ -913,6 +1067,8 @@ def printDict():
 printDict()
 ```
 
+</details>
+
 ### Question 36
 Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the keys only.
 
@@ -923,7 +1079,9 @@ Use ** operator to get power of a number.
 Use range() for loops.
 Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printDict():
 	d=dict()
@@ -935,6 +1093,8 @@ def printDict():
 printDict()
 ```
 
+</details>
+
 ### Question 37
 Define a function which can generate and print a list where the values are square of numbers between 1 and 20 (both included).
 
@@ -944,7 +1104,9 @@ Use ** operator to get power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printList():
 	li=list()
@@ -953,6 +1115,8 @@ def printList():
 	print(li)
 
 printList()
+
+</details>
 ```
 ### Question 38
 Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the first 5 elements in the list.
@@ -964,7 +1128,9 @@ Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printList():
 	li=list()
@@ -974,6 +1140,8 @@ def printList():
 
 printList()
 ```
+
+</details>
 
 ### Question 39
 Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the last 5 elements in the list.
@@ -985,7 +1153,9 @@ Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printList():
 	li=list()
@@ -994,6 +1164,8 @@ def printList():
 	print(li[-5:])
 
 printList()
+
+</details>
 ```
 ### Question 40
 Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
@@ -1005,7 +1177,9 @@ Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printList():
 	li=list()
@@ -1015,6 +1189,8 @@ def printList():
 
 printList()
 ```
+
+</details>
 
 ### Question 41
 Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included). 
@@ -1026,7 +1202,9 @@ Use range() for loops.
 Use list.append() to add values into a list.
 Use tuple() to get a tuple from a list.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 def printTuple():
 	li=list()
@@ -1035,6 +1213,8 @@ def printTuple():
 	print(tuple(li))
 		
 printTuple()
+
+</details>
 ```
 ### Question 42
 With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line. 
@@ -1043,7 +1223,9 @@ Hints:
 
 Use [n1:n2] notation to get a slice from a tuple.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 tp=(1,2,3,4,5,6,7,8,9,10)
 tp1=tp[:5]
@@ -1051,6 +1233,8 @@ tp2=tp[5:]
 print(tp1)
 print(tp2)
 ```
+
+</details>
 
 ### Question 43
 Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10). 
@@ -1060,7 +1244,9 @@ Hints:
 Use "for" to iterate the tuple
 Use tuple() to generate a tuple from a list.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 tp=(1,2,3,4,5,6,7,8,9,10)
 li=list()
@@ -1070,6 +1256,8 @@ for i in tp:
 
 tp2=tuple(li)
 print(tp2)
+
+</details>
 ```
 ### Question 44
 Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
@@ -1078,13 +1266,17 @@ Hints:
 
 Use if statement to judge condition.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 s= raw_input()
 if s=="yes" or s=="YES" or s=="Yes":
     print "Yes"
 else:
     print "No"
+
+</details>
 ```
 ### Question 45
 Write a program which can filter even numbers in a list by using filter function. The list is: [1,2,3,4,5,6,7,8,9,10].
@@ -1094,12 +1286,16 @@ Hints:
 Use filter() to filter some elements in a list.
 Use lambda to define anonymous functions.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 li = [1,2,3,4,5,6,7,8,9,10]
 evenNumbers = filter(lambda x: x%2==0, li)
 print(evenNumbers)
 ```
+
+</details>
 
 ### Question 46
 Write a program which can map() to make a list whose elements are square of elements in [1,2,3,4,5,6,7,8,9,10].
@@ -1108,12 +1304,16 @@ Hints
 Use map() to generate a list.
 Use lambda to define anonymous functions.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 li = [1,2,3,4,5,6,7,8,9,10]
 squaredNumbers = map(lambda x: x**2, li)
 print(squaredNumbers)
 ```
+
+</details>
 
 ### Question 47
 Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10].
@@ -1123,11 +1323,15 @@ Use map() to generate a list.
 Use filter() to filter elements of a list.
 Use lambda to define anonymous functions.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 li = [1,2,3,4,5,6,7,8,9,10]
 evenNumbers = map(lambda x: x**2, filter(lambda x: x%2==0, li))
 print(evenNumbers)
+
+</details>
 ```
 ### Question 48
 Write a program which can filter() to make a list whose elements are even number between 1 and 20 (both included).
@@ -1137,11 +1341,15 @@ Hints:
 Use filter() to filter elements of a list.
 Use lambda to define anonymous functions.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 evenNumbers = filter(lambda x: x%2==0, range(1,21))
 print(evenNumbers)
 ```
+
+</details>
 
 ### Question 49
 Write a program which can map() to make a list whose elements are square of numbers between 1 and 20 (both included).
@@ -1150,11 +1358,15 @@ Hints
 Use map() to generate a list.
 Use lambda to define anonymous functions.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 squaredNumbers = map(lambda x: x**2, range(1,21))
 print(squaredNumbers)
 ```
+
+</details>
 
 ### Question 50
 Define a class named American which has a static method called printNationality.
@@ -1162,7 +1374,9 @@ Define a class named American which has a static method called printNationality.
 Hints:
 Use @staticmethod decorator to define class static method.
 
-Solution
+<details>
+
+<summary>Solution:</summary>
 ```python
 class American(object):
     @staticmethod
@@ -1174,6 +1388,8 @@ anAmerican.printNationality()
 American.printNationality()
 ```
 
+</details>
+
 ### Question 51
 Define a class named American and its subclass NewYorker. 
 
@@ -1181,7 +1397,10 @@ Hints:
 
 Use class Subclass(ParentClass) to define a subclass.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 class American(object):
     pass
@@ -1195,6 +1414,8 @@ print(anAmerican)
 print(aNewYorker)
 ```
 
+</details>
+
 ### Question 52
 Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area. 
 
@@ -1202,7 +1423,10 @@ Hints:
 
 Use def methodName(self) to define a method.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 class Circle(object):
     def __init__(self, r):
@@ -1215,6 +1439,8 @@ aCircle = Circle(2)
 print aCircle.area()
 ```
 
+</details>
+
 ### Question 53
 Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area. 
 
@@ -1222,7 +1448,10 @@ Hints:
 
 Use def methodName(self) to define a method.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 class Rectangle(object):
     def __init__(self, l, w):
@@ -1236,6 +1465,8 @@ aRectangle = Rectangle(2,10)
 print(aRectangle.area())
 ```
 
+</details>
+
 ### Question 54
 Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
 
@@ -1243,7 +1474,10 @@ Hints:
 
 To override a method in super class, we can define a method with the same name in the super class.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 class Shape(object):
     def __init__(self):
@@ -1264,6 +1498,8 @@ aSquare= Square(3)
 print(aSquare.area())
 ```
 
+</details>
+
 ### Question 55
 Please raise a RuntimeError exception.
 
@@ -1271,11 +1507,16 @@ Hints:
 
 Use raise() to raise an exception.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 
 ```python
 raise RuntimeError('something wrong')
 ```
+
+</details>
 
 ### Question 56
 Write a function to compute 5/0 and use try/except to catch the exceptions.
@@ -1284,7 +1525,10 @@ Hints:
 
 Use try/except to catch exceptions.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 def throws():
     return 5/0
@@ -1299,6 +1543,8 @@ finally:
     print('In finally block for cleanup')
 ```
 
+</details>
+
 ### Question 57
 Define a custom exception class which takes a string message as attribute.
 
@@ -1306,7 +1552,10 @@ Hints:
 
 To define a custom exception, we need to define a class inherited from Exception.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 class MyError(Exception):
     """My own exception class
@@ -1320,6 +1569,8 @@ class MyError(Exception):
 
 error = MyError("something wrong")
 ```
+
+</details>
 
 ### Question 58
 Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the user name of a given email address. Both user names and company names are composed of letters only.
@@ -1339,7 +1590,10 @@ Hints:
 
 Use \w to match letters.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import re
 emailAddress = raw_input()
@@ -1347,6 +1601,8 @@ pat2 = "(\w+)@((\w+\.)+(com))"
 r2 = re.match(pat2,emailAddress)
 print(r2.group(1))
 ```
+
+</details>
 
 ### Question 59
 Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
@@ -1366,7 +1622,10 @@ Hints:
 
 Use \w to match letters.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import re
 emailAddress = raw_input()
@@ -1374,6 +1633,8 @@ pat2 = "(\w+)@(\w+)\.(com)"
 r2 = re.match(pat2,emailAddress)
 print(r2.group(2))
 ```
+
+</details>
 
 ### Question 60
 Write a program which accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
@@ -1393,12 +1654,17 @@ Hints:
 
 Use re.findall() to find all substring using regex.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import re
 s = raw_input()
 print(re.findall("\d+",s))
 ```
+
+</details>
 
 ### Question 61
 Print a unicode string "hello world".
@@ -1407,11 +1673,16 @@ Hints:
 
 Use u'strings' format to define unicode string.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 unicodeString = u"hello world!"
 print(unicodeString)
 ```
+
+</details>
 
 ### Question 62
 Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
@@ -1420,12 +1691,17 @@ Hints:
 
 Use unicode() function to convert.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 s = input()
 u = unicode( s ,"utf-8")
 print(u)
 ```
+
+</details>
 
 ### Question 63
 
@@ -1433,13 +1709,18 @@ Write a special comment to indicate a Python source code file is in unicode.
 
 Hints:
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 
 # -*- coding: utf-8 -*-
 
 #----------------------------------------#
 ```
+
+</details>
 
 ### Question 64
 
@@ -1459,7 +1740,10 @@ In case of input data being supplied to the question, it should be assumed to be
 Hints:
 Use float() to convert an integer to a float
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 n=int(input())
 sum=0.0
@@ -1467,6 +1751,8 @@ for i in range(1,n+1):
     sum += float(float(i)/(i+1))
 print(sum)
 ```
+
+</details>
 
 ### Question 65
 
@@ -1491,7 +1777,10 @@ In case of input data being supplied to the question, it should be assumed to be
 Hints:
 We can define recursive function in Python.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 def f(n):
     if n==0:
@@ -1502,6 +1791,8 @@ def f(n):
 n=int(input())
 print(f(n))
 ```
+
+</details>
 
 ### Question 66
 The Fibonacci Sequence is computed based on the following formula:
@@ -1527,7 +1818,10 @@ Hints:
 We can define recursive function in Python.
 
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 def f(n):
     if n == 0: return 0
@@ -1537,6 +1831,8 @@ def f(n):
 n=int(input())
 print(f(n))
 ```
+
+</details>
 
 ### Question 67
 The Fibonacci Sequence is computed based on the following formula:
@@ -1564,7 +1860,10 @@ Use string.join() to join a list of strings.
 
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 def f(n):
     if n == 0: return 0
@@ -1575,6 +1874,8 @@ n=int(input())
 values = [str(f(x)) for x in range(0, n+1)]
 print(",".join(values))
 ```
+
+</details>
 
 ### Question 68
 
@@ -1594,7 +1895,10 @@ Use yield to produce the next value in generator.
 
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 def EvenGenerator(n):
     i=0
@@ -1611,6 +1915,8 @@ for i in EvenGenerator(n):
 
 print(",".join(values))
 ```
+
+</details>
 
 ### Question 69
 Please write a program using generator to print the numbers which can be divisible by 5 and 7 between 0 and n in comma separated form while n is input by console.
@@ -1629,7 +1935,10 @@ Use yield to produce the next value in generator.
 
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 def NumGenerator(n):
     for i in range(n+1):
@@ -1644,18 +1953,25 @@ for i in NumGenerator(n):
 print(",".join(values))
 ```
 
+</details>
+
 ### Question 70
 Please write assert statements to verify that every number in the list [2,4,6,8] is even.
 
 Hints:
 Use "assert expression" to make assertion.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 li = [2,4,6,8]
 for i in li:
     assert i%2==0
 ```
+
+</details>
 
 ### Question 71
 Please write a program which accepts basic mathematic expression from console and print the evaluation result.
@@ -1673,11 +1989,16 @@ Hints:
 Use eval() to evaluate an expression.
 
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 expression = raw_input()
 print(eval(expression))
 ```
+
+</details>
 
 ### Question 72
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
@@ -1685,7 +2006,10 @@ Please write a binary search function which searches an item in a sorted list. T
 Hints:
 Use if/elif to deal with conditions.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import math
 def bin_search(li, element):
@@ -1707,6 +2031,8 @@ li=[2,5,7,9,11,17,222]
 print(bin_search(li,11))
 print(bin_search(li,12))
 ```
+
+</details>
 
 ### Question 73
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
@@ -1714,7 +2040,10 @@ Please write a binary search function which searches an item in a sorted list. T
 Hints:
 Use if/elif to deal with conditions.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import math
 def bin_search(li, element):
@@ -1737,17 +2066,24 @@ print(bin_search(li,11))
 print(bin_search(li,12))
 ```
 
+</details>
+
 ### Question 74
 Please generate a random float where the value is between 10 and 100 using Python math module.
 
 Hints:
 Use random.random() to generate a random float in [0,1].
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import random
 print(random.random()*100)
 ```
+
+</details>
 
 ### Question 75
 Please generate a random float where the value is between 5 and 95 using Python math module.
@@ -1755,11 +2091,16 @@ Please generate a random float where the value is between 5 and 95 using Python 
 Hints:
 Use random.random() to generate a random float in [0,1].
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import random
 print(random.random()*100-5)
 ```
+
+</details>
 
 ### Question 76
 Please write a program to output a random even number between 0 and 10 inclusive using random module and list comprehension.
@@ -1767,11 +2108,16 @@ Please write a program to output a random even number between 0 and 10 inclusive
 Hints:
 Use random.choice() to a random element from a list.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import random
 print(random.choice([i for i in range(11) if i%2==0]))
 ```
+
+</details>
 
 ### Question 77
 Please write a program to output a random number, which is divisible by 5 and 7, between 0 and 10 inclusive using random module and list comprehension.
@@ -1779,11 +2125,16 @@ Please write a program to output a random number, which is divisible by 5 and 7,
 Hints:
 Use random.choice() to a random element from a list.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import random
 print(random.choice([i for i in range(201) if i%5==0 and i%7==0]))
 ```
+
+</details>
 
 ### Question 78
 Please write a program to generate a list with 5 random numbers between 100 and 200 inclusive.
@@ -1791,11 +2142,16 @@ Please write a program to generate a list with 5 random numbers between 100 and 
 Hints:
 Use random.sample() to generate a list of random values.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import random
 print(random.sample(range(100), 5))
 ```
+
+</details>
 
 ### Question 79
 Please write a program to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
@@ -1803,11 +2159,16 @@ Please write a program to randomly generate a list with 5 even numbers between 1
 Hints:
 Use random.sample() to generate a list of random values.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import random
 print(random.sample([i for i in range(100,201) if i%2==0], 5))
 ```
+
+</details>
 
 ### Question 80
 Please write a program to randomly generate a list with 5 numbers, which are divisible by 5 and 7 , between 1 and 1000 inclusive.
@@ -1815,11 +2176,16 @@ Please write a program to randomly generate a list with 5 numbers, which are div
 Hints:
 Use random.sample() to generate a list of random values.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import random
 print(random.sample([i for i in range(1,1001) if i%5==0 and i%7==0], 5))
 ```
+
+</details>
 
 ### Question 81
 Please write a program to randomly print a integer number between 7 and 15 inclusive.
@@ -1827,11 +2193,16 @@ Please write a program to randomly print a integer number between 7 and 15 inclu
 Hints:
 Use random.randrange() to a random integer in a given range.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import random
 print(random.randrange(7,16))
 ```
+
+</details>
 
 ### Question 82
 Please write a program to compress and decompress the string "hello world!hello world!hello world!hello world!".
@@ -1839,7 +2210,10 @@ Please write a program to compress and decompress the string "hello world!hello 
 Hints:
 Use zlib.compress() and zlib.decompress() to compress and decompress a string.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import zlib
 s = b'hello world!hello world!hello world!hello world!'
@@ -1848,18 +2222,25 @@ print(t)
 print(zlib.decompress(t))
 ```
 
+</details>
+
 ### Question 83
 Please write a program to print the running time of execution of "1+1" for 100 times.
 
 Hints:
 Use timeit() function to measure the running time.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 from timeit import Timer
 t = Timer("for i in range(100):1+1")
 print(t.timeit())
 ```
+
+</details>
 
 ### Question 84
 Please write a program to shuffle and print the list [3,6,7,8].
@@ -1867,13 +2248,18 @@ Please write a program to shuffle and print the list [3,6,7,8].
 Hints:
 Use shuffle() function to shuffle a list.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 from random import shuffle
 li = [3,6,7,8]
 shuffle(li)
 print(li)
 ```
+
+</details>
 
 ### Question 85
 Please write a program to shuffle and print the list [3,6,7,8].
@@ -1881,7 +2267,10 @@ Please write a program to shuffle and print the list [3,6,7,8].
 Hints:
 Use shuffle() function to shuffle a list.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 from random import shuffle
 li = [3,6,7,8]
@@ -1889,13 +2278,18 @@ shuffle(li)
 print(li)
 ```
 
+</details>
+
 ### Question 86
 Please write a program to generate all sentences where subject is in ["I", "You"] and verb is in ["Play", "Love"] and the object is in ["Hockey","Football"].
 
 Hints:
 Use list[index] notation to get a element from a list.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 subjects=["I", "You"]
 verbs=["Play", "Love"]
@@ -1907,18 +2301,25 @@ for i in range(len(subjects)):
             print(sentence)
 ```
 
+</details>
+
 ### Question 87
 Please write a program to print the list after removing delete even numbers in [5,6,77,45,22,12,24].
 
 Hints:
 Use list comprehension to delete a bunch of element from a list.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```
 li = [5,6,77,45,22,12,24]
 li = [x for x in li if x%2!=0]
 print(li)
 ```
+
+</details>
 
 ### Question 88
 By using list comprehension, please write a program to print the list after removing delete numbers which are divisible by 5 and 7 in [12,24,35,70,88,120,155].
@@ -1926,12 +2327,17 @@ By using list comprehension, please write a program to print the list after remo
 Hints:
 Use list comprehension to delete a bunch of element from a list.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```
 li = [12,24,35,70,88,120,155]
 li = [x for x in li if x%5!=0 and x%7!=0]
 print(li)
 ```
+
+</details>
 
 ### Question 89
 By using list comprehension, please write a program to print the list after removing the 0th, 2nd, 4th,6th numbers in [12,24,35,70,88,120,155].
@@ -1940,12 +2346,17 @@ Hints:
 Use list comprehension to delete a bunch of element from a list.
 Use enumerate() to get (index, value) tuple.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 li = [12,24,35,70,88,120,155]
 li = [x for (i,x) in enumerate(li) if i%2!=0]
 print(li)
 ```
+
+</details>
 
 ### Question 90
 By using list comprehension, please write a program generate a 3*5*8 3D array whose each element is 0.
@@ -1953,11 +2364,16 @@ By using list comprehension, please write a program generate a 3*5*8 3D array wh
 Hints:
 Use list comprehension to make an array.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```
 array = [[ [0 for col in range(8)] for col in range(5)] for row in range(3)]
 print(array)
 ```
+
+</details>
 
 ### Question 91
 By using list comprehension, please write a program to print the list after removing the 0th,4th,5th numbers in [12,24,35,70,88,120,155].
@@ -1966,12 +2382,17 @@ Hints:
 Use list comprehension to delete a bunch of element from a list.
 Use enumerate() to get (index, value) tuple.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 li = [12,24,35,70,88,120,155]
 li = [x for (i,x) in enumerate(li) if i not in (0,4,5)]
 print(li)
 ```
+
+</details>
 
 ### Question 92
 By using list comprehension, please write a program to print the list after removing the value 24 in [12,24,35,24,88,120,155].
@@ -1979,12 +2400,17 @@ By using list comprehension, please write a program to print the list after remo
 Hints:
 Use list's remove method to delete a value.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 li = [12,24,35,24,88,120,155]
 li = [x for x in li if x!=24]
 print(li)
 ```
+
+</details>
 
 ### Question 93
 With two given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a program to make a list whose elements are intersection of the above given lists.
@@ -1992,7 +2418,10 @@ With two given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a prog
 Hints:
 Use set() and "&=" to do set intersection operation.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 set1=set([1,3,6,78,35,55])
 set2=set([12,24,35,24,88,120,155])
@@ -2001,13 +2430,18 @@ li=list(set1)
 print(li)
 ```
 
+</details>
+
 ### Question 94
 With a given list [12,24,35,24,88,120,155,88,120,155], write a program to print this list after removing all duplicate values with original order reserved.
 
 Hints:
 Use set() to store a number of values without duplicate.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 def removeDuplicate( li ):
     newli=[]
@@ -2023,13 +2457,18 @@ li=[12,24,35,24,88,120,155,88,120,155]
 print(removeDuplicate(li))
 ```
 
+</details>
+
 ### Question 95
 Define a class Person and its two child classes: Male and Female. All classes have a method "getGender" which can print "Male" for Male class and "Female" for Female class.
 
 Hints:
 Use Subclass(Parentclass) to define a child class.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 class Person(object):
     def getGender( self ):
@@ -2048,6 +2487,8 @@ aFemale= Female()
 print(aMale.getGender())
 print(aFemale.getGender())
 ```
+
+</details>
 
 ### Question 96
 Please write a program which count and print the numbers of each character in a string input by console.
@@ -2071,7 +2512,10 @@ Hints:
 Use dict to store key/value pairs.
 Use dict.get() method to lookup a key with default value.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 dic = {}
 s=raw_input()
@@ -2079,6 +2523,8 @@ for s in s:
     dic[s] = dic.get(s,0)+1
 print('\n'.join(['%s,%s' % (k, v) for k, v in dic.items()]))
 ```
+
+</details>
 
 ### Question 97
 Please write a program which accepts a string from console and print it in reverse order.
@@ -2095,12 +2541,17 @@ ris etov ot esir
 Hints:
 Use list[::-1] to iterate a list in a reverse order.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 s=raw_input()
 s = s[::-1]
 print(s)
 ```
+
+</details>
 
 ### Question 98
 Please write a program which accepts a string from console and print the characters that have even indexes.
@@ -2117,12 +2568,17 @@ Helloworld
 Hints:
 Use list[::2] to iterate a list by step 2.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 s=raw_input()
 s = s[::2]
 print(s)
 ```
+
+</details>
 
 ### Question 99
 Please write a program which prints all permutations of [1,2,3]
@@ -2130,11 +2586,16 @@ Please write a program which prints all permutations of [1,2,3]
 Hints:
 Use itertools.permutations() to get permutations of list.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 import itertools
 print(list(itertools.permutations([1,2,3])))
 ```
+
+</details>
 
 ### Question 100
 Write a program to solve a classic ancient Chinese puzzle: 
@@ -2143,7 +2604,10 @@ We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many
 Hint:
 Use for loop to iterate all possible solutions.
 
-Solution:
+<details>
+
+<summary>Solution:</summary>
+
 ```python
 def solve(numheads,numlegs):
     ns='No solutions!'
