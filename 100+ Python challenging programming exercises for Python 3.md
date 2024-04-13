@@ -66,6 +66,17 @@ def fact(x):
 x=int(input())
 print(fact(x))
 ```
+#second method
+
+def factorial(n):
+    fact=1
+    while n >= 1:
+        fact=fact*n
+        n=n-1
+    return fact
+x=int(input("enter number"))
+factorial(x)
+
 
 ### Question 3
 Level 1
