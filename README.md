@@ -1,20 +1,15 @@
- [<img src="https://devin.ai/assets/deepwiki-badge.png" alt="Ask DeepWiki.com" height="20"/>](https://deepwiki.com/zhiwehu/Python-programming-exercises)
- 
-# Python-programming-exercises
+# python beginner
+一个包含了一些适用于python初学者题目的小文件。
+A small file containing some beginner friendly questions for Python.
 
-100+ Python challenge programming exercises.
+题目出处为https://github.com/zhiwehu/Python-programming-exercises
+The source of the title is https://github.com/zhiwehu/Python-programming-exercises
 
-## 100+ Python Projects Challenge 
+原答案依然存在txt文件当中。但是请注意原答案使用的python2在现在并不适用。
+The original answer still exists in the txt file.However, please note that the Python 2 used in the original answer is not currently applicable.
 
-https://github.com/zhiwehu/100_plus_Python_Projects_Challenge
+本人发言先中后英，原作者发言先英后中以示区分。
+To distinguish between us,I will write in Chinese first and then in English, while the original author will write in English first and then in Chinese.
 
-## A simple Python online IDE run in browser.
-
-Hey guys I just made a simple Python online IDE run in browser : https://github.com/zhiwehu/react-python-ide. It's free and opensource. Feel free to let me know if you have any issues.
-
-## Python comic
-
-Hey guys I just created a comic for learning Python if you like you could see it from here: https://zhixinfuture.com
-For now I just use Chinese if you like I could use English as well.
-
-![Python Comic](https://github.com/zhiwehu/Python-programming-exercises/blob/master/comic.png?raw=true)
+我是一个24级的计算机大学生，或许有一些规矩不太懂，如有冒犯请一定要告诉我。
+I am a computer science student in the 24th grade, and there may be some rules that I don't quite understand. If I offend you or maybe I didn't do it well enough , please be sure to let me know.

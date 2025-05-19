@@ -1,0 +1,3782 @@
+100+ Python challenging programming exercises
+100+Python挑战性编程练习
+
+1.	Level description
+1.级别描述
+
+
+Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
+第一级初学者是指刚刚完成Python入门课程的人。他可以用一两个Python类或函数来解决一些问题。通常，答案可以直接在教科书中找到。
+
+Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
+2级中级是指刚刚学习Python，但之前已经有了相对较强的编程背景的人。他应该能够解决可能涉及3个或3个Python类或函数的问题。答案不能直接在教科书中找到。
+
+Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
+3级高级。他应该使用Python来解决更复杂的问题，使用更丰富的库函数、数据结构和算法。他应该使用几个Python标准包和高级技术来解决这个问题。
+
+2.	Problem template
+2.问题模板
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question
+问题
+Hints
+提示
+Solution
+解决方案
+
+3.	Questions
+3.问题
+
+#----------------------------------------#
+#----------------------------------------#
+Question 1
+问题1
+
+Level 1
+级别1
+
+Question:
+问题：
+Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
+编写一个程序,找出所有能被7整除但不是5的倍数的数字,
+
+between 2000 and 3200 (both included).
+2000至3200(均包括在内)。
+
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+获得的数字应以逗号分隔的顺序打印在一行上。
+
+Hints:
+提示：
+Consider use range(#begin, #end) method
+考虑使用range（#begin，#end）方法
+
+#本人答案
+for i in range(2000, 3201):
+        if i % 7 == 0 and i % 5 != 0:
+            print(i, end=',')
+
+#参考答案
+l=[]
+for i in range(2000, 3201):
+    if (i%7==0) and (i%5!=0):
+        l.append(str(i))
+
+print ','.join(l)
+#----------------------------------------#
+#----------------------------------------#
+
+Question 2
+问题2
+
+Level 1
+级别1
+
+Question:
+问题：
+
+Write a program which can compute the factorial of a given numbers.
+编写一个程序，可以计算给定数字的阶乘。
+
+The results should be printed in a comma-separated sequence on a single line.
+结果应以逗号分隔的顺序打印在一行上。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+8
+
+Then, the output should be:
+那么，输出应该是：
+
+40320
+
+
+Hints:
+提示：
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+# 本人答案
+num=1
+n=int(input("请输入一个数字："))
+for i in range(1,n+1):
+    num=num*i
+print(num)
+
+
+# 参考答案
+def fact(x):
+    if x == 0:
+        return 1
+    return x * fact(x - 1)
+
+x=int(raw_input())
+print fact(x)
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 3
+问题3
+
+Level 1
+级别1
+
+Question:
+问题：
+
+With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
+对于给定的整数n,编写一个程序来生成一个包含(i,i*i)的字典。该字典是1和n之间的整数(两者都包括在内)然后程序应该打印字典。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+8
+
+Then, the output should be:
+那么，输出应该是：
+
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+
+Hints:
+提示：
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+Consider use dict()
+考虑使用dict（）
+
+#本人答案
+n=int(input("请输入一个数字："))
+a={}
+for i in range(1,n+1):
+    a[i]=i*i
+print(a)
+
+Solution:
+n=int(raw_input())
+d=dict()
+for i in range(1,n+1):
+    d[i]=i*i
+
+print d
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 4
+问题4
+
+Level 1
+级别1
+
+Question:
+问题：
+
+Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
+编写一个程序，从控制台接受逗号分隔的数字序列，并生成一个包含每个数字的列表和元组。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+34,67,55,33,12,98
+
+Then, the output should be:
+那么，输出应该是：
+
+['34', '67', '55', '33', '12', '98']
+('34', '67', '55', '33', '12', '98')
+
+Hints:
+提示：
+
+tuple() method can convert list to tuple
+tuple（）方法可以将列表转换为元组
+
+#本人答案
+a=input()
+b=tuple(a.split (','))
+c=a.split(',')
+print(b,c)
+
+Solution:
+values=raw_input()
+l=values.split(",")
+t=tuple(l)
+print l
+print t
+#----------------------------------------#
+#----------------------------------------#
+
+Question 5
+问题5
+
+Level 1
+级别1
+
+Question:
+问题：
+
+Define a class which has at least two methods:
+定义一个至少有两个方法的类：
+
+getString: to get a string from console input
+getString:从控制台输入中获取字符串
+
+printString: to print the string in upper case.
+printString:打印大写字符串。
+
+Also please include simple test function to test the class methods.
+另外，请包含简单的测试函数来测试类方法。
+
+Hints:
+提示：
+
+Use __init__ method to construct some parameters
+使用__init__方法构造一些参数
+
+#本人答案
+class stringa:
+    def __init__(self):
+        self.str1= ""
+
+    def getstring(self):
+            self.str1=input("请输入字符串：")
+    
+    def printstring(self):
+            print(self.str1.upper())
+
+s=stringa()
+s.getstring()
+s.printstring()
+
+Solution:
+class InputOutString(object):
+    def __init__(self):
+        self.s = ""
+
+    def getString(self):
+        self.s = raw_input()
+
+    def printString(self):
+        print self.s.upper()
+
+strObj = InputOutString()
+strObj.getString()
+strObj.printString()
+#----------------------------------------#
+#----------------------------------------#
+
+Question 6
+问题6
+Level 2
+2级
+
+Question:
+问题：
+
+Write a program that calculates and prints the value according to the given formula:
+编写一个程序，根据给定的公式计算并打印值：
+
+Q = Square root of [(2 * C * D)/H]
+Q=[(2*C*D)/H]**0.5
+
+Following are the fixed values of C and H:
+以下是C和H的固定值,
+
+C is 50. H is 30.
+C是50。H是30。
+
+D is the variable whose values should be input to your program in a comma-separated sequence.
+D是变量,其值应以逗号分隔的顺序输入到程序中。
+
+Example
+例子
+
+Let us assume the following comma separated input sequence is given to the program:
+让我们假设程序有以下逗号分隔的输入序列：
+
+100,150,180
+
+The output of the program should be:
+程序的输出应该是：
+
+18,22,24
+
+Hints:
+提示：
+If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
+如果接收到的输出是十进制形式的,则应四舍五入到最接近的值(例如,如果收到的输出是26.0,则应打印为26)
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+#本人答案
+def task(d):
+    c=50
+    h=30
+    q=int(((2*c*d)/h)**0.5)
+    return q
+
+a=list((input("输入数字").split(",")))
+for i in a:
+    print(task(int(i)),end=",")
+
+Solution:
+#!/usr/bin/env python
+import math
+c=50
+h=30
+value = []
+items=[x for x in raw_input().split(',')]
+for d in items:
+    value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
+
+print ','.join(value)
+#----------------------------------------#
+#----------------------------------------#
+Question 7
+问题7
+
+Level 2
+2级
+
+Question:
+问题：
+
+Write a program which takes 2 digits, X,Y as input and generates a 2-dimensional array. The element value in the i-th row and j-th column of the array should be i*j.
+编写一个程序,以2位数字X、Y为输入,生成一个二维数组。数组第i行和第j列中的元素值应为i*j。
+
+Example
+例子
+
+Suppose the following inputs are given to the program:
+假设程序有以下输入：
+
+3,5
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+
+
+Hints:
+提示：
+
+Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
+注意：如果向问题提供输入数据，则应假设它是逗号分隔形式的控制台输入。
+
+#本人答案
+a,b=map(int,input("a,b=").split(','))
+c=[]
+for i in range(a):
+    d=[]
+    for j in range(b):
+        d.append(i*j)
+    c.append(d)        
+print(c)
+
+Solution:
+input_str = raw_input()
+dimensions=[int(x) for x in input_str.split(',')]
+rowNum=dimensions[0]
+colNum=dimensions[1]
+multilist = [[0 for col in range(colNum)] for row in range(rowNum)]
+
+for row in range(rowNum):
+    for col in range(colNum):
+        multilist[row][col]= row*col
+
+print multilist
+#----------------------------------------#
+#----------------------------------------#
+Question 8
+问题8
+Level 2
+2级
+
+Question:
+问题：
+
+Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
+编写一个程序，接受逗号分隔的单词序列作为输入，并在按字母顺序排序后以逗号分隔的顺序打印单词。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+without,hello,bag,world
+
+
+Then, the output should be:
+那么，输出应该是：
+
+bag,hello,without,world
+
+
+#本人答案
+str_list=input("输入单词序列(Input word sequence):").split(',')
+str_list.sort()
+print(','.join(str_list))
+
+
+Solution:
+items=[x for x in raw_input().split(',')]
+items.sort()
+print ','.join(items)
+#----------------------------------------#
+#----------------------------------------#
+Question 9
+问题9
+Level 2
+2级
+
+Question£º
+问题：
+Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
+编写一个程序，接受行序列作为输入，并在将句子中的所有字符大写后打印行。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+Hello world
+Practice makes perfect
+
+Then, the output should be:
+那么，输出应该是：
+
+HELLO WORLD
+PRACTICE MAKES PERFECT
+
+#本人答案
+a=[]
+while 1==1:
+    s=input()
+    if s:
+        a.append(s.upper())
+    else:
+        break
+for k in a:
+    print(k)
+
+Solution:
+lines = []
+while True:
+    s = raw_input()
+    if s:
+        lines.append(s.upper())
+    else:
+        break;
+
+for sentence in lines:
+    print sentence
+#----------------------------------------#
+#----------------------------------------#
+Question 10
+问题10
+Level 2
+2级
+
+Question:
+问题：
+Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
+编写一个程序,接受一系列空格分隔的单词作为输入,并在删除所有重复单词并按字典序排序后打印单词。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+hello world and practice makes perfect and hello world again
+你好世界，熟能生巧，再次你好世界
+
+Then, the output should be:
+那么,输出应该是：
+
+again and hello makes perfect practice world
+再次,hello创造了完美的实践世界
+
+Hints:
+提示：
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+We use set container to remove duplicated data automatically and then use sorted() to sort the data.
+我们使用set容器自动删除重复的数据,然后使用sorted()对数据进行排序。
+
+#本人答案
+a=list(set(input().split(" ")))
+a.sort()
+print(' '.join(a))
+
+Solution:
+s = raw_input()
+words = [word for word in s.split(" ")]
+print " ".join(sorted(list(set(words))))
+#----------------------------------------#
+#----------------------------------------#
+Question 11
+问题11
+Level 2
+2级
+
+Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma separated sequence.
+编写一个程序,接受逗号分隔的4位二进制数序列作为输入,然后检查它们是否能被5整除。可被5整除的数字将以逗号分隔的顺序打印。
+
+Example:
+例子：
+
+0100,0011,1010,1001
+
+Then the output should be:
+那么输出应该是：
+
+1010
+
+Notes: Assume the data is input by console.
+注：假设数据是通过控制台输入的。
+
+#本人答案
+a=input().split(",")
+c=[]
+for i in a:
+    b=int(i,2)
+    if b%5==0:
+        c.append(i)
+print(','.join(c))
+
+Solution:
+value = []
+items=[x for x in raw_input().split(',')]
+for p in items:
+    intp = int(p, 2)
+    if not intp%5:
+        value.append(p)
+
+print ','.join(value)
+#----------------------------------------#
+#----------------------------------------#
+
+Question 12
+问题12
+
+Leve2
+2级
+
+Question:
+问题：
+
+Write a program, which will find all such numbers between 1000 and 3000 (both included) such that each digit of the number is an even number.
+编写一个程序,它将找到1000到3000之间的所有的每一位都是偶数的数字(包括1000和3000)。
+
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+获得的数字应以逗号分隔的顺序打印在一行上。
+
+Hints:
+提示：
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+说实话我认为这应该是一道一级的题目
+To be honest, I think this should be a first level question
+
+#本人答案
+num=[]
+for i in range(1000,3001):
+    a=i
+    while a>0:
+        b=a%10
+        a//=10
+        if b%2!=0:
+            break
+    else:
+        num.append(str(i))
+print(','.join(num))
+
+Solution:
+values = []
+for i in range(1000, 3001):
+    s = str(i)
+    if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and (int(s[3])%2==0):
+        values.append(s)
+print ",".join(values)
+#----------------------------------------#
+#----------------------------------------#
+Question 13
+问题13
+Level 2
+2级
+
+Question:
+问题：
+
+write a program that accepts a sentence and calculate the number of letters and digits.
+编写一个程序，接受一个句子并计算字母和数字的数量。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+hello world! 123
+
+Then, the output should be:
+那么，输出应该是：
+
+LETTERS 10
+DIGITS 3
+
+#本人答案
+str1=input()
+a={'LETTERS':0 ,'DIGITS':0}
+for i in str1:
+    if i.isalpha():
+        a['LETTERS']+=1
+    elif i.isdigit():
+        a['DIGITS']+=1
+print('LETTERS',a['LETTERS'])
+print('DIGITS',a['DIGITS'])
+
+Solution:
+s = raw_input()
+d={"DIGITS":0, "LETTERS":0}
+for c in s:
+    if c.isdigit():
+        d["DIGITS"]+=1
+    elif c.isalpha():
+        d["LETTERS"]+=1
+    else:
+        pass
+print "LETTERS", d["LETTERS"]
+print "DIGITS", d["DIGITS"]
+#----------------------------------------#
+#----------------------------------------#
+Question 14
+问题14
+Level 2
+2级
+
+Question:
+问题：
+
+Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
+编写一个程序，接受一个句子并计算大写字母和小写字母的数量。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+Hello world!
+
+Then, the output should be:
+那么，输出应该是：
+
+UPPER CASE 1
+LOWER CASE 9
+
+#本人答案
+str1=input("")
+a={'UPPER CASE':0 ,'LOWER CASE':0}
+for i in str1:
+    if i.isupper():
+        a['UPPER CASE']+=1
+    elif i.islower():
+        a['LOWER CASE']+=1
+print('UPPER CASE',a['UPPER CASE'])
+print('LOWER CASE',a['LOWER CASE'])
+
+Solution:
+s = raw_input()
+d={"UPPER CASE":0, "LOWER CASE":0}
+for c in s:
+    if c.isupper():
+        d["UPPER CASE"]+=1
+    elif c.islower():
+        d["LOWER CASE"]+=1
+    else:
+        pass
+print "UPPER CASE", d["UPPER CASE"]
+print "LOWER CASE", d["LOWER CASE"]
+#----------------------------------------#
+#----------------------------------------#
+Question 15
+问题15
+Level 2
+2级
+
+Question:
+问题：
+
+Write a program that computes the value of a+aa+aaa+aaaa with a given digit as the value of a.
+编写一个程序,用给定的数字作为a的值来计算a+aa+aaa+aaaa的值。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+9
+
+Then, the output should be:
+那么，输出应该是：
+
+11106
+
+
+#本人答案
+num=int(input())
+res=num+num*11+num*111+num*1111
+print(res)
+
+Solution:
+a = raw_input()
+n1 = int( "%s" % a )
+n2 = int( "%s%s" % (a,a) )
+n3 = int( "%s%s%s" % (a,a,a) )
+n4 = int( "%s%s%s%s" % (a,a,a,a) )
+print n1+n2+n3+n4
+#----------------------------------------#
+#----------------------------------------#
+Question 16
+问题16
+Level 2
+2级
+
+Question:
+问题：
+
+Use a list comprehension to square each odd number in a list. The list is input by a sequence of comma-separated numbers.
+使用列表推导式法将列表中的每个奇数平方。列表由逗号分隔的数字序列输入。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+1,2,3,4,5,6,7,8,9
+
+Then, the output should be:
+那么，输出应该是：
+
+1,3,5,7,9
+
+我的老师告诉我使用列表推导式或许可以使代码变得更加简洁,但是一个好的代码追求的应该让人可以读得懂,而不是最少的行数。
+My teacher told me that using list dcomprehension may make the code more concise, but good code should strive for readability, not the minimum number of lines.
+
+#本人的答案（使用列表推导式）
+a = [i for i in input().split(',') if int(i) % 2 != 0]
+print(','.join(a))
+
+
+#本人的答案（不使用列表推导式）
+a=input().split(',')
+b=[]
+for i in a:
+    if int(i)%2!=0:
+        b.append(i)
+print(','.join(b))
+
+Solution:
+values = raw_input()
+numbers = [x for x in values.split(",") if int(x)%2!=0]
+print ",".join(numbers)
+#----------------------------------------#
+#----------------------------------------#
+
+Question 17
+问题17
+Level 2
+2级
+
+Question:
+问题：
+
+Write a program that computes the net amount of a bank account based a transaction log from console input. The transaction log format is shown as following:
+编写一个程序，根据控制台输入的交易日志计算银行账户的净额。交易日志格式如下：
+
+D 100
+W 200
+
+
+D means deposit while W means withdrawal.
+D表示存款,W表示取款。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+D 300
+D 300
+W 200
+D 100
+
+Then, the output should be:
+那么，输出应该是：
+
+500
+
+#本人答案
+money=0
+while True:
+    s=input()
+    if not s:
+        break
+    a,b=s.split()
+    if a=='D':
+        money+=int(b)
+    elif a=='W':
+        money-=int(b)
+    else:
+        break
+print(money)
+
+Solution:
+netAmount = 0
+while True:
+    s = raw_input()
+    if not s:
+        break
+    values = s.split(" ")
+    operation = values[0]
+    amount = int(values[1])
+    if operation=="D":
+        netAmount+=amount
+    elif operation=="W":
+        netAmount-=amount
+    else:
+        pass
+print netAmount
+#----------------------------------------#
+#----------------------------------------#
+Question 18
+问题18
+Level 3
+级别3
+
+A website requires the users to input username and password to register. Write a program to check the validity of password input by users.
+网站要求用户输入用户名和密码进行注册。编写一个程序来检查用户输入的密码的有效性。
+
+Following are the criteria for checking the password:
+以下是检查密码的标准：
+
+1. At least 1 letter between [a-z]
+1.[a-z]之间至少有一个小写字母
+2. At least 1 number between [0-9]
+2.[0-9]之间至少有一个数字
+1. At least 1 letter between [A-Z]
+1.[A-Z]之间至少有一个大写字母
+3. At least 1 character from [$#@]
+3.[$#@]中至少有1个字符
+4. Minimum length of transaction password: 6
+4.交易密码最小长度:6
+5. Maximum length of transaction password: 12
+5.交易密码最大长度:12
+
+Your program should accept a sequence of comma separated passwords and will check them according to the above criteria. Passwords that match the criteria are to be printed, each separated by a comma.
+您的程序应接受逗号分隔的密码序列，并将根据上述标准进行检查。将打印符合标准的密码，每个密码用逗号分隔。
+
+Example
+例子
+
+If the following passwords are given as input to the program:
+如果程序输入了以下密码：
+
+ABd1234@1,a F1#,2w3E*,2We3345
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+ABd1234@1
+
+#本人答案
+str1=input().split(',')
+str2=[]
+for i in str1:
+    if len(i)<6 or len(i)>12:
+        continue
+    if not i.isupper:
+        continue
+    if not i.islower:
+        continue
+    if not i.isdigit:
+        continue
+    if not any(c in '$#@' for c in i):
+        continue
+    str2.append(i)
+print(','.join(str2))
+
+Solutions:
+import re
+value = []
+items=[x for x in raw_input().split(',')]
+for p in items:
+    if len(p)<6 or len(p)>12:
+        continue
+    else:
+        pass
+    if not re.search("[a-z]",p):
+        continue
+    elif not re.search("[0-9]",p):
+        continue
+    elif not re.search("[A-Z]",p):
+        continue
+    elif not re.search("[$#@]",p):
+        continue
+    elif re.search("\s",p):
+        continue
+    else:
+        pass
+    value.append(p)
+print ",".join(value)
+#----------------------------------------#
+#----------------------------------------#
+Question 19
+问题19
+Level 3
+级别3
+
+You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. The tuples are input by console. The sort criteria is:
+您需要编写一个程序,按升序对(name、age、height)元组进行排序,其中name是字符串,age和height是数字。元组由控制台输入。排序标准为：
+
+1: Sort based on name;
+1:按名称排序；
+
+2: Then sort based on age;
+2:然后按年龄排序；
+
+3: Then sort by score.
+3:然后按分数排序。
+
+The priority is that name > age > score.
+优先顺序是姓名>年龄>分数。
+
+If the following tuples are given as input to the program:
+如果将以下元组作为程序的输入：
+
+Tom,19,80
+John,20,90
+Jony,17,91
+Jony,17,93
+Json,21,85
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+[('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
+
+Hints:
+提示：
+
+We use itemgetter to enable multiple sort keys.
+我们使用itemgetter来启用多个排序键。
+
+#本人答案
+list1=[]
+while True:
+    s=input()
+    if not s:
+        break
+    tup=tuple(s.split(','))
+    list1.append(tup)
+list1.sort(key=lambda x: (x[0], int(x[1]),int(x[2])))
+print(list1)
+
+Solutions:
+from operator import itemgetter, attrgetter
+
+l = []
+while True:
+    s = raw_input()
+    if not s:
+        break
+    l.append(tuple(s.split(",")))
+
+print sorted(l, key=itemgetter(0,1,2))
+#----------------------------------------#
+#----------------------------------------#
+Question 20
+问题20
+Level 3
+级别3
+
+Question:
+问题：
+
+Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
+使用生成器定义一个类,该生成器可以迭代给定范围0和n之间的可被7整除的数字。
+
+#本人答案
+class task():
+    def find(self,n):
+        for i in range(1, n+1):
+            if i % 7 == 0:
+                print(i,end=',')
+            
+num=int(input())
+task1=task()
+task1.find(num)
+
+Solution:
+def putNumbers(n):
+    i = 0
+    while i<n:
+        j=i
+        i=i+1
+        if j%7==0:
+            yield j
+
+for i in reverse(100):
+    print i
+#----------------------------------------#
+#----------------------------------------#
+Question 21
+问题21
+Level 3
+级别3
+
+A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following:
+机器人从原点(0,0)开始在平面内移动。机器人可以按照给定的步骤向上、向下、向左和向右移动。机器人运动轨迹如下:
+The numbers after the direction are steps. Please write a program to compute the distance from current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
+方向后面的数字是步数。请编写一个程序来计算一系列移动和原点后与当前位置的距离。如果距离是浮点数，则只需打印最接近的整数。
+
+Example:
+例子：
+
+If the following tuples are given as input to the program:
+如果将以下元组作为程序的输入：
+
+UP 5
+DOWN 3
+LEFT 3
+RIGHT 2
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+2
+
+#本人答案
+location=[0,0]
+while True:
+    s=input()
+    if not s:
+        break
+    ss=s.split()
+    if ss[0] == 'UP':
+        location[1] += int(ss[1])
+    elif ss[0] == 'DOWN':
+        location[1] -= int(ss[1])
+    elif ss[0] == 'LEFT':
+        location[0] -= int(ss[1])
+    elif ss[0] == 'RIGHT':
+        location[0] += int(ss[1])
+print(int((location[0]**2+location[1]**2)**0.5))
+
+
+Solution:
+import math
+pos = [0,0]
+while True:
+    s = raw_input()
+    if not s:
+        break
+    movement = s.split(" ")
+    direction = movement[0]
+    steps = int(movement[1])
+    if direction=="UP":
+        pos[0]+=steps
+    elif direction=="DOWN":
+        pos[0]-=steps
+    elif direction=="LEFT":
+        pos[1]-=steps
+    elif direction=="RIGHT":
+        pos[1]+=steps
+    else:
+        pass
+
+print int(round(math.sqrt(pos[1]**2+pos[0]**2)))
+#----------------------------------------#
+#----------------------------------------#
+Question 22
+问题22
+Level 3
+级别3
+
+Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically.
+编写一个程序来计算输入中单词的频率。输出应在按字母数字对键进行排序后输出。
+
+Suppose the following input is supplied to the program:
+假设向程序提供了以下输入：
+
+New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.
+Python新手还是在Python 2和Python 3之间做出选择?阅读Python 2或Python 3。
+
+Then, the output should be:
+那么，输出应该是：
+
+2:2
+3.:1
+3?:1
+New:1
+Python:5
+Read:1
+and:1
+between:1
+choosing:1
+or:2
+to:1
+
+#本人答案
+while True:
+    s=input()
+    if not s:
+        break
+    s = s.split()
+    dict1={}
+    for i in s:
+        if i in dict1:
+            dict1[i] += 1
+        else:
+            dict1[i] = 1
+    dict1 = sorted(dict1.items())
+    print(dict1)
+
+Solution:
+freq = {}   # frequency of words in text
+line = raw_input()
+for word in line.split():
+    freq[word] = freq.get(word,0)+1
+
+words = freq.keys()
+words.sort()
+
+for w in words:
+    print "%s:%d" % (w,freq[w])
+#----------------------------------------#
+#----------------------------------------#
+Question 23
+问题23
+level 1
+级别1
+
+Question:
+问题：
+Write a method which can calculate square value of number
+写一个可以计算数字平方值的函数
+
+Hints:
+提示：
+Using the ** operator
+使用**运算符
+
+# Solution:
+def squre():
+    num=int(input("Enter a number: "))
+    return num**2
+
+print(squre())
+
+Solution:
+def square(num):
+    return num ** 2
+
+print square(2)
+print square(3)
+#----------------------------------------#
+#----------------------------------------#
+
+#----------------------------------------#
+#----------------------------------------#
+Question 24
+问题24
+Level 1
+级别1
+
+Question:
+问题：
+Python has many built-in functions, and if you do not know how to use it, you can read document online or find some books. But Python has a built-in document function for every built-in functions.
+Python有很多内置函数，如果你不知道如何使用它，你可以在线阅读文档或找一些书。但是Python对每个内置函数都有一个内置的文档函数。
+
+Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
+请编写一个程序来打印一些Python内置函数文档，如abs（）、int（）、raw_input（）
+
+And add document for your own function
+并为您自己的功能添加文档
+
+Hints:
+提示：
+The built-in document method is __doc__
+内置的document方法是__doc__
+
+#本人答案
+help(abs)
+help(int)
+help(input)
+
+def square(num):
+    '''返回输入数字的平方值。
+    
+    输入数字必须是整数。
+    '''
+    return num ** 2
+
+
+Solution:
+print abs.__doc__
+print int.__doc__
+print raw_input.__doc__
+
+def square(num):
+    '''Return the square value of the input number.
+    
+    The input number must be integer.
+    '''
+    return num ** 2
+
+print square(2)
+print square.__doc__
+#----------------------------------------#
+#----------------------------------------#
+
+#----------------------------------------#
+#----------------------------------------#
+Question 25
+问题25
+Level 1
+级别1
+
+Question:
+问题：
+
+Define a class, which have a class parameter and have a same instance parameter.
+定义一个类，该类具有类参数和相同的实例参数。
+
+Hints:
+提示：
+Define a instance parameter, need add it in __init__ method
+定义一个实例参数，需要将其添加到__init__方法中
+
+You can init a object with construct parameter or set the value later
+您可以使用构造参数初始化对象，也可以稍后设置值
+
+#本人答案
+class task ():
+    name = " JACK"
+    def __init__(self, name,):
+        self.name = name
+
+
+person1=task("JACK")
+print(person1.name)
+
+person2=task("MIKE")
+print(person2.name)
+
+Solution:
+class Person:
+    # Define the class parameter "name"
+    name = "Person"
+    
+    def __init__(self, name = None):
+        # self.name is the instance parameter
+        self.name = name
+
+jeffrey = Person("Jeffrey")
+print "%s name is %s" % (Person.name, jeffrey.name)
+
+nico = Person()
+nico.name = "Nico"
+print "%s name is %s" % (Person.name, nico.name)
+
+#----------------------------------------#
+#----------------------------------------#
+Question26:
+问题：
+
+Define a function which can compute the sum of two numbers.
+定义一个可以计算两个数字之和的函数。
+
+Hints:
+提示：
+Define a function with two numbers as arguments. You can compute the sum in the function and return the value.
+定义一个以两个数字为参数的函数。您可以在函数中计算总和并返回值。
+
+#本人答案
+def task(a,b):
+    return a + b
+
+print(task(1,4))
+
+Solution
+def SumFunction(number1, number2):
+	return number1+number2
+
+print SumFunction(1,2)
+
+#----------------------------------------#
+#----------------------------------------#
+Question 27:
+问题：
+
+Define a function that can convert a integer into a string and print it in console.
+定义一个可以将整数转换为字符串并在控制台中打印的函数。
+
+Hints:
+提示：
+
+Use str() to convert a number to string.
+使用str（）将数字转换为字符串。
+
+#本人答案
+def task(n):
+    return str(n)
+
+n=1234
+print(task(n))
+
+Solution
+def printValue(n):
+	print str(n)
+
+printValue(3)
+
+#----------------------------------------#
+#----------------------------------------#
+Question 29:
+问题：
+Define a function that can receive two integral numbers in string form and compute their sum and then print it in console.
+定义一个函数，该函数可以接收两个字符串形式的整数，计算它们的和，然后在控制台中打印出来。
+
+Hints:
+提示：
+
+Use int() to convert a string to integer.
+使用int（）将字符串转换为整数。
+
+#本人答案
+def task(s1,s2):
+    return int(s1) + int(s2)
+
+print(task("123","456"))
+
+Solution
+def printValue(s1,s2):
+	print int(s1)+int(s2)
+
+printValue("3","4") #7
+
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 30:
+问题：
+Define a function that can accept two strings as input and concatenate them and then print it in console.
+定义一个函数，该函数可以接受两个字符串作为输入，并将它们连接起来，然后在控制台中打印出来。
+
+Hints:
+提示：
+
+Use + to concatenate the strings
+使用+连接字符串
+
+#本人答案
+def task(str1, str2):
+    return str1 + str2
+str1 = "Hello "
+str2 = "World!"
+print(task(str1, str2))
+
+Solution
+def printValue(s1,s2):
+	print s1+s2
+
+printValue("3","4") #34
+
+#----------------------------------------#
+#----------------------------------------#
+Question 31:
+问题：
+Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print al l strings line by line.
+定义一个函数，该函数可以接受两个字符串作为输入，并在控制台中打印具有最大长度的字符串。如果两个字符串的长度相同，则函数应逐行打印所有字符串。
+
+Hints:
+提示：
+
+Use len() function to get the length of a string
+使用len（）函数获取字符串的长度
+
+#本人答案
+def task(str1, str2):
+    if len(str1) > len(str2):
+        return str1
+    elif len(str1) < len(str2):
+        return str2
+    else:
+        return str1 + "\n" + str2
+    
+str1 = "Hello"
+str2 = "World!"
+print(task(str1, str2))
+
+Solution
+def printValue(s1,s2):
+	len1 = len(s1)
+	len2 = len(s2)
+	if len1>len2:
+		print s1
+	elif len2>len1:
+		print s2
+	else:
+		print s1
+		print s2
+		
+
+printValue("one","three")
+
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 32:
+问题：
+Define a function that can accept an integer number as input and print the "It is an even number" if the number is even, otherwise print "It is an odd number".
+定义一个可以接受整数作为输入的函数，如果该数字是偶数，则打印“它是偶数”，否则打印“这是奇数”。
+
+Hints:
+提示：
+
+Use % operator to check if a number is even or odd.
+使用%运算符检查数字是偶数还是奇数。
+
+#本人答案
+def task(num):
+    if num % 2 == 0:
+        return "It is an even number\n这是偶数"
+    else:
+        return "It is an odd number\n这是奇数"
+    
+num = 10
+print(task(num))
+
+Solution
+def checkValue(n):
+	if n%2 == 0:
+		print "It is an even number"
+	else:
+		print "It is an odd number"
+		
+
+checkValue(7)
+
+
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 33:
+问题：
+Define a function which can print a dictionary where the keys are numbers between 1 and 3 (both included) and the values are square of keys.
+定义一个函数，该函数可以打印一个字典，其中键是1到3之间的数字（都包括在内），值是键的平方。
+
+Hints:
+提示：
+
+Use dict[key]=value pattern to put entry into a dictionary.
+使用dict[key]=value模式将条目放入字典中。
+
+Use ** operator to get power of a number.
+使用**运算符获取数字的幂。
+
+# 本人答案
+def task():
+    dict1 = {}
+    for i in range(1, 4):
+        dict1[i] = i ** 2
+    return dict1
+print(task())
+
+Solution
+def printDict():
+	d=dict()
+	d[1]=1
+	d[2]=2**2
+	d[3]=3**2
+	print d
+		
+
+printDict()
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 34:
+问题：
+Define a function which can print a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys.
+定义一个函数，该函数可以打印一个字典，其中键是1到20之间的数字（都包括在内），值是键的平方。
+
+Hints:
+提示：
+
+Use dict[key]=value pattern to put entry into a dictionary.
+使用dict[key]=value模式将条目放入字典中。
+Use ** operator to get power of a number.
+使用**运算符获取数字的幂。
+Use range() for loops.
+对循环使用range（）。
+
+#本人答案
+def print_square_dict():
+    square_dict = {i: i**2 for i in range(1, 21)}
+    for key, value in square_dict.items():
+        print(f"{key}: {value}")
+
+print_square_dict()
+
+Solution
+def printDict():
+	d=dict()
+	for i in range(1,21):
+		d[i]=i**2
+	print d
+		
+
+printDict()
+
+#----------------------------------------#
+#----------------------------------------#
+Question 34:
+问题：
+Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the values only.
+定义一个函数,该函数可以生成一个字典,其中键是1到20之间的数字(都包括在内),值是键的平方。该函数应该只打印值。
+
+Hints:
+提示：
+
+Use dict[key]=value pattern to put entry into a dictionary.
+使用dict[key]=value模式将条目放入字典中。
+
+Use ** operator to get power of a number.
+使用**运算符获取数字的幂。
+
+Use range() for loops.
+对循环使用range（）。
+
+# 本人答案
+def task():
+    dict1 = {}
+    for i in range(1, 21):
+        dict1[i] = i ** 2
+    for value in dict1.values():
+        print(value)
+
+Solution
+def printDict():
+	d=dict()
+	for i in range(1,21):
+		d[i]=i**2
+	for k in d.value():	
+		print k
+		
+
+printDict()
+#----------------------------------------#
+#----------------------------------------#
+Question 36:
+问题：
+Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should just print the keys only.
+定义一个函数，该函数可以生成一个字典，其中键是1到20之间的数字（都包括在内），值是键的平方。该功能应仅打印按键。
+
+Hints:
+提示：
+
+Use dict[key]=value pattern to put entry into a dictionary.
+使用dict[key]=value模式将条目放入字典中。
+
+Use ** operator to get power of a number.
+使用**运算符获取数字的幂。
+
+Use range() for loops.
+对循环使用range（）。
+
+Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
+使用keys（）迭代字典中的键。我们还可以使用item（）来获取键/值对。
+
+# 本人答案
+def task():
+    dict1 = {}
+    for i in range(1, 21):
+        dict1[i] = i ** 2
+    for key in dict1.keys():
+        print(key)
+
+Solution
+def printDict():
+	d=dict()
+	for i in range(1,21):
+		d[i]=i**2
+	for k in d.keys():	
+		print k
+		
+
+printDict()
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 37:
+问题：
+Define a function which can generate and print a list where the values are square of numbers between 1 and 20 (both included).
+定义一个函数，该函数可以生成并打印一个列表，其中的值是1到20之间的数字的平方（均包括在内）。
+
+Hints:
+提示：
+
+Use ** operator to get power of a number.
+使用**运算符获取数字的幂。
+
+Use range() for loops.
+对循环使用range（）。
+
+Use list.append() to add values into a list.
+使用list.append（）将值添加到列表中。
+
+# 本人答案
+def task():
+    list1 = []
+    for i in range(1, 21):
+        list1.append(i ** 2)
+    print(list1)
+
+Solution
+def printList():
+	li=list()
+	for i in range(1,21):
+		li.append(i**2)
+	print li
+		
+
+printList()
+
+#----------------------------------------#
+#----------------------------------------#
+Question 38:
+问题：
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the first 5 elements in the list.
+定义一个函数，该函数可以生成一个列表，其中的值是1到20之间的数字的平方（都包括在内）。然后，该函数需要打印列表中的前5个元素。
+
+Hints:
+提示：
+
+Use ** operator to get power of a number.
+使用**运算符获取数字的幂。
+Use range() for loops.
+对循环使用range（）。
+Use list.append() to add values into a list.
+使用list.append（）将值添加到列表中。
+Use [n1:n2] to slice a list
+使用[n1:n2]对列表进行切片
+
+# 本人答案
+def task():
+    list1 = []
+    for i in range(1, 21):
+        list1.append(i ** 2)
+    print(list1[:5])
+
+Solution
+def printList():
+	li=list()
+	for i in range(1,21):
+		li.append(i**2)
+	print li[:5]
+		
+
+printList()
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 39:
+问题：
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the last 5 elements in the list.
+定义一个函数，该函数可以生成一个列表，其中的值是1到20之间的数字的平方（都包括在内）。然后，该函数需要打印列表中的最后5个元素。
+
+Hints:
+提示：
+
+Use ** operator to get power of a number.
+使用**运算符获取数字的幂。
+
+Use range() for loops.
+对循环使用range（）。
+
+Use list.append() to add values into a list.
+使用list.append（）将值添加到列表中。
+
+Use [n1:n2] to slice a list
+使用[n1:n2]对列表进行切片
+
+# 本人答案
+def task():
+    list1 = []
+    for i in range(1, 21):
+        list1.append(i ** 2)
+    print(list1[-5:])
+
+Solution
+def printList():
+	li=list()
+	for i in range(1,21):
+		li.append(i**2)
+	print li[-5:]
+		
+
+printList()
+
+#----------------------------------------#
+#----------------------------------------#
+Question 40:
+问题：
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
+定义一个函数，该函数可以生成一个列表，其中的值是1到20之间的数字的平方（都包括在内）。然后，该函数需要打印列表中除前5个元素之外的所有值。
+
+Hints:
+提示：
+
+Use ** operator to get power of a number.
+使用**运算符获取数字的幂。
+
+Use range() for loops.
+对循环使用range（）。
+
+Use list.append() to add values into a list.
+使用list.append（）将值添加到列表中。
+
+Use [n1:n2] to slice a list
+使用[n1:n2]对列表进行切片
+
+# 本人答案
+def task():
+    list1 = []
+    for i in range(1, 21):
+        list1.append(i ** 2)
+    print(list1[5:])
+
+Solution
+def printList():
+	li=list()
+	for i in range(1,21):
+		li.append(i**2)
+	print li[5:]
+		
+
+printList()
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 41:
+问题：
+Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included).
+定义一个函数，该函数可以生成并打印一个元组，其中值是1到20之间的数字的平方（都包括在内）。
+
+Hints:
+提示：
+
+Use ** operator to get power of a number.
+使用**运算符获取数字的幂。
+
+Use range() for loops.
+对循环使用range（）。
+
+Use list.append() to add values into a list.
+使用list.append（）将值添加到列表中。
+
+Use tuple() to get a tuple from a list.
+使用tuple（）从列表中获取元组。
+
+# 本人答案
+def task():
+    tuple1 = tuple(i ** 2 for i in range(1, 21))
+    print(tuple1)
+
+Solution
+def printTuple():
+	li=list()
+	for i in range(1,21):
+		li.append(i**2)
+	print tuple(li)
+		
+printTuple()
+
+#----------------------------------------#
+#----------------------------------------#
+Question 42:
+问题：
+With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line.
+对于给定的元组（1,2,3,4,5,6,7,8,9,10），编写一个程序，将前半部分值打印在一行中，将后半部分值打印到一行中。
+
+Hints:
+提示：
+
+Use [n1:n2] notation to get a slice from a tuple.
+使用[n1:n2]表示法从元组中获取切片。
+
+# 本人答案
+def task():
+    tuple1 = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    print(tuple1[:5])
+    print(tuple1[5:]) 
+    S
+Solution
+tp=(1,2,3,4,5,6,7,8,9,10)
+tp1=tp[:5]
+tp2=tp[5:]
+print tp1
+print tp2
+
+#----------------------------------------#
+#----------------------------------------#
+Question 43:
+问题：
+Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10).
+编写一个程序来生成并打印另一个元组，其值是给定元组中的偶数（1,2,3,4,5,6,7,8,9,10）。
+
+Hints:
+提示：
+
+Use "for" to iterate the tuple
+使用“for”迭代元组
+
+Use tuple() to generate a tuple from a list.
+使用tuple（）从列表生成元组。
+
+# 本人答案
+def task():
+    tuple1 = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    tuple2 = tuple(i for i in tuple1 if i % 2 == 0)
+    print(tuple2)
+
+Solution
+tp=(1,2,3,4,5,6,7,8,9,10)
+li=list()
+for i in tp:
+	if tp[i]%2==0:
+		li.append(tp[i])
+
+tp2=tuple(li)
+print tp2
+
+
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 44:
+问题：
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No".
+编写一个程序，接受字符串作为输入，如果字符串为“YES”、“yes”或“Yes”，则打印“是”；否则打印“否”。
+
+Hints:
+提示：
+
+Use if statement to judge condition.
+使用if语句判断条件。
+
+# 本人答案
+def task():
+    string = input("请输入一个字符串: ")
+    if string in ["yes", "YES", "Yes"]:
+        print("Yes")
+    else:
+        print("No")
+
+Solution
+s= raw_input()
+if s=="yes" or s=="YES" or s=="Yes":
+    print "Yes"
+else:
+    print "No"
+
+#----------------------------------------#
+#----------------------------------------#
+Question 45:
+问题：
+Write a program which can filter even numbers in a list by using filter function. The list is: [1,2,3,4,5,6,7,8,9,10].
+编写一个程序，通过使用过滤函数过滤列表中的偶数。列表为：[1,2,3,4,5,6,7,8,9,10]。
+
+Hints:
+提示：
+
+Use filter() to filter some elements in a list.
+使用filter（）过滤列表中的一些元素。
+Use lambda to define anonymous functions.
+使用lambda定义匿名函数。
+
+# 本人答案
+def task():
+    list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    list2 = list(filter(lambda x: x % 2 == 0, list1))
+    print(list2)
+
+Solution
+li = [1,2,3,4,5,6,7,8,9,10]
+evenNumbers = filter(lambda x: x%2==0, li)
+print evenNumbers
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 46:
+问题：
+Write a program which can map() to make a list whose elements are square of elements in [1,2,3,4,5,6,7,8,9,10].
+编写一个可以映射（）的程序来制作一个列表，该列表的元素是[1,2,3,4,5,6,7,8,9,10]中元素的平方。
+
+Hints:
+提示：
+
+Use map() to generate a list.
+使用map（）生成列表。
+
+Use lambda to define anonymous functions.
+使用lambda定义匿名函数。
+
+# 本人答案
+def task():
+    list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    list2 = list(map(lambda x: x ** 2, list1))
+    print(list2)
+
+Solution
+li = [1,2,3,4,5,6,7,8,9,10]
+squaredNumbers = map(lambda x: x**2, li)
+print squaredNumbers
+#----------------------------------------#
+#----------------------------------------#
+Question 47:
+问题：
+Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10].
+编写一个可以映射（）和过滤（）的程序，以制作一个元素为[1,2,3,4,5,6,7,8,9,10]中偶数平方的列表。
+
+Hints:
+提示：
+
+Use map() to generate a list.
+使用map（）生成列表。
+
+Use filter() to filter elements of a list.
+使用filter（）过滤列表中的元素。
+
+Use lambda to define anonymous functions.
+使用lambda定义匿名函数。
+
+# 本人答案
+def task():
+    list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    list2 = list(map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, list1)))
+    print(list2)
+
+Solution
+li = [1,2,3,4,5,6,7,8,9,10]
+evenNumbers = map(lambda x: x**2, filter(lambda x: x%2==0, li))
+print evenNumbers
+
+#----------------------------------------#
+#----------------------------------------#
+Question 48:
+问题：
+Write a program which can filter() to make a list whose elements are even number between 1 and 20 (both included).
+编写一个可以过滤（）的程序，以制作一个元素为1到20之间的偶数（均包含在内）的列表。
+
+Hints:
+提示：
+
+Use filter() to filter elements of a list.
+使用filter（）过滤列表中的元素。
+
+Use lambda to define anonymous functions.
+使用lambda定义匿名函数。
+
+# 本人答案
+def task():
+    list1 = range(1, 21)
+    list2 = list(filter(lambda x: x % 2 == 0, list1))
+    print(list2)
+task()
+
+Solution
+evenNumbers = filter(lambda x: x%2==0, range(1,21))
+print evenNumbers
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 49:
+问题：
+Write a program which can map() to make a list whose elements are square of numbers between 1 and 20 (both included).
+编写一个程序，它可以映射（）来制作一个列表，其元素是1到20之间的数字的平方（两者都包括在内）。
+
+Hints:
+提示：
+
+Use map() to generate a list.
+使用map（）生成列表。
+
+Use lambda to define anonymous functions.
+使用lambda定义匿名函数。
+
+# 本人答案
+def task():
+    list1 = range(1, 21)
+    list2 = list(map(lambda x: x ** 2, list1))
+    print(list2)
+task()
+
+Solution
+squaredNumbers = map(lambda x: x**2, range(1,21))
+print squaredNumbers
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question  50:
+问题：
+Define a class named American which has a static method called printNationality.
+定义一个名为American的类，该类有一个称为printNationality的静态方法。
+
+Hints:
+提示：
+
+Use @staticmethod decorator to define class static method.
+使用@staticmethod装饰器定义类静态方法。
+
+#本人答案
+class American:
+    @staticmethod
+    def printNationality():
+        print("American")
+
+anAmerican = American()
+anAmerican.printNationality()
+American.printNationality()
+
+Solution
+class American(object):
+    @staticmethod
+    def printNationality():
+        print "America"
+
+anAmerican = American()
+anAmerican.printNationality()
+American.printNationality()
+
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 51:
+问题：
+Define a class named American and its subclass NewYorker.
+定义一个名为American的类及其子类NewYorker。
+
+Hints:
+提示：
+
+Use class Subclass(ParentClass) to define a subclass.
+使用类子类（ParentClass）定义子类。
+
+#本人答案
+class American:
+    @staticmethod
+    def printNationality():
+        print("American")
+
+class NewYorker(American):
+    @staticmethod
+    def printNationality():
+        print("New Yorker")
+
+Solution:
+
+class American(object):
+    pass
+
+class NewYorker(American):
+    pass
+
+anAmerican = American()
+aNewYorker = NewYorker()
+print anAmerican
+print aNewYorker
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 52:
+问题：
+Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area.
+定义一个名为Circle的类，它可以由半径构造。Circle类有一个可以计算面积的方法。
+
+Hints:
+提示：
+
+Use def methodName(self) to define a method.
+使用def methodName（self）定义方法。
+
+#本人答案
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def compute_area(self):
+        return 3.14 * self.radius ** 2
+
+Solution:
+
+class Circle(object):
+    def __init__(self, r):
+        self.radius = r
+
+    def area(self):
+        return self.radius**2*3.14
+
+aCircle = Circle(2)
+print aCircle.area()
+
+#----------------------------------------#
+#----------------------------------------#
+Question 53:
+
+Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area.
+定义一个名为Rectangle的类,它可以由长度和宽度构造。Rectangle类有一个可以计算面积的方法。
+
+Hints:
+提示：
+
+Use def methodName(self) to define a method.
+使用def methodName（self）定义方法。
+
+#本人答案
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def compute_area(self):
+        return self.length * self.width
+
+Solution:
+
+class Rectangle(object):
+    def __init__(self, l, w):
+        self.length = l
+        self.width  = w
+
+    def area(self):
+        return self.length*self.width
+
+aRectangle = Rectangle(2,10)
+print aRectangle.area()
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 54：
+
+Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
+定义一个名为Shape的类及其子类Square。Square类有一个init函数，它接受长度作为参数。这两个类都有一个area函数，可以打印默认shape面积为0的形状区域。
+
+Hints:
+提示：
+
+To override a method in super class, we can define a method with the same name in the super class.
+要覆盖超类中的方法，我们可以在超类中定义一个同名方法。
+
+# #本人答案
+class Shape:
+    def area(self):
+        return 0
+class Square(Shape):
+    def __init__(self, length):
+        self.length = length
+    def area(self):
+        return self.length ** 2
+
+Solution:
+
+class Shape(object):
+    def __init__(self):
+        pass
+
+    def area(self):
+        return 0
+
+class Square(Shape):
+    def __init__(self, l):
+        Shape.__init__(self)
+        self.length = l
+
+    def area(self):
+        return self.length*self.length
+
+aSquare= Square(3)
+print aSquare.area()
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 55:
+Please raise a RuntimeError exception.
+请引发RuntimeError异常。
+
+Hints:
+提示：
+
+Use raise() to raise an exception.
+使用raise（）引发异常。
+
+#本人答案
+raise RuntimeError("This is a runtime error.")
+
+Solution:
+
+raise RuntimeError('something wrong')
+
+
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 56:
+
+Write a function to compute 5/0 and use try/except to catch the exceptions.
+编写一个函数来计算5/0，并使用try/except来捕获异常。
+
+Hints:
+提示：
+
+Use try/except to catch exceptions.
+使用try/except来捕获异常。
+
+#本人答案
+def compute_division():
+    try:
+        result = 5 / 0
+    except ZeroDivisionError as e:
+        print(f"Error: {e}")
+compute_division()
+
+Solution:
+
+def throws():
+    return 5/0
+
+try:
+    throws()
+except ZeroDivisionError:
+    print "division by zero!"
+except Exception, err:
+    print 'Caught an exception'
+finally:
+    print 'In finally block for cleanup'
+
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 57:
+
+Define a custom exception class which takes a string message as attribute.
+定义一个自定义异常类，该类将字符串消息作为属性。
+
+Hints:
+提示：
+
+To define a custom exception, we need to define a class inherited from Exception.
+要定义自定义异常，我们需要定义一个从exception继承的类。
+
+#本人答案
+class CustomException(Exception):
+    def __init__(self, message):
+        self.message = message
+        super().__init__(self.message)
+
+Solution:
+
+class MyError(Exception):
+    """My own exception class
+
+    Attributes:
+        msg  -- explanation of the error
+    """
+
+    def __init__(self, msg):
+        self.msg = msg
+
+error = MyError("something wrong")
+
+#----------------------------------------#
+#----------------------------------------#
+Question 58:
+问题：
+
+Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the user name of a given email address. Both user names and company names are composed of letters only.
+假设我们有一些电子邮件地址username@companyname.com，请编写程序打印给定电子邮件地址的用户名。用户名和公司名称都只由字母组成。
+
+Example:
+例子：
+If the following email address is given as input to the program:
+如果程序输入了以下电子邮件地址：
+
+john@google.com
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+john
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+Hints:
+提示：
+
+Use \w to match letters.
+使用\w匹配字母。
+
+def get_username(email):
+    try:
+        username = email.split('@')[0]
+        return username
+    except IndexError:
+        return "Invalid email format"
+
+Solution:
+import re
+emailAddress = raw_input()
+pat2 = "(\w+)@((\w+\.)+(com))"
+r2 = re.match(pat2,emailAddress)
+print r2.group(1)
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 59:
+问题：
+
+Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
+假设我们有一些电子邮件地址username@companyname.com，请编写程序打印给定电子邮件地址的公司名称。用户名和公司名称都只由字母组成。
+
+Example:
+例子：
+If the following email address is given as input to the program:
+如果程序输入了以下电子邮件地址：
+
+john@google.com
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+google
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+Hints:
+提示：
+
+Use \w to match letters.
+使用\w匹配字母。
+
+Solution:
+import re
+emailAddress = raw_input()
+pat2 = "(\w+)@(\w+)\.(com)"
+r2 = re.match(pat2,emailAddress)
+print r2.group(2)
+
+#----------------------------------------#
+#----------------------------------------#
+Question 60:
+问题：
+
+Write a program which accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
+编写一个程序，接受由空格分隔的单词序列作为输入，打印仅由数字组成的单词。
+
+Example:
+例子：
+
+If the following words is given as input to the program:
+如果将以下单词作为程序的输入：
+
+2 cats and 3 dogs.
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+2 3
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+Hints:
+提示：
+
+Use re.findall() to find all substring using regex.
+使用re.findall（）使用正则表达式查找所有子字符串。
+
+#本人答案
+input_str = input("请输入由空格分隔的单词序列：")
+words = input_str.split()
+result = [word for word in words if word.isdigit()]
+print(" ".join(result))
+
+Solution:
+import re
+s = raw_input()
+print re.findall("\d+",s)
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 61:
+问题：
+
+此为python2的内容，在python3中不出现
+This is content from Python 2 and does not appear in Python 3
+
+Print a unicode string "hello world".
+打印一个unicode字符串“hello world”。
+
+Hints:
+提示：
+
+Use u'strings' format to define unicode string.
+使用“字符串”格式定义unicode字符串。
+
+Solution:
+
+unicodeString = u"hello world!"
+print unicodeString
+
+#----------------------------------------#
+#----------------------------------------#
+Question 62:
+
+此为python2的内容，在python3中不出现
+This is content from Python 2 and does not appear in Python 3
+Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
+编写一个程序来读取ASCII字符串并将其转换为utf-8编码的unicode字符串。
+
+Hints:
+提示：
+
+Use unicode() function to convert.
+使用unicode（）函数进行转换。
+
+Solution:
+解决方案：
+
+s = raw_input()
+u = unicode( s ,"utf-8")
+print u
+
+#----------------------------------------#
+#----------------------------------------#
+Question 63:
+问题：
+
+此为python2的内容，在python3中不出现
+This is content from Python 2 and does not appear in Python 3
+
+Write a special comment to indicate a Python source code file is in unicode.
+写一个特殊的注释，表示Python源代码文件是unicode的。
+
+Hints:
+提示：
+
+Solution:
+解决方案：
+
+# -*- coding: utf-8 -*-
+#-*-编码：utf-8-*-
+
+#----------------------------------------#
+#----------------------------------------#
+Question 64:
+问题：
+
+Write a program to compute 1/2+2/3+3/4+...+n/n+1 with a given n input by console (n>0).
+编写一个程序来计算1/2+2/3+3/4+。..+n/n+1，控制台输入给定的n（n>0）。
+
+Example:
+例子：
+
+If the following n is given as input to the program:
+如果将以下n作为程序的输入：
+
+5
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+3.55
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+Hints:
+提示：
+Use float() to convert an integer to a float
+使用float（）将整数转换为浮点数
+
+# 本人答案
+def compute_sum(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i / (i + 1)
+    return total
+
+n= int(input("请输入一个正整数n: "))
+result = compute_sum(n)
+
+Solution:
+
+n=int(raw_input())
+sum=0.0
+for i in range(1,n+1):
+    sum += float(float(i)/(i+1))
+print sum
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 65:
+问题：
+
+Write a program to compute:
+编写一个程序来计算：
+
+f(n)=f(n-1)+100 when n>0
+and f(0)=1
+
+with a given n input by console (n>0).
+通过控制台输入给定的n（n>0）。
+
+Example:
+例子：
+If the following n is given as input to the program:
+如果将以下n作为程序的输入：
+
+5
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+500
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+Hints:
+提示：
+We can define recursive function in Python.
+我们可以在Python中定义递归函数。
+
+# 本人答案
+def compute_f(n):
+    if n == 0:
+        return 0
+    else:
+        return compute_f(n - 1) + 100
+
+Solution:
+
+def f(n):
+    if n==0:
+        return 0
+    else:
+        return f(n-1)+100
+
+n=int(raw_input())
+print f(n)
+
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 66:
+问题：
+
+
+The Fibonacci Sequence is computed based on the following formula:
+斐波那契数列根据以下公式计算：
+
+
+f(n)=0 if n=0
+f(n)=1 if n=1
+f(n)=f(n-1)+f(n-2) if n>1
+
+Please write a program to compute the value of f(n) with a given n input by console.
+请编写一个程序，通过控制台输入给定的n来计算f（n）的值。
+
+Example:
+例子：
+
+If the following n is given as input to the program:
+如果将以下n作为程序的输入：
+
+7
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+13
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+Hints:
+提示：
+We can define recursive function in Python.
+我们可以在Python中定义递归函数。
+
+# 本人答案
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+n = int(input("请输入一个非负整数n: "))
+result = fibonacci(n)
+print(f"f({n}) = {result}")
+
+Solution:
+
+def f(n):
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return f(n-1)+f(n-2)
+
+n=int(raw_input())
+print f(n)
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 67:
+问题：
+
+The Fibonacci Sequence is computed based on the following formula:
+斐波那契数列根据以下公式计算：
+
+
+f(n)=0 if n=0
+f(n)=1 if n=1
+f(n)=f(n-1)+f(n-2) if n>1
+
+Please write a program using list comprehension to print the Fibonacci Sequence in comma separated form with a given n input by console.
+请编写一个使用列表推导式的程序，通过控制台输入给定的n，以逗号分隔的形式打印斐波那契序列。
+
+Example:
+例子：
+If the following n is given as input to the program:
+如果将以下n作为程序的输入：
+
+7
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+0,1,1,2,3,5,8,13
+
+Hints:
+提示：
+We can define recursive function in Python.
+我们可以在Python中定义递归函数。
+Use list comprehension to generate a list from an existing list.
+使用列表推导式从现有列表生成列表。
+Use string.join() to join a list of strings.
+使用string.join（）连接字符串列表。
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+# 本人答案
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+n = int(input("请输入一个整数: "))
+fibonacci_list = [str(fibonacci(i)) for i in range(n + 1)]
+
+Solution:
+
+def f(n):
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return f(n-1)+f(n-2)
+
+n=int(raw_input())
+values = [str(f(x)) for x in range(0, n+1)]
+print ",".join(values)
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 68:
+问题：
+
+Please write a program using generator to print the even numbers between 0 and n in comma separated form while n is input by console.
+请使用生成器编写一个程序，在控制台输入n时，以逗号分隔的形式打印0到n之间的偶数。
+
+Example:
+例子：
+If the following n is given as input to the program:
+如果将以下n作为程序的输入：
+
+10
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+0,2,4,6,8,10
+
+Hints:
+提示：
+
+Use yield to produce the next value in generator.
+使用yield在生成器中生成下一个值。
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+#本人答案
+def even_numbers(n):
+    for i in range(0, n + 1, 2):
+        yield i
+n = int(input("请输入一个整数: "))
+even_numbers_list = [str(num) for num in even_numbers(n)]
+print(",".join(even_numbers_list))
+
+
+Solution:
+
+def EvenGenerator(n):
+    i=0
+    while i<=n:
+        if i%2==0:
+            yield i
+        i+=1
+
+
+n=int(raw_input())
+values = []
+for i in EvenGenerator(n):
+    values.append(str(i))
+
+print ",".join(values)
+
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 69:
+问题：
+
+Please write a program using generator to print the numbers which can be divisible by 5 and 7 between 0 and n in comma separated form while n is input by console.
+请使用生成器编写一个程序，以逗号分隔的形式打印0和n之间可被5和7整除的数字，而n是由控制台输入的。
+
+Example:
+例子：
+
+If the following n is given as input to the program:
+如果将以下n作为程序的输入：
+
+100
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+0,35,70
+
+Hints:
+提示：
+
+Use yield to produce the next value in generator.
+使用yield在生成器中生成下一个值。
+
+In case of input data being supplied to the question, it should be assumed to be a console input.
+如果输入数据被提供给问题，则应假设它是控制台输入。
+
+#本人答案
+def task(n):
+    for i in range(0, n + 1):
+        if i % 5 == 0 and i % 7 == 0:
+            yield i
+n = int(input("请输入一个整数: "))
+task_list = [str(num) for num in task(n)]
+print(",".join(task_list))
+Solution:
+
+def NumGenerator(n):
+    for i in range(n+1):
+        if i%5==0 and i%7==0:
+            yield i
+
+n=int(raw_input())
+values = []
+for i in NumGenerator(n):
+    values.append(str(i))
+
+print ",".join(values)
+
+
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 70:
+问题：
+
+Please write assert statements to verify that every number in the list [2,4,6,8] is even.
+请写断言语句来验证列表[2,4,6,8]中的每个数字都是偶数。
+
+Hints:
+提示：
+Use "assert expression" to make assertion.
+使用“assert-expression”进行断言。
+
+# 本人答案
+list1=[2,4,6,8]
+for i in list1:
+    assert i%2==0, f"{i} is not an even number"
+
+Solution:
+
+li = [2,4,6,8]
+for i in li:
+    assert i%2==0
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 71:
+问题：
+
+Please write a program which accepts basic mathematic expression from console and print the evaluation result.
+请编写一个程序，从控制台接受基本的数学表达式，并打印评估结果。
+
+Example:
+例子：
+If the following string is given as input to the program:
+如果将以下字符串作为程序的输入：
+
+35+3
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+38
+
+Hints:
+提示：
+Use eval() to evaluate an expression.
+使用eval（）来计算表达式。
+
+
+# 本人答案
+s=eval(input("请输入一个数学表达式: "))
+print(s)
+
+Solution:
+expression = raw_input()
+print eval(expression)
+
+#----------------------------------------#
+#----------------------------------------#
+Question 72:
+问题：
+
+Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
+请编写一个二分查找函数，用于搜索排序列表中的项目。函数应返回列表中要搜索的元素的索引。
+
+
+Hints:
+提示：
+Use if/elif to deal with conditions.
+使用if/eif处理条件。
+
+# 本人答案
+def search(n,tas):
+    tas.sort()
+    low = 0
+    high = len(tas) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if tas[mid] == n:
+            return mid
+        elif tas[mid] < n:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+li=[2,5,7,9,11,17,222]
+print (search(li,11))
+print (search(li,12))
+
+Solution:
+
+import math
+def bin_search(li, element):
+    bottom = 0
+    top = len(li)-1
+    index = -1
+    while top>=bottom and index==-1:
+        mid = int(math.floor((top+bottom)/2.0))
+        if li[mid]==element:
+            index = mid
+        elif li[mid]>element:
+            top = mid-1
+        else:
+            bottom = mid+1
+
+    return index
+
+li=[2,5,7,9,11,17,222]
+print bin_search(li,11)
+print bin_search(li,12)
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 73:
+问题：
+
+Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
+请编写一个二分查找函数，用于搜索排序列表中的项目。函数应返回列表中要搜索的元素的索引。
+
+
+Hints:
+提示：
+Use if/elif to deal with conditions.
+使用if/eif处理条件。
+
+# 本人答案
+def search(n,tas):
+    tas.sort()
+    low = 0
+    high = len(tas) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if tas[mid] == n:
+            return mid
+        elif tas[mid] < n:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+li=[2,5,7,9,11,17,222]
+print (search(li,11))
+print (search(li,12))
+
+Solution:
+import math
+def bin_search(li, element):
+    bottom = 0
+    top = len(li)-1
+    index = -1
+    while top>=bottom and index==-1:
+        mid = int(math.floor((top+bottom)/2.0))
+        if li[mid]==element:
+            index = mid
+        elif li[mid]>element:
+            top = mid-1
+        else:
+            bottom = mid+1
+
+    return index
+
+li=[2,5,7,9,11,17,222]
+print bin_search(li,11)
+print bin_search(li,12)
+
+#----------------------------------------#
+#----------------------------------------#
+Question 74:
+问题：
+
+Please generate a random float where the value is between 10 and 100 using Python math module.
+请使用Python数学模块生成一个值在10到100之间的随机浮点数。
+
+
+
+Hints:
+提示：
+Use random.random() to generate a random float in [0,1].
+使用random.random（）在[0,1]中生成随机浮点数。
+
+# 本人答案
+import random
+print (random.random()*100)
+
+Solution:
+import random
+print random.random()*100
+
+#----------------------------------------#
+#----------------------------------------#
+Question 75:
+问题：
+
+Please generate a random float where the value is between 5 and 95 using Python math module.
+请使用Python数学模块生成一个值在5到95之间的随机浮点数。
+
+Hints:
+提示：
+
+Use random.random() to generate a random float in [0,1].
+使用random.random（）在[0,1]中生成随机浮点数。
+
+# 本人答案
+import random
+print (random.random()*90 + 5)
+
+Solution:
+import random
+print random.random()*100-5
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 76:
+问题：
+
+Please write a program to output a random even number between 0 and 10 inclusive using random module and list comprehension.
+请使用随机模块和列表理解编写一个程序，输出0到10之间的随机偶数。
+
+Hints:
+提示：
+
+Use random.choice() to a random element from a list.
+对列表中的随机元素使用random.choice（）。
+
+#本人答案
+import random
+print (random.choice([i for i in range(0,11) if i%2==0]))
+
+Solution:
+
+import random
+print random.choice([i for i in range(11) if i%2==0])
+
+#----------------------------------------#
+#----------------------------------------#
+Question 77:
+问题：
+
+Please write a program to output a random number, which is divisible by 5 and 7, between 0 and 10 inclusive using random module and list comprehension.
+请使用随机模块和列表推导式编写一个程序来输出一个可被5和7整除的随机数，该随机数介于0和10之间。
+
+Hints:
+提示：
+Use random.choice() to a random element from a list.
+对列表中的随机元素使用random.choice（）。
+
+# 本人答案
+import random
+print (random.choice([i for i in range(0,11) if i%5==0 and i%7==0]))
+
+Solution:
+
+import random
+print random.choice([i for i in range(201) if i%5==0 and i%7==0])
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 78:
+问题：
+
+Please write a program to generate a list with 5 random numbers between 100 and 200 inclusive.
+请编写一个程序，生成一个包含100到200之间的5个随机数的列表。
+
+Hints:
+提示：
+Use random.sample() to generate a list of random values.
+使用random.sample（）生成随机值列表。
+
+# 本人答案
+import random
+print (random.sample(range(100,201),5))
+
+Solution:
+
+import random
+print random.sample(range(100), 5)
+
+#----------------------------------------#
+#----------------------------------------#
+Question 79:
+问题：
+
+Please write a program to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
+请编写一个程序，随机生成一个包含5个介于100和200之间的偶数的列表。
+
+Hints:
+提示：
+Use random.sample() to generate a list of random values.
+使用random.sample（）生成随机值列表。
+
+# 本人答案
+import random
+print (random.sample([i for i in range(100,201) if i%2==0],5))
+
+Solution:
+import random
+print random.sample([i for i in range(100,201) if i%2==0], 5)
+
+#----------------------------------------#
+#----------------------------------------#
+Question 80:
+问题：
+
+Please write a program to randomly generate a list with 5 numbers, which are divisible by 5 and 7 , between 1 and 1000 inclusive.
+请编写一个程序，随机生成一个包含5个数字的列表，这些数字可以被5和7整除，介于1和1000之间。
+
+Hints:
+提示：
+Use random.sample() to generate a list of random values.
+使用random.sample（）生成随机值列表。
+
+# 本人答案
+import random
+print (random.sample([i for i in range(1,1001) if i%5==0 and i%7==0],5))
+
+Solution:
+
+import random
+print random.sample([i for i in range(1,1001) if i%5==0 and i%7==0], 5)
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 81:
+问题：
+
+Please write a program to randomly print a integer number between 7 and 15 inclusive.
+请编写一个程序，随机打印一个介于7和15之间的整数。
+
+Hints:
+提示：
+Use random.randrange() to a random integer in a given range.
+使用random.randrange（）对给定范围内的随机整数进行处理。
+
+# 本人答案
+import random
+print(random.randrange(7, 16))
+
+Solution:
+
+import random
+print random.randrange(7,16)
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 82:
+问题：
+
+Please write a program to compress and decompress the string "hello world!hello world!hello world!hello world!".
+请编写一个程序来压缩和解压缩字符串“hello world！hello world！hello world！hello world！”。
+
+Hints:
+提示：
+Use zlib.compress() and zlib.decompress() to compress and decompress a string.
+使用zlib.compress（）和zlib.dexport（）来压缩和解压缩字符串。
+
+# 本人答案
+import zlib
+s = b"hello world!hello world!hello world!hello world!"
+s = zlib.compress(s)
+print(s)
+s = zlib.decompress(s)
+print(s)
+
+Solution:
+import zlib
+s = 'hello world!hello world!hello world!hello world!'
+t = zlib.compress(s)
+print t
+print zlib.decompress(t)
+
+#----------------------------------------#
+#----------------------------------------#
+Question 83:
+问题：
+
+Please write a program to print the running time of execution of "1+1" for 100 times.
+请编写一个程序，打印100次“1+1”执行的运行时间。
+
+Hints:
+提示：
+Use timeit() function to measure the running time.
+使用timeit（）函数测量运行时间。
+
+# 本人答案
+import timeit
+def test():
+    return 1 + 1
+print(timeit.timeit(test, number=100))
+
+Solution:
+
+from timeit import Timer
+t = Timer("for i in range(100):1+1")
+print t.timeit()
+
+#----------------------------------------#
+#----------------------------------------#
+Question 84:
+问题：
+
+Please write a program to shuffle and print the list [3,6,7,8].
+请编写一个程序来洗牌并打印列表[3,6,7,8]。
+
+Hints:
+提示：
+Use shuffle() function to shuffle a list.
+使用shuffle（）函数对列表进行洗牌。
+
+# 本人答案
+import random
+def shuffle_list(lst):
+    random.shuffle(lst)
+    return lst
+print(shuffle_list([3, 6, 7, 8]))
+
+Solution:
+from random import shuffle
+li = [3,6,7,8]
+shuffle(li)
+print li
+
+#----------------------------------------#
+#----------------------------------------#
+Question 85:
+问题：
+
+Please write a program to shuffle and print the list [3,6,7,8].
+请编写一个程序来洗牌并打印列表[3,6,7,8]。
+
+Hints:
+提示：
+Use shuffle() function to shuffle a list.
+使用shuffle（）函数对列表进行洗牌。
+
+# 本人答案
+import random
+def shuffle_list(lst):
+    random.shuffle(lst)
+    return lst
+print(shuffle_list([3, 6, 7, 8]))
+
+Solution:
+from random import shuffle
+li = [3,6,7,8]
+shuffle(li)
+print li
+
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 86:
+问题：
+
+Please write a program to generate all sentences where subject is in ["I", "You"] and verb is in ["Play", "Love"] and the object is in ["Hockey","Football"].
+请编写一个程序来生成所有句子，其中主语在[“I”，“You”]，动词在[“Play”，“Love”]，宾语在[“Hockey”，“Football”]。
+
+Hints:
+提示：
+Use list[index] notation to get a element from a list.
+使用list[index]表示法从列表中获取元素。
+
+# 本人答案
+subjects = ["I", "You"]
+verbs = ["Play", "Love"]
+objects = ["Hockey", "Football"]
+for subject in subjects:
+    for verb in verbs:
+        for obj in objects:
+            print(f"{subject} {verb} {obj}")
+
+Solution:
+subjects=["I", "You"]
+verbs=["Play", "Love"]
+objects=["Hockey","Football"]
+for i in range(len(subjects)):
+    for j in range(len(verbs)):
+        for k in range(len(objects)):
+            sentence = "%s %s %s." % (subjects[i], verbs[j], objects[k])
+            print sentence
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 87:
+
+Please write a program to print the list after removing delete even numbers in [5,6,77,45,22,12,24].
+请编写一个程序，在删除[5,6,77,45,22,12,24]中的删除偶数后打印列表。
+
+Hints:
+提示：
+Use list comprehension to delete a bunch of element from a list.
+使用列表理解从列表中删除一堆元素。
+
+# 本人答案
+def remove_even_numbers(lst):
+    return [x for x in lst if x % 2 != 0]
+print(remove_even_numbers([5, 6, 77, 45, 22, 12, 24]))
+
+Solution:
+li = [5,6,77,45,22,12,24]
+li = [x for x in li if x%2!=0]
+print li
+
+#----------------------------------------#
+#----------------------------------------#
+Question 88:
+问题：
+
+By using list comprehension, please write a program to print the list after removing delete numbers which are divisible by 5 and 7 in [12,24,35,70,88,120,155].
+通过使用列表理解，请编写一个程序，在删除[12,24,35,70,88120155]中可被5和7整除的删除数后打印列表。
+
+Hints:
+提示：
+Use list comprehension to delete a bunch of element from a list.
+使用列表理解从列表中删除一堆元素。
+
+# 本人答案
+def remove_divisible_by_5_and_7(lst):
+    return [x for x in lst if x % 5 != 0 and x % 7 != 0]
+print(remove_divisible_by_5_and_7([12, 24, 35, 70, 88, 120, 155]))
+
+Solution:
+li = [12,24,35,70,88,120,155]
+li = [x for x in li if x%5!=0 and x%7!=0]
+print li
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question89:
+问题：
+
+By using list comprehension, please write a program to print the list after removing the 0th, 2nd, 4th,6th numbers in [12,24,35,70,88,120,155].
+通过使用列表理解，请编写一个程序，在删除[12,24,35,70,88,120,155]中的第0、第2、第4、第6个数字后打印列表。
+
+Hints:
+提示：
+Use list comprehension to delete a bunch of element from a list.
+使用列表推导式从列表中删除一堆元素。
+
+Use enumerate() to get (index, value) tuple.
+使用enumerate（）来获取（索引，值）元组。
+
+# 本人答案
+def remove_indices(lst, indices):
+    return [x for i, x in enumerate(lst) if i not in indices]
+print(remove_indices([12, 24, 35, 70, 88, 120, 155], {0, 2, 4, 6}))
+
+
+Solution:
+li = [12,24,35,70,88,120,155]
+li = [x for (i,x) in enumerate(li) if i%2!=0]
+print li
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 90:
+问题：
+
+By using list comprehension, please write a program generate a 3*5*8 3D array whose each element is 0.
+通过使用列表理解，请编写一个程序来生成一个3*5*8的3D数组，其中每个元素都是0。
+
+Hints:
+提示：
+Use list comprehension to make an array.
+使用列表推导式来创建数组。
+
+# 本人答案
+def generate_3d_array(dim1, dim2, dim3):
+    return [[[0 for _ in range(dim3)] for _ in range(dim2)] for _ in range(dim1)]
+print(generate_3d_array(3, 5, 8))
+
+Solution:
+array = [[ [0 for col in range(8)] for col in range(5)] for row in range(3)]
+print array
+
+#----------------------------------------#
+#----------------------------------------#
+Question 91:
+问题：
+
+By using list comprehension, please write a program to print the list after removing the 0th,4th,5th numbers in [12,24,35,70,88,120,155].
+通过使用列表理解，请编写一个程序，在删除[12,24,35,70,88120155]中的第0、第4、第5个数字后打印列表。
+
+Hints:
+提示：
+Use list comprehension to delete a bunch of element from a list.
+使用列表推导式从列表中删除一堆元素。
+
+Use enumerate() to get (index, value) tuple.
+使用enumerate（）来获取（索引，值）元组。
+
+# 本人答案
+def remove_indices(lst, indices):
+    return [x for i, x in enumerate(lst) if i not in indices]
+print(remove_indices([12, 24, 35, 70, 88, 120, 155], {0, 4, 5}))
+
+Solution:
+li = [12,24,35,70,88,120,155]
+li = [x for (i,x) in enumerate(li) if i not in (0,4,5)]
+print li
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 92:
+问题：
+
+By using list comprehension, please write a program to print the list after removing the value 24 in [12,24,35,24,88,120,155].
+通过使用列表推导式，请编写一个程序，在删除[12,24,35,24,88,120,155]中的值24后打印列表。
+
+Hints:
+提示：
+Use list's remove method to delete a value.
+使用list的remove方法删除值。
+
+# 本人答案
+def remove_value(lst, value):
+    return [x for x in lst if x != value]
+print(remove_value([12, 24, 35, 24, 88, 120, 155], 24))
+
+Solution:
+li = [12,24,35,24,88,120,155]
+li = [x for x in li if x!=24]
+print li
+
+
+#----------------------------------------#
+#----------------------------------------#
+Question 93:
+问题：
+
+With two given lists [1,3,6,78,35,55] and [12,24,35,24,88,120,155], write a program to make a list whose elements are intersection of the above given lists.
+使用两个给定的列表[1,3,6,78,35,55]和[12,24,35,24,88,120,155]，编写一个程序来制作一个列表，其元素是上述给定列表的交集。
+
+Hints:
+提示：
+Use set() and "&=" to do set intersection operation.
+使用set（）和“&=”执行set交集操作。
+
+# 本人答案
+def intersection(lst1, lst2):
+    return list(set(lst1) & set(lst2))
+print(intersection([1, 3, 6, 78, 35, 55], [12, 24, 35, 24, 88, 120, 155]))
+
+Solution:
+
+set1=set([1,3,6,78,35,55])
+set2=set([12,24,35,24,88,120,155])
+set1 &= set2
+li=list(set1)
+print li
+
+#----------------------------------------#
+#----------------------------------------#
+Question 94:
+With a given list [12,24,35,24,88,120,155,88,120,155], write a program to print this list after removing all duplicate values with original order reserved.
+对于给定的列表[12,24,35,24,88,120,155,88,120,155]，在保留原始顺序的情况下删除所有重复值后，编写一个程序打印此列表。
+
+Hints:
+提示：
+Use set() to store a number of values without duplicate.
+使用set（）存储多个不重复的值。
+
+def remove_duplicates(lst):
+    seen = set()
+    result = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result    
+    
+print(remove_duplicates([12, 24, 35, 24, 88, 120, 155, 88, 120, 155]))
+
+Solution:
+def removeDuplicate( li ):
+    newli=[]
+    seen = set()
+    for item in li:
+        if item not in seen:
+            seen.add( item )
+            newli.append(item)
+    return newli
+
+li=[12,24,35,24,88,120,155,88,120,155]
+print removeDuplicate(li)
+
+#----------------------------------------#
+#----------------------------------------#
+Question 95:
+问题：
+
+Define a class Person and its two child classes: Male and Female. All classes have a method "getGender" which can print "Male" for Male class and "Female" for Female class.
+定义一个类Person及其两个子类：男性和女性。所有类都有一个方法“getGender”，可以为男性类打印“Male”，为女性类打印“Female”。
+
+Hints:
+提示：
+Use Subclass(Parentclass) to define a child class.
+使用子类（父类）定义子类。
+
+# 本人答案
+class Person:
+    def getGender(self):
+        pass
+class male(Person):
+    def getGender(self):
+        print("Male")
+class female(Person):
+    def getGender(self):
+        print("Female")
+
+Solution:
+class Person(object):
+    def getGender( self ):
+        return "Unknown"
+
+class Male( Person ):
+    def getGender( self ):
+        return "Male"
+
+class Female( Person ):
+    def getGender( self ):
+        return "Female"
+
+aMale = Male()
+aFemale= Female()
+print aMale.getGender()
+print aFemale.getGender()
+
+#----------------------------------------#
+#----------------------------------------#
+Question 96:
+问题：
+
+Please write a program which count and print the numbers of each character in a string input by console.
+请编写一个程序，对控制台输入的字符串中的每个字符进行计数和打印。
+
+Example:
+例子：
+If the following string is given as input to the program:
+如果将以下字符串作为程序的输入：
+
+abcdefgabc
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+a,2
+c,2
+b,2
+e,1
+d,1
+g,1
+f,1
+
+Hints:
+提示：
+
+Use dict to store key/value pairs.
+使用dict存储键/值对。
+
+Use dict.get() method to lookup a key with default value.
+使用dict.get（）方法查找具有默认值的键。
+
+# 本人答案
+def count_characters(s):
+    char_count = {}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    return char_count
+s="abcdefgabc"
+print(count_characters(s))
+
+Solution:
+dic = {}
+s=raw_input()
+for s in s:
+    dic[s] = dic.get(s,0)+1
+print '\n'.join(['%s,%s' % (k, v) for k, v in dic.items()])
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 97:
+问题：
+
+Please write a program which accepts a string from console and print it in reverse order.
+请编写一个从控制台接受字符串的程序，并按相反顺序打印。
+
+Example:
+例子：
+
+If the following string is given as input to the program:
+如果将以下字符串作为程序的输入：
+
+rise to vote sir
+起立投票，先生
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+ris etov ot esir
+
+Hints:
+提示：
+Use list[::-1] to iterate a list in a reverse order.
+使用list[：：-1]以相反的顺序迭代列表。
+
+# 本人答案
+def reverse_string(s):
+    return s[::-1]
+
+s = "rise to vote sir"
+print(reverse_string(s))
+
+Solution:
+
+s=raw_input()
+s = s[::-1]
+print s
+
+#----------------------------------------#
+#----------------------------------------#
+
+Question 98 :
+问题：
+
+Please write a program which accepts a string from console and print the characters that have even indexes.
+请编写一个从控制台接受字符串的程序，并打印具有偶数索引的字符。
+
+Example:
+例子：
+If the following string is given as input to the program:
+如果将以下字符串作为程序的输入：
+
+H1e2l3l4o5w6o7r8l9d
+
+Then, the output of the program should be:
+那么，程序的输出应该是：
+
+Helloworld
+你好世界
+
+Hints:
+提示：
+
+Use list[::2] to iterate a list by step 2.
+使用list[：：2]按步数为2迭代列表。
+
+# 本人答案
+def even_index_characters(s):
+    return s[::2]
+s = "H1e2l3l4o5w6o7r8l9d"
+print(even_index_characters(s))
+
+Solution:
+s=raw_input()
+s = s[::2]
+print s
+#----------------------------------------#
+#----------------------------------------#
+
+
+Question 99:
+问题：
+
+Please write a program which prints all permutations of [1,2,3]
+请编写一个程序，打印[1,2,3]的所有排列
+
+
+Hints:
+提示：
+Use itertools.permutations() to get permutations of list.
+使用itertools.permutations（）来获取列表的排列。
+
+# 本人答案
+import itertools
+def print_permutations(lst):
+    return list(itertools.permutations(lst))
+lst = [1, 2, 3]
+print(print_permutations(lst))
+
+Solution:
+import itertools
+print list(itertools.permutations([1,2,3]))
+
+#----------------------------------------#
+#----------------------------------------#
+Question 100:
+问题：
+
+Write a program to solve a classic ancient Chinese puzzle:
+编写一个程序来解决一个经典的中国古代谜题：
+
+We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
+我们在一个农场的鸡和兔子中数了35个头和94条腿。我们有多少只兔子和多少只鸡？
+
+Hint:
+提示：
+
+Use for loop to iterate all possible solutions.
+使用for循环迭代所有可能的解决方案。
+
+# 本人答案
+def solve_chickens_and_rabbits(total_heads, total_legs):
+    for chickens in range(total_heads + 1):
+        rabbits = total_heads - chickens
+        if 2 * chickens + 4 * rabbits == total_legs:
+            return chickens, rabbits
+    return None
+total_heads = 35
+total_legs = 94
+solution = solve_chickens_and_rabbits(total_heads, total_legs)
+if solution:
+    chickens, rabbits = solution
+    print(f"Chickens: {chickens}, Rabbits: {rabbits}")
+
+Solution:
+def solve(numheads,numlegs):
+    ns='No solutions!'
+    for i in range(numheads+1):
+        j=numheads-i
+        if 2*i+4*j==numlegs:
+            return i,j
+    return ns,ns
+
+numheads=35
+numlegs=94
+solutions=solve(numheads,numlegs)
+print solutions
+
+#----------------------------------------#
+#----------------------------------------#
+
