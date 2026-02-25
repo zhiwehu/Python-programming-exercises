@@ -564,13 +564,13 @@ Solution:
 ```python
 def putNumbers(n):
     i = 0
-    while i<n:
-        j=i
-        i=i+1
-        if j%7==0:
-            yield j
+    while i < n:
+        if i % 7 == 0:
+            yield i
+        i += 1
 
-for i in reverse(100):
+# Using reversed(list(...)) to iterate backwards
+for i in reversed(list(putNumbers(100))):
     print(i)
 ```
 
