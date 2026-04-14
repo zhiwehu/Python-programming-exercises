@@ -1,4 +1,4 @@
-Python
+#Python Tutorial
 The below table largely covers the TOC for 5 popular books. Learning Python (Fourth Edition) has a more in-depth look at concepts than any of the other books. However this book also does not essentially cover some aspects that are covered in other books.
 No.	Diving into Python	The Python Standard Library by Example	Python Essential Reference (4th edition)	The Quick Python Book	Learning Python
 Introductory Concepts covering installation on different OS, version history, interpreter. This section also covers questions like Why, Who, What and Where on Python.
@@ -66,6 +66,7 @@ String & Text Handling	1.	Python Overview
 5.	Strings
 6.	Control Flow
 3.	Functions
+#recursion examples
 4.	Modules and Scoping Rules
 5.	Python Programs	1.	Introducing Python Object Types
 1.	Why use built-in Types ?
