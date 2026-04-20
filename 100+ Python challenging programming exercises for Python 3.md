@@ -249,7 +249,7 @@ while True:
     if s:
         lines.append(s.upper())
     else:
-        break;
+        break
 
 for sentence in lines:
     print(sentence)
@@ -1080,7 +1080,7 @@ Use if statement to judge condition.
 
 Solution
 ```python
-s= raw_input()
+s= input()
 if s=="yes" or s=="YES" or s=="Yes":
     print "Yes"
 else:
