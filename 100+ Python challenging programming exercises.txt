@@ -2371,5 +2371,25 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
+Level 1: 
+Relatively easy problem that can be solved
+by someone who is a beginner to Python
 
+Question:
+Write a program that goes through the integers from 1-100. For every integer divisible by 3 the program should print "Fizz". For every integer divisible by 5 the program should print "Buzz". For every integer divisible by both 3 and 5 the program should print "FizzBuzz". For every integer that are not divisible by either 3 or 5 and both, print the integer itself.
 
+Hints:
+Use a for loop and range(). Read the question carefully before writing any lines of code.
+
+Solution:
+def fizzbuzz() -> None:
+    for integer in range(1,101):
+        if integer % 3 == 0 and integer % 5 == 0:
+	    print 'FizzBuzz'
+	elif integer % 3 == 0:
+	    print 'Fizz'
+	elif integer % 5 == 0:
+	    print 'Buzz'
+	else:
+	    print integer
+#----------------------------------------#
