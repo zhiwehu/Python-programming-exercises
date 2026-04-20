@@ -4,7 +4,7 @@
 Level	Description
 Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
 Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
-Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
+Level 3	Advanced. He should use Python to solve a more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
 
 2.	Problem template
 
@@ -149,7 +149,7 @@ Following are the fixed values of C and H:
 C is 50. H is 30.
 D is the variable whose values should be input to your program in a comma-separated sequence.
 Example
-Let us assume the following comma separated input sequence is given to the program:
+Let us assume the following comma-separated input sequence is given to the program:
 100,150,180
 The output of the program should be:
 18,22,24
@@ -206,7 +206,7 @@ Question 8
 Level 2
 
 Question:
-Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
+Write a program that accepts a comma-separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
 Suppose the following input is supplied to the program:
 without,hello,bag,world
 Then, the output should be:
@@ -255,7 +255,7 @@ Question 10
 Level 2
 
 Question:
-Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
+Write a program that accepts a sequence of whitespace-separated words as input and prints the words after removing all duplicate words and sorting them alphanumerically.
 Suppose the following input is supplied to the program:
 hello world and practice makes perfect and hello world again
 Then, the output should be:
@@ -276,7 +276,7 @@ Question 11
 Level 2
 
 Question:
-Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma separated sequence.
+Write a program which accepts a sequence of comma-separated 4 digit binary numbers as its input and then check whether they are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma-separated sequence.
 Example:
 0100,0011,1010,1001
 Then the output should be:
@@ -469,7 +469,7 @@ Following are the criteria for checking the password:
 3. At least 1 character from [$#@]
 4. Minimum length of transaction password: 6
 5. Maximum length of transaction password: 12
-Your program should accept a sequence of comma separated passwords and will check them according to the above criteria. Passwords that match the criteria are to be printed, each separated by a comma.
+Your program should accept a sequence of comma-separated passwords and will check them according to the above criteria. Passwords that match the criteria are to be printed, each separated by a comma.
 Example
 If the following passwords are given as input to the program:
 ABd1234@1,a F1#,2w3E*,2We3345
@@ -568,13 +568,13 @@ Question 21
 Level 3
 
 Question£º
-A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with a given steps. The trace of robot movement is shown as the following:
+A robot moves in a plane starting from the original point (0,0). The robot can move toward UP, DOWN, LEFT and RIGHT with given steps. The trace of robot movement is shown as the following:
 UP 5
 DOWN 3
 LEFT 3
 RIGHT 2
 ¡­
-The numbers after the direction are steps. Please write a program to compute the distance from current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
+The numbers after the direction are steps. Please write a program to compute the distance from the current position after a sequence of movement and original point. If the distance is a float, then just print the nearest integer.
 Example:
 If the following tuples are given as input to the program:
 UP 5
@@ -686,7 +686,7 @@ print raw_input.__doc__
 def square(num):
     '''Return the square value of the input number.
     
-    The input number must be integer.
+    The input number must be an integer.
     '''
     return num ** 2
 
@@ -737,11 +737,11 @@ print SumFunction(1,2)
 
 #----------------------------------------#
 Question:
-Define a function that can convert a integer into a string and print it in console.
+Define a function that can convert an integer into a string and print it in console.
 
 Hints:
 
-Use str() to convert a number to string.
+Use str() to convert a number to a string.
 
 Solution
 def printValue(n):
@@ -752,7 +752,7 @@ printValue(3)
 
 #----------------------------------------#
 Question:
-Define a function that can convert a integer into a string and print it in console.
+Define a function that can convert an integer into a string and print it in console.
 
 Hints:
 
@@ -856,7 +856,7 @@ Define a function which can print a dictionary where the keys are numbers betwee
 Hints:
 
 Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 
 Solution
 def printDict():
@@ -882,7 +882,7 @@ Define a function which can print a dictionary where the keys are numbers betwee
 Hints:
 
 Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
 
 Solution
@@ -905,9 +905,9 @@ Define a function which can generate a dictionary where the keys are numbers bet
 Hints:
 
 Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
-Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
+Use keys() to iterate keys in the dictionary. Also, we can use item() to get key/value pairs.
 
 Solution
 def printDict():
@@ -929,9 +929,9 @@ Define a function which can generate a dictionary where the keys are numbers bet
 Hints:
 
 Use dict[key]=value pattern to put entry into a dictionary.
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
-Use keys() to iterate keys in the dictionary. Also we can use item() to get key/value pairs.
+Use keys() to iterate keys in the dictionary. Also, we can use item() to get key/value pairs.
 
 Solution
 def printDict():
@@ -953,7 +953,7 @@ Define a function which can generate and print a list where the values are squar
 
 Hints:
 
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 
@@ -975,7 +975,7 @@ Define a function which can generate a list where the values are square of numbe
 
 Hints:
 
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
@@ -999,7 +999,7 @@ Define a function which can generate a list where the values are square of numbe
 
 Hints:
 
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
@@ -1023,7 +1023,7 @@ Define a function which can generate a list where the values are square of numbe
 
 Hints:
 
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
@@ -1043,11 +1043,11 @@ printList()
 2.10
 
 Question:
-Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included). 
+Define a function which can generate and print a tuple where the value is square of numbers between 1 and 20 (both included). 
 
 Hints:
 
-Use ** operator to get power of a number.
+Use ** operator to get the power of a number.
 Use range() for loops.
 Use list.append() to add values into a list.
 Use tuple() to get a tuple from a list.
@@ -1319,7 +1319,7 @@ print aRectangle.area()
 
 7.2
 
-Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
+Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as an argument. Both classes have an area function which can print the area of the shape where Shape's area is 0 by default.
 
 Hints:
 
@@ -1390,7 +1390,7 @@ finally:
 
 
 #----------------------------------------#
-Define a custom exception class which takes a string message as attribute.
+Define a custom exception class which takes a string message as an attribute.
 
 Hints:
 
@@ -1413,7 +1413,7 @@ error = MyError("something wrong")
 #----------------------------------------#
 Question:
 
-Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the user name of a given email address. Both user names and company names are composed of letters only.
+Assuming that we have some email addresses in the "username@companyname.com" format, please write a program to print the user name of a given email address. Both user names and company names are composed of letters only.
 
 Example:
 If the following email address is given as input to the program:
@@ -1441,7 +1441,7 @@ print r2.group(1)
 #----------------------------------------#
 Question:
 
-Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
+Assuming that we have some email addresses in the "username@companyname.com" format, please write a program to print the company name of a given email address. Both user names and company names are composed of letters only.
 
 Example:
 If the following email address is given as input to the program:
@@ -1474,7 +1474,7 @@ Question:
 Write a program which accepts a sequence of words separated by whitespace as input to print the words composed of digits only.
 
 Example:
-If the following words is given as input to the program:
+If the following words are given as input to the program:
 
 2 cats and 3 dogs.
 
@@ -1649,7 +1649,7 @@ f(n)=0 if n=0
 f(n)=1 if n=1
 f(n)=f(n-1)+f(n-2) if n>1
 
-Please write a program using list comprehension to print the Fibonacci Sequence in comma separated form with a given n input by console.
+Please write a program using list comprehension to print the Fibonacci Sequence in comma-separated form with a given n input by console.
 
 Example:
 If the following n is given as input to the program:
@@ -1684,7 +1684,7 @@ print ",".join(values)
 
 Question:
 
-Please write a program using generator to print the even numbers between 0 and n in comma separated form while n is input by console.
+Please write a program using generator to print the even numbers between 0 and n in comma-separated form while n is input by console.
 
 Example:
 If the following n is given as input to the program:
@@ -1722,7 +1722,7 @@ print ",".join(values)
 
 Question:
 
-Please write a program using generator to print the numbers which can be divisible by 5 and 7 between 0 and n in comma separated form while n is input by console.
+Please write a program using generator to print the numbers which can be divisible by 5 and 7 between 0 and n in comma-separated form while n is input by console.
 
 Example:
 If the following n is given as input to the program:
@@ -1763,7 +1763,7 @@ Please write assert statements to verify that every number in the list [2,4,6,8]
 
 
 Hints:
-Use "assert expression" to make assertion.
+Use "assert expression" to make an assertion.
 
 
 Solution:
@@ -1972,7 +1972,7 @@ print random.sample([i for i in range(100,201) if i%2==0], 5)
 #----------------------------------------#
 Question:
 
-Please write a program to randomly generate a list with 5 numbers, which are divisible by 5 and 7 , between 1 and 1000 inclusive.
+Please write a program to randomly generate a list with 5 numbers, which are divisible by 5 and 7, between 1 and 1000 inclusive.
 
 
 
@@ -1989,7 +1989,7 @@ print random.sample([i for i in range(1,1001) if i%5==0 and i%7==0], 5)
 
 Question:
 
-Please write a program to randomly print a integer number between 7 and 15 inclusive.
+Please write a program to randomly print an integer number between 7 and 15 inclusive.
 
 
 
@@ -2080,7 +2080,7 @@ Question:
 Please write a program to generate all sentences where subject is in ["I", "You"] and verb is in ["Play", "Love"] and the object is in ["Hockey","Football"].
 
 Hints:
-Use list[index] notation to get a element from a list.
+Use list[index] notation to get an element from a list.
 
 Solution:
 
@@ -2299,7 +2299,7 @@ Then, the output of the program should be:
 ris etov ot esir
 
 Hints:
-Use list[::-1] to iterate a list in a reverse order.
+Use list[::-1] to iterate a list in reverse order.
 
 Solution:
 
@@ -2350,7 +2350,7 @@ print list(itertools.permutations([1,2,3]))
 Question:
 
 Write a program to solve a classic ancient Chinese puzzle: 
-We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
+We count 35 heads and 94 legs among the chickens and rabbits on a farm. How many rabbits and how many chickens do we have?
 
 Hint:
 Use for loop to iterate all possible solutions.
