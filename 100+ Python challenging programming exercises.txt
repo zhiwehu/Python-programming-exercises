@@ -2371,5 +2371,33 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
+Level: Easy
+Question:
+Given an integer input, n, perform the following conditional actions:
 
+1. If n is odd, print "Weird".
+2. If n is even and in the inclusive range of 2 to 5, print "Not Weird".
+3. If n is even and in the inclusive range of 6 to 20, print "Weird".
+4. If n is even and greater than 20, print "Not Weird".
+
+(credit: HackerRank (30 days of Code))
+
+Hints: Use if-elif-else statements to split the problem into sections.
+
+Answer:
+
+import math
+import os
+import random
+import re
+import sys
+
+if __name__ == '__main__':
+    n = int(input().strip())
+    if(n%2!=0 or (n%2==0 and (n>=6 and n<=20))):
+        print('Weird')
+    else:
+        if((n%2==0 and (n>=2 and n<=5) or (n%2==0 and n>20))):
+            print('Not Weird')
+#----------------------------------------#
 
