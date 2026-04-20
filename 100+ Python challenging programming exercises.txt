@@ -1,17 +1,17 @@
 100+ Python challenging programming exercises
 
 1.	Level description
-Level	Description
-Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
-Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
-Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
+# Level	Description
+# Level 1	Beginner means someone who has just gone through an introductory Python course. He can solve some problems with 1 or 2 Python classes or functions. Normally, the answers could directly be found in the textbooks.
+# Level 2	Intermediate means someone who has just learned Python, but already has a relatively strong programming background from before. He should be able to solve problems which may involve 3 or 3 Python classes or functions. The answers cannot be directly be found in the textbooks.
+# Level 3	Advanced. He should use Python to solve more complex problem using more rich libraries functions and data structures and algorithms. He is supposed to solve the problem using several Python standard packages and advanced techniques.
 
 2.	Problem template
 
 #----------------------------------------#
-Question
-Hints
-Solution
+# Question
+# Hints
+# Solution
 
 3.	Questions
 
@@ -24,16 +24,17 @@ Write a program which will find all such numbers which are divisible by 7 but ar
 between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-Hints: 
+
+Hints:
 Consider use range(#begin, #end) method
-
 Solution:
-l=[]
-for i in range(2000, 3201):
-    if (i%7==0) and (i%5!=0):
-        l.append(str(i))
+numbers = range(2000,3200)
+result = []
+for number in numbers:
+    if (number % 7 == 0) and (number % 5 != 0):
+        result.append(str(number))
 
-print ','.join(l)
+print(', '.join(result))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -53,12 +54,12 @@ In case of input data being supplied to the question, it should be assumed to be
 
 Solution:
 def fact(x):
-    if x == 0:
+    if x == 0
         return 1
-    return x * fact(x - 1)
+    return x * fact(x-1)
 
-x=int(raw_input())
-print fact(x)
+x = int(input)
+print(fact(x))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -77,12 +78,20 @@ In case of input data being supplied to the question, it should be assumed to be
 Consider use dict()
 
 Solution:
-n=int(raw_input())
-d=dict()
-for i in range(1,n+1):
-    d[i]=i*i
+def multi(x):
+  count = 1
+  #create empty dictionary
+  output = dict()
+  # While 1 < als x
+  while count <= x:
+  # create key value pair with 1: 1*1
+      output[count] = count * count
+  # increase by 1 and check if smaller than x
+      count += 1
+  return output
 
-print d
+x = int(raw_input)
+print(multi(x))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -101,12 +110,17 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 tuple() method can convert list to tuple
 
+
+
+
 Solution:
-values=raw_input()
-l=values.split(",")
-t=tuple(l)
-print l
-print t
+input_value = input("Enter comma separated integers: ")
+list_input = input_value.split(',')
+tuple_input = tuple(list_input)
+
+print(list_input)
+print(tuple_input)
+
 #----------------------------------------#
 
 #----------------------------------------#
@@ -123,19 +137,20 @@ Hints:
 Use __init__ method to construct some parameters
 
 Solution:
-class InputOutString(object):
-    def __init__(self):
-        self.s = ""
+class Converter(object):
+  def __init__(self):
+      self.s = ''
 
-    def getString(self):
-        self.s = raw_input()
+  def getString(self):
+      self.s = input()
 
-    def printString(self):
-        print self.s.upper()
+  def Capitalized(self):
+      result = self.s.upper()
+      print(result)
 
-strObj = InputOutString()
+strObj = Converter()
 strObj.getString()
-strObj.printString()
+strObj.Capitalized()
 #----------------------------------------#
 
 #----------------------------------------#
@@ -154,21 +169,21 @@ Let us assume the following comma separated input sequence is given to the progr
 The output of the program should be:
 18,22,24
 
+
 Hints:
 If the output received is in decimal form, it should be rounded off to its nearest value (for example, if the output received is 26.0, it should be printed as 26)
-In case of input data being supplied to the question, it should be assumed to be a console input. 
+In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
-#!/usr/bin/env python
 import math
-c=50
-h=30
-value = []
-items=[x for x in raw_input().split(',')]
-for d in items:
-    value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
+items = [ int(x) for x in input().split(',') ]
+C = 50
+H = 30
+result = []
+for D in items:
+    result.append(str(round(math.sqrt((2*C*D)/H))))
 
-print ','.join(value)
+print(','.join(result))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -182,23 +197,23 @@ Example
 Suppose the following inputs are given to the program:
 3,5
 Then, the output of the program should be:
-[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]] 
+[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
 
 Hints:
 Note: In case of input data being supplied to the question, it should be assumed to be a console input in a comma-separated form.
 
 Solution:
-input_str = raw_input()
-dimensions=[int(x) for x in input_str.split(',')]
-rowNum=dimensions[0]
-colNum=dimensions[1]
-multilist = [[0 for col in range(colNum)] for row in range(rowNum)]
 
-for row in range(rowNum):
-    for col in range(colNum):
-        multilist[row][col]= row*col
+digits = [int(x) for x in input().split(',')]
+rows = digits[0]
+cols = digits[1]
+array = [[0 for i in range(cols)] for j in range(rows)]
 
-print multilist
+for row in range(rows):
+    for col in range(cols):
+        array[row][col] = row * col
+
+print(array)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -215,10 +230,11 @@ bag,hello,without,world
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
+
 Solution:
-items=[x for x in raw_input().split(',')]
-items.sort()
-print ','.join(items)
+  raw_words = [x for x in input().split(',')]
+  print(','.join(sorted(raw_words)))
+
 #----------------------------------------#
 
 #----------------------------------------#
@@ -240,14 +256,19 @@ In case of input data being supplied to the question, it should be assumed to be
 Solution:
 lines = []
 while True:
-    s = raw_input()
-    if s:
-        lines.append(s.upper())
+# while line contains input
+    line = input()
+    if line:
+      # add to emty query and uppercase it
+        lines.append(line.upper())
     else:
-        break;
+      # if empty line provided break loop
+        break
+# join list by adding a line break between each element
+text = '\n'.join(lines)
 
-for sentence in lines:
-    print sentence
+for l in lines:
+    print(l)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -261,14 +282,16 @@ hello world and practice makes perfect and hello world again
 Then, the output should be:
 again and hello makes perfect practice world
 
+
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use set container to remove duplicated data automatically and then use sorted() to sort the data.
 
 Solution:
-s = raw_input()
-words = [word for word in s.split(" ")]
-print " ".join(sorted(list(set(words))))
+s = input()
+words = [word for word in s.split(' ')]
+print(' '.join(sorted(list(dict.fromkeys(words)))))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -285,16 +308,15 @@ Notes: Assume the data is input by console.
 
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
-
 Solution:
-value = []
-items=[x for x in raw_input().split(',')]
-for p in items:
-    intp = int(p, 2)
-    if not intp%5:
-        value.append(p)
+output = []
+numbers = [x for x in input().split(',')]
+for number in numbers:
+    if number[0] != '0':
+        if int(number) % 5 == 0:
+            output.append((number))
 
-print ','.join(value)
+print(','.join(output))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -309,12 +331,13 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
-values = []
-for i in range(1000, 3001):
-    s = str(i)
-    if (int(s[0])%2==0) and (int(s[1])%2==0) and (int(s[2])%2==0) and (int(s[3])%2==0):
-        values.append(s)
-print ",".join(values)
+result = []
+
+  values = range(1000,3000)
+  for value in values:
+        if all(int(integer) % 2 == 0 for integer in str(value)):
+            result.append(value)
+print(result)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -329,21 +352,17 @@ Then, the output should be:
 LETTERS 10
 DIGITS 3
 
+#split string into individual pieces
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
-s = raw_input()
-d={"DIGITS":0, "LETTERS":0}
-for c in s:
-    if c.isdigit():
-        d["DIGITS"]+=1
-    elif c.isalpha():
-        d["LETTERS"]+=1
-    else:
-        pass
-print "LETTERS", d["LETTERS"]
-print "DIGITS", d["DIGITS"]
+s = input()
+numbers = sum(i.isdigit() for i in str(s))
+letters   = sum(i.isalpha() for i in str(s))
+print('LETTERS:',letters)
+print('NUMBERS:',numbers)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -360,19 +379,13 @@ LOWER CASE 9
 
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
-
 Solution:
-s = raw_input()
-d={"UPPER CASE":0, "LOWER CASE":0}
-for c in s:
-    if c.isupper():
-        d["UPPER CASE"]+=1
-    elif c.islower():
-        d["LOWER CASE"]+=1
-    else:
-        pass
-print "UPPER CASE", d["UPPER CASE"]
-print "LOWER CASE", d["LOWER CASE"]
+s = input()
+upper  = sum(i.isupper() for i in str(s))
+lower  = sum(i.islower() for i in str(s))
+
+print('UPPER CASE:',upper)
+print('LOWER CASE:',lower)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -390,12 +403,9 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
-a = raw_input()
-n1 = int( "%s" % a )
-n2 = int( "%s%s" % (a,a) )
-n3 = int( "%s%s%s" % (a,a,a) )
-n4 = int( "%s%s%s%s" % (a,a,a,a) )
-print n1+n2+n3+n4
+d = input()
+result = int(d) + int(d*2) + int(d*3) + int(d*4)
+print(result)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -413,10 +423,9 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
-values = raw_input()
-numbers = [x for x in values.split(",") if int(x)%2!=0]
-print ",".join(numbers)
-#----------------------------------------#
+result = [i for i in input().split(',') if int(i) % 2 != 0]
+print(','.join(result))
+# #----------------------------------------#
 
 Question 17
 Level 2
@@ -435,25 +444,25 @@ D 100
 Then, the output should be:
 500
 
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
-netAmount = 0
-while True:
-    s = raw_input()
-    if not s:
-        break
-    values = s.split(" ")
-    operation = values[0]
-    amount = int(values[1])
-    if operation=="D":
-        netAmount+=amount
-    elif operation=="W":
-        netAmount-=amount
-    else:
-        pass
-print netAmount
+
+span = 2
+words = input().split(' ')
+balance = 0
+transactions = [' '.join(words[i:i+span]) for i in range(0, len(words), span)]
+
+for transaction in transactions:
+    amount = [int(value) for value in transaction.split() if value.isdigit()]
+    if ('D') in transaction:
+        balance += amount[0]
+    elif ('W') in transaction:
+        balance -= amount[0]
+
+print(balance)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -481,27 +490,15 @@ In case of input data being supplied to the question, it should be assumed to be
 
 Solutions:
 import re
-value = []
-items=[x for x in raw_input().split(',')]
-for p in items:
-    if len(p)<6 or len(p)>12:
-        continue
-    else:
-        pass
-    if not re.search("[a-z]",p):
-        continue
-    elif not re.search("[0-9]",p):
-        continue
-    elif not re.search("[A-Z]",p):
-        continue
-    elif not re.search("[$#@]",p):
-        continue
-    elif re.search("\s",p):
-        continue
-    else:
-        pass
-    value.append(p)
-print ",".join(value)
+passwords = input().split(',')
+result = []
+for password in passwords:
+  if len(password) >=6 and len(password)<= 12:
+      if re.match('[a-z]*', str(password)) and re.match('[A-Z]*', str(password)) and re.match('[0-9]*', str(password)):
+          if '#' in str(password) or '@' in str(password) or ('$' in str(password)):
+              result.append(password)
+
+print(''.join(result))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -523,21 +520,22 @@ Json,21,85
 Then, the output of the program should be:
 [('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
 
+
 Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 We use itemgetter to enable multiple sort keys.
 
 Solutions:
+
 from operator import itemgetter, attrgetter
-
-l = []
+people = []
 while True:
-    s = raw_input()
-    if not s:
+    input_value = input()
+    if not input_value
         break
-    l.append(tuple(s.split(",")))
+    people.append(tuple(input_value.split(',')))
 
-print sorted(l, key=itemgetter(0,1,2))
+print(sorted(people, key=itemgetter(0,1,2)))
 #----------------------------------------#
 
 #----------------------------------------#
@@ -616,7 +614,7 @@ Question 22
 Level 3
 
 Question:
-Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically. 
+Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically.
 Suppose the following input is supplied to the program:
 New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.
 Then, the output should be:
@@ -674,7 +672,7 @@ Question:
     Python has many built-in functions, and if you do not know how to use it, you can read document online or find some books. But Python has a built-in document function for every built-in functions.
     Please write a program to print some Python built-in functions documents, such as abs(), int(), raw_input()
     And add document for your own function
-    
+
 Hints:
     The built-in document method is __doc__
 
@@ -685,7 +683,7 @@ print raw_input.__doc__
 
 def square(num):
     '''Return the square value of the input number.
-    
+
     The input number must be integer.
     '''
     return num ** 2
@@ -709,7 +707,7 @@ Solution:
 class Person:
     # Define the class parameter "name"
     name = "Person"
-    
+
     def __init__(self, name = None):
         # self.name is the instance parameter
         self.name = name
@@ -748,7 +746,7 @@ def printValue(n):
 	print str(n)
 
 printValue(3)
-	
+
 
 #----------------------------------------#
 Question:
@@ -820,7 +818,7 @@ def printValue(s1,s2):
 	else:
 		print s1
 		print s2
-		
+
 
 printValue("one","three")
 
@@ -842,7 +840,7 @@ def checkValue(n):
 		print "It is an even number"
 	else:
 		print "It is an odd number"
-		
+
 
 checkValue(7)
 
@@ -865,7 +863,7 @@ def printDict():
 	d[2]=2**2
 	d[3]=3**2
 	print d
-		
+
 
 printDict()
 
@@ -891,7 +889,7 @@ def printDict():
 	for i in range(1,21):
 		d[i]=i**2
 	print d
-		
+
 
 printDict()
 
@@ -914,9 +912,9 @@ def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
-	for (k,v) in d.items():	
+	for (k,v) in d.items():
 		print v
-		
+
 
 printDict()
 
@@ -938,9 +936,9 @@ def printDict():
 	d=dict()
 	for i in range(1,21):
 		d[i]=i**2
-	for k in d.keys():	
+	for k in d.keys():
 		print k
-		
+
 
 printDict()
 
@@ -963,7 +961,7 @@ def printList():
 	for i in range(1,21):
 		li.append(i**2)
 	print li
-		
+
 
 printList()
 
@@ -986,7 +984,7 @@ def printList():
 	for i in range(1,21):
 		li.append(i**2)
 	print li[:5]
-		
+
 
 printList()
 
@@ -1010,7 +1008,7 @@ def printList():
 	for i in range(1,21):
 		li.append(i**2)
 	print li[-5:]
-		
+
 
 printList()
 
@@ -1034,7 +1032,7 @@ def printList():
 	for i in range(1,21):
 		li.append(i**2)
 	print li[5:]
-		
+
 
 printList()
 
@@ -1043,7 +1041,7 @@ printList()
 2.10
 
 Question:
-Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included). 
+Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included).
 
 Hints:
 
@@ -1058,7 +1056,7 @@ def printTuple():
 	for i in range(1,21):
 		li.append(i**2)
 	print tuple(li)
-		
+
 printTuple()
 
 
@@ -1067,7 +1065,7 @@ printTuple()
 2.10
 
 Question:
-With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line. 
+With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line.
 
 Hints:
 
@@ -1085,7 +1083,7 @@ print tp2
 2.10
 
 Question:
-Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10). 
+Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10).
 
 Hints:
 
@@ -1108,7 +1106,7 @@ print tp2
 2.14
 
 Question:
-Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No".
 
 Hints:
 
@@ -1238,7 +1236,7 @@ American.printNationality()
 7.2
 
 Question:
-Define a class named American and its subclass NewYorker. 
+Define a class named American and its subclass NewYorker.
 
 Hints:
 
@@ -1266,7 +1264,7 @@ print aNewYorker
 7.2
 
 Question:
-Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area. 
+Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area.
 
 Hints:
 
@@ -1293,7 +1291,7 @@ print aCircle.area()
 
 7.2
 
-Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area. 
+Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area.
 
 Hints:
 
@@ -2349,7 +2347,7 @@ print list(itertools.permutations([1,2,3]))
 #----------------------------------------#
 Question:
 
-Write a program to solve a classic ancient Chinese puzzle: 
+Write a program to solve a classic ancient Chinese puzzle:
 We count 35 heads and 94 legs among the chickens and rabbits in a farm. How many rabbits and how many chickens do we have?
 
 Hint:
