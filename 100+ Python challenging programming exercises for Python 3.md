@@ -90,6 +90,12 @@ for i in range(1,n+1):
 
 print(d)
 ```
+Another Solution:
+```python
+n=int(input("Enter the value of n:"))
+d={i:i*i for i in range(1, n+1)}
+print(d)
+```
 
 ### Question 4
 Level 1
@@ -549,6 +555,19 @@ while True:
 
 print(sorted(l, key=itemgetter(0,1,2)))
 ```
+Another Solution:
+```python
+from operator import itemgetter
+lst=[]
+while True: 
+  l=input()
+  if l==" ":
+    break
+  else:
+    lst.append(tuple(l.split(',')))
+lst.sort(key=itemgetter(0,1,2))
+print(lst)
+```
 
 ### Question 20
 Level 3
@@ -678,6 +697,12 @@ def square(num):
 
 print(square(2))
 print(square(3))
+```
+Another Solution
+```python
+n=int(input('enter value of n:'))
+square=n**2
+print(square)
 ```
 
 ### Question 24
