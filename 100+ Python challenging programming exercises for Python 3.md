@@ -768,6 +768,28 @@ printValue(3)
 ```
 
 ### Question 28
+Level 3
+Define a function that takes two (MxN) matrices(created using numpy arrays) and computes a third matrix by summing the first two matrices. It should return the result.  
+
+Hints:
+
+Matrices can only be added if they have the same exact dimensions as the other. Assume if this is the case. Also, matrix addition happens in-place. This means that in matrix A of dimension 2x2 and matrix B of dimensions 2x2, one can only add values A[0][0] to B[0][0] and A[0][1] to B[0][1].
+
+Solution
+```python
+import numpy as np
+def sum_2_matrices(matrix1, matrix2):
+    rows = len(matrix1[0])
+    cols = len(matrix1[0][0])
+    
+    result = np.zeroes((rows, cols), dtype=int)
+    for i in range(len(result)):
+        for k in range(len(result[i])):
+	    result[i][k] = matrix1[i][k] + matrix2[i][k]
+    return result
+```
+
+### Question 29
 Define a function that can convert a integer into a string and print it in console.
 
 Hints:
