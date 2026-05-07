@@ -172,6 +172,22 @@ print ','.join(value)
 #----------------------------------------#
 
 #----------------------------------------#
+Alternate Solution to Question 6
+import math
+
+print ("This is a program that calculates and prints the value according to the given formula :Q = Square root of [(2 * C * D)/H]")
+print("These are the fixed values of C and H:C is 50. H is 30.")
+print("D is the variable whose values will be input to the program in a comma-separated sequence.")
+
+Dvalues = input ("What are the values of D you would like to use ? Please use positive integers separated by comma such as 100,150,180:")
+
+Q_list = []
+D_list = Dvalues.split(",")
+
+print("Through list comprehension method : ")
+Q_list_2 = [round(math.sqrt((2*50*int(n))/30)) for n in D_list ]
+print(Q_list_2)
+#----------------#
 Question 7
 Level 2
 
