@@ -2371,5 +2371,40 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
+Level: Easy
+Question:
+Create a NxN mutiplication table, of size
+provided in parameter. (Credit: CodeWars)
+
+Example:
+input: 3
+Output:
+1 2 3
+2 4 6
+3 6 9
+Returned value: 
+[[1,2,3][2,4,6][3,6,9]]
+
+Hint:
+Double loop to create mutiple arrays.
+
+Solution one (simplified):
+
+def mutiplication_table(size: int) -> list:
+	return [[rows * cols for rows in range(1,size+1)] for cols in range(1,size+1)]
+
+Solution two (traditional):
+
+def mutiplication_table(size: int) -> list:
+	temp = []
+	for rows in range(1,size+1):
+		col = []
+		for cols in range(1,size+1):
+			col.append(rows*cols)
+		temp.append(col)
+	return temp
+
+#----------------------------------------#
+
 
 
