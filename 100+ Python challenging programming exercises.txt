@@ -2371,5 +2371,25 @@ solutions=solve(numheads,numlegs)
 print solutions
 
 #----------------------------------------#
+Level: Medium
 
+Question:
 
+Given a sentence, reverse and swap the case of the letters within the sentence.
+
+Example: 
+1. "hEllo, I aM A cAt" => "CaT a Am i HeLLO,"
+2. "THiS IS a sEnTENce." => "SeNtenCE. A is thIs"
+
+Hints: Use reversed(), swapcase(), and .join() to solve this problem.
+
+Answer:
+
+def stringReverse_and_swapCase(string):
+    sen = string.split()
+    sen = list(reversed(sen))
+    sen = " ".join(sen)
+    sen = sen.swapcase()
+    
+stringReverse_and_swapCase(string)
+#----------------------------------------#
