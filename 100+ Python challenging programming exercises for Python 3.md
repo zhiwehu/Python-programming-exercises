@@ -570,7 +570,7 @@ def putNumbers(n):
         if j%7==0:
             yield j
 
-for i in reverse(100):
+for i in range(100, -1, -1):
     print(i)
 ```
 
